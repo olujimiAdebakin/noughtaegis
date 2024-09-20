@@ -1,0 +1,134 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 15px 20px; */
+    background-color:transparent ;
+    /* height: 50px; */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 50px;
+     transition: background-color 0.3s ease;
+   
+    z-index: 5;
+        transform: translateZ(1px);
+    height: 60px;
+}
+
+.navbar-transparent {
+  background-color: transparent;
+}
+
+.navbar-scrolled {
+  background-color: #00274f
+}
+
+nav:hover{
+    background-color: #00274f;
+    color: white;
+}
+
+.nav-img img{
+    width: 100px;
+    height:100px;
+}
+
+.nav-links{
+    display: flex;
+    align-items: center;
+    gap: 18px;
+   
+}
+
+.nav-links a{
+ color: white;
+ font-size: 12px;
+ font-weight: 500;
+     /* outline: deeppink solid 1px !important; */
+}
+
+.nav-links a:hover{
+    color:deeppink ;
+}
+
+.nav-end{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-end a{
+  color: white;
+ font-size: 12px;
+ text-decoration: underline;
+  font-weight: 500;
+}
+
+.nav-end a:hover{
+    color: deeppink;
+}
+
+
+.nav-end button{
+    background-color:#fd3842 ;
+    color: white;
+    height: 26px;
+    width: 100px;
+    border-radius: 20px;
+}
+
+ .nav-toggle {
+    display: none;
+} 
+
+/* Mobile styles */
+@media (max-width: 768px) {
+
+    nav{
+        padding: 10px 20px;
+    }
+
+    .nav-links, .nav-end {
+        display: none; 
+    }
+
+    .nav-toggle {
+        display: block;
+        font-size: 30px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav-links.active, .nav-end.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #00274f;
+        padding: 10px;
+        z-index: 10;
+    }
+
+    .nav-links.active a, .nav-end.active a {
+        font-size: 16px;
+        color: white;
+        padding: 10px 0;
+    }
+
+    .nav-end.active button {
+        width: 40%;
+        height: 30px;
+        margin: 10px auto;
+    }
+
+    .nav-end.active a, .nav-links.active a:hover{
+        color: #fd3842;
+    }
+
+}
+

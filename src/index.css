@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    appearance: none;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+     font-family: "IBM Plex Sans", sans-serif;
+}
+
+html{
+    font-size: 14px;
+}
+
+body{
+    width: 100vw;
+    /* height: 100vh; */
+    font-family: "Poppins", sans-serif;
+    /* font-size:0.88rem ; */
+    background:#001a38 ;
+    user-select: none;
+    
+    /* overflow: hidden; */
+    
+}
+
+
+a{
+    text-decoration: none;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+h1{
+    font-weight: 800;
+    font-size:3rem;
+}
+
+h2{
+    font-size: 1rem;
+}
+
+h3{
+    font-size: 0.87rem;
+}
+
+h4{
+    font-size: 0.8rem;
+}
+
+h5{
+    font-size: 0.77rem;
+}
+
+small{
+    font-size: 0.75rem;
+}
+
+.app{
+    display: flex;
+    flex-direction: column;
+}
