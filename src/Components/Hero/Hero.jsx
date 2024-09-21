@@ -1,12 +1,35 @@
 import React from 'react'
 import './Hero.css'
+import backgroundVideo from '../../assets/bg-video.mp4'
 
 const Hero = () => {
   return (
-    <div className="hero">
-      <h1>
-        Protect Your Firm <br /> Optimize Your IT.
-      </h1>
+    <div className="hero" data-aos="fade-up-right">
+      {/* <div className="bg-video">
+        <video autoPlay muted loop className="hero-video">
+          <source src={backgroundVideo} type="video/mp4" />
+        </video>
+      </div> */}
+
+      <div className="hero-design">
+        <div className="hero-flex">
+          <span> Protect </span>
+
+          <span> Your Firm</span>
+        </div>
+        <div className="hero-optimize">
+          <span>Optimize Your IT.</span>
+        </div>
+        <div className="hero-svg">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 500 150"
+            preserveAspectRatio="none"
+          >
+            <path d="M7.7,145.6C109,125,299.9,116.2,401,121.3c42.1,2.2,87.6,11.8,87.3,25.7"></path>
+          </svg>
+        </div>
+      </div>
 
       <div className="hero-paragraph">
         <p>
@@ -16,7 +39,7 @@ const Hero = () => {
         </p>
 
         <div className="flex-hero">
-          <button>Contact Us</button>
+          <button className='buttonn'>Contact Us</button>
           <button>Learn More About Our Services</button>
         </div>
       </div>

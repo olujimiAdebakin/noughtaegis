@@ -32,8 +32,8 @@ nav:hover{
 }
 
 .nav-img img{
-    width: 100px;
-    height:100px;
+    width: 130px;
+    height:130px;
 }
 
 .nav-links{
@@ -45,7 +45,7 @@ nav:hover{
 
 .nav-links a{
  color: white;
- font-size: 12px;
+ font-size: 17px;
  font-weight: 500;
      /* outline: deeppink solid 1px !important; */
 }
@@ -62,7 +62,7 @@ nav:hover{
 
 .nav-end a{
   color: white;
- font-size: 12px;
+ font-size: 17px;
  text-decoration: underline;
   font-weight: 500;
 }
@@ -75,7 +75,7 @@ nav:hover{
 .nav-end button{
     background-color:#fd3842 ;
     color: white;
-    height: 26px;
+    height: 34px;
     width: 100px;
     border-radius: 20px;
 }
