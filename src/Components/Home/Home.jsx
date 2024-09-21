@@ -4,6 +4,7 @@ import Hero from '../Hero/Hero'
 import Footer from '../Footer/Footer'
 import Services from "../Services/Services";
 import Certification from '../Certification/Certification';
+import Serve from '../WhoWeServe/Serve';
 
 const Home = () => {
   return (
@@ -11,7 +12,8 @@ const Home = () => {
           <Navbar />
       <Hero />
       <Services />
-      <Certification/>
+      <Certification />
+      <Serve/>
       {/* <hr /> */}
       <Footer/>
           

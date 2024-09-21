@@ -1,0 +1,90 @@
+.serve{
+    background-color: #fff;
+    height: 600px;
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+    padding:90px 150px;
+    overflow-x: hidden;
+}
+
+.serve-left h3{
+       color: rgb(253, 56, 66);
+       font: 500;
+       font-size:2.5rem;
+       line-height: 30px;
+}
+
+.serve-left-link{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 15px;
+    column-gap: 35px;
+    margin-top: 6rem;
+}
+
+.serve-left button{
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: rgb(253, 56, 66);
+    border-radius: 15px;
+    border: none;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+    margin-top: 2rem;
+}
+
+.serve-left-link a{
+    color: rgb(0, 26, 56);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 230px;
+    height: 40px;
+    font-size: 1rem;
+    font-weight: 700;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    border: none;
+    position: relative;
+    z-index: 1;
+    transition: 0.3s;
+    border: 1px solid rgb(0, 26, 56);
+}
+
+.serve-right img{
+    width: 450px;
+    height: 490px;
+    padding-bottom:80px;
+}
+
+@media (max-width:768px){
+    .serve{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px 25px;
+        overflow: visible;
+        height: fit-content;
+    }
+
+    .serve-left-link{
+        gap: 13px;
+    }
+
+    .serve-left-link a{
+        width: 200px;
+    }
+
+    .serve-left-link button{
+        width: 200px;
+    }
+}

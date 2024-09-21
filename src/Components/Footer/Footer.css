@@ -4,14 +4,16 @@ footer{
     height: 400px;
     width: 100%;
     margin-top: 50px;
+    overflow-x: hidden;
     
 }
 
 .footer-flex{
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 100px;
-     padding: 30px 40px;
+     padding: 10px 40px;
     /* justify-content: space-between; */
 }
 
@@ -94,6 +96,41 @@ footer{
     gap: 12px;
 }
 
+.news-letter h3{
+    color: white;
+    font-size: 25px;
+    margin-bottom:20px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  
+}
+
+form input{
+  width: 300px;
+    height: 40px;
+    background-color:transparent;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 14px;
+    color: #fff;
+}
+
+form input:focus{
+    outline-color:#fd3842 ;
+    border: 1px solid #fd3842;
+}
+form button{
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    border-radius: 4px;
+    padding: 10px;
+}
 @media  (max-width: 768px) {
     footer{
         margin-top: 20px;
