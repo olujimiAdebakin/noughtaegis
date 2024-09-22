@@ -4,7 +4,7 @@ import './Footer.css'
 import logo from '../../assets/logo.svg'
 import { FaFacebook, FaXTwitter, FaYoutube } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
-import { Link, useFormAction } from "react-router-dom";
+import { Link} from "react-router-dom";
 
 const Footer = () => {
 
@@ -22,7 +22,7 @@ const Footer = () => {
     localStorage.setItem("newsletterEmail", email);
 
    
-    setMessage("Subscription successful! Email stored locally.");
+    setMessage("Subscription successful!");
   };
 
 

@@ -68,3 +68,20 @@ small{
     display: flex;
     flex-direction: column;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
+    position: absolute;
+
+    z-index: 10;
+    cursor: pointer;
+    font-size:30px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+:root{
+    /* font-size: 30px; */
+}

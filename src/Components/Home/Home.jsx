@@ -5,6 +5,7 @@ import Footer from '../Footer/Footer'
 import Services from "../Services/Services";
 import Certification from '../Certification/Certification';
 import Serve from '../WhoWeServe/Serve';
+import Testimonial from '../Testimonial/Testimonial';
 
 const Home = () => {
   return (
@@ -13,7 +14,8 @@ const Home = () => {
       <Hero />
       <Services />
       <Certification />
-      <Serve/>
+      <Serve />
+      <Testimonial/>
       {/* <hr /> */}
       <Footer/>
           
