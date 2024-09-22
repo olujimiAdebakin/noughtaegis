@@ -42,19 +42,19 @@ const Certification = () => {
          centerPadding: "40px",
          responsive: [
            {
-             breakpoint: 786, // When screen width is less than or equal to 786px
+             breakpoint: 786,
              settings: {
-               slidesToShow: 2, // Show only 2 slides
+               slidesToShow: 2, 
                slidesToScroll: 1,
-               centerPadding: "20px", // Adjust the padding for smaller screens if needed
+               centerPadding: "20px", 
              },
            },
            {
-             breakpoint: 480, // When screen width is less than or equal to 480px
+             breakpoint: 500, 
              settings: {
-               slidesToShow: 1, // Show only 1 slide
+               slidesToShow: 2,
                slidesToScroll: 1,
-               centerPadding: "10px", // Further reduce padding on very small screens
+               centerPadding: "10px", 
              },
            },
          ],

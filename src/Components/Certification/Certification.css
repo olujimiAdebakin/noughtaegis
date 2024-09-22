@@ -91,3 +91,22 @@
   }
 
 }
+
+ @media (max-width: 500px) {
+  .slick-slide {
+    width: 100%; 
+  }
+
+  .img-wrapper{
+    padding: 40px;
+  }
+
+  .img-wrapper img{
+    width: 70px;
+  }
+
+  .slick-slider{
+    padding: 0px 30px;
+  }
+
+}

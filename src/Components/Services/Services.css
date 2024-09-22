@@ -231,3 +231,61 @@ ul li:nth-child(6)::before{
     font-size: 13px;
    }
 }
+
+@media (max-width: 500px){
+  
+   .services{
+    display: block;
+   }
+
+   .services-container{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 25px;
+   }
+
+   .services h2{
+    padding-left: 25px;
+    margin-bottom: 20px;
+    
+   }
+
+     .services-container-content {
+    width: 90%;
+   }
+   .service-below{
+    display: inline;
+   }
+
+   .services-below h2{
+    padding-left: 25px;
+    font-size: 26px;
+   }
+
+   .service-below-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-left: 25px;
+   }
+
+   ul li{
+
+    font-size: 10px;
+   }
+
+   .service-left,.service-right{
+    width: 80%;
+   }
+
+   .service-left div p{
+    font-size: 13px;
+    width: 350px;
+   }
+
+   .service-right button{
+margin-top: 40px;
+padding: 8px;
+   }
+}

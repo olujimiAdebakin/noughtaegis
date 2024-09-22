@@ -145,3 +145,36 @@ form button{
 
     }
 }
+
+@media  (max-width: 500px) {
+    footer{
+        margin-top: 20px;
+        height: 100%;
+    }
+
+    .footer-flex{
+           flex-direction: column;
+           gap: 30px;
+    align-items: flex-start;
+    padding:10px 20px ;
+
+    }
+
+    .footer-privacy{
+        display: flex;
+        flex-direction: column;
+        gap: 9px;
+    }
+
+    .footer-privacy h4{
+        white-space: nowrap;
+    }
+
+    .footer-bottom p{
+        width: 200px;
+    }
+
+    .footer-bottom {
+    padding: 20px;
+    }
+}
