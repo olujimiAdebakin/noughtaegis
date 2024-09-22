@@ -1,4 +1,12 @@
-.hero{
+/* .solution-hero{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    background-color: #001a38;
+} */
+.solution-hero{
     margin-top: 200px;
     display: flex;
     flex-direction: column;
@@ -7,7 +15,7 @@
     background-color: #001a38;
 }
 
-.hero-design{
+.solution-hero-design{
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -15,35 +23,35 @@
     position: relative;
 }
 
-.hero-optimize span,.hero-flex span{
+.solution-hero-optimize span,.solution-hero-flex span{
       color: white;
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 600;
     line-height: 60px;
     text-align: start;
 
 }
 
-.hero-flex{
+.solution-hero-flex{
     display: flex;
     gap: 10px;
     align-items: center;
 }
 
 
-.hero-svg {
+.solution-hero-svg {
   position: absolute;
   bottom: 60px; 
   left: 0;
-  width: 100%;
+  width: 70%;
 }
 
-.hero-svg svg {
-  width: 100%;
-  height: 70px; 
+.solution-hero-svg svg {
+  width: 60%;
+  height: 30px; 
 }
 
-.hero-svg svg path {
+.solution-hero-svg svg path {
   stroke: #fd3842;
   stroke-width: 16px;
   stroke-linecap: round;
@@ -51,59 +59,17 @@
   fill: none; 
 }
 
-.bg-video .hero-video{
-    width:100%;
-    height: 300px;
-}
 
-
-
-.hero h1{
-    color: white;
-    font-size: 60px;
-    font-weight: 600;
-    line-height: 60px;
-    text-align: start;
-    margin-right: 200px;
-}
-
-.hero-paragraph p{
+.solution-hero-paragraph p{
     width: 500px;
-    font-size: 17px;
+    font-size: 13px;
     color: white;
     text-align: start;
     line-height: 30px;
 }
 
-.flex-hero{
-    display: flex;
-    margin-top: 25px;
-    gap: 20px;
-}
-
-.flex-hero button{
-   background-color:#fd3842;
-   width: 190px;
-   height: 35px;
-   font-size: 12px;
-   font-weight: 500;
-   /* padding:8px; */
-   border-radius: 6px;
-   color: white;
-}
-
-.flex-hero button:hover{
- transition: all 300ms ease;
-  transform: translateX(20px);
-  background-color:#fd3842;
-}
 
 
-.flex-hero .buttonn:hover{
- transition: all 300ms ease;
-  transform: translateX(-20px);
-  background-color:#fd3842;
-}
 
 
 
@@ -111,7 +77,7 @@
 /* Mobile styles */
 @media (max-width: 768px) {
 
-    .hero{
+    .solution-hero{
         align-items: start;
         margin-left: 20px;
         margin-top: 100px;
@@ -123,11 +89,11 @@
     
     } */
 
-    .hero-design{
+    .solution.hero-design{
         gap: 3px;
     }
 
-   .hero-optimize span,.hero-flex span{
+   .solution-hero-optimize span,.solution-hero-flex span{
       color: white;
     font-size: 35px;
     font-weight: 600;
@@ -137,12 +103,12 @@
 
 }
 
-.hero-svg svg {
+.solution-hero-svg svg {
   width: 100%;
   height: 70px; 
 }
 
-.hero-svg svg path {
+.solution-hero-svg svg path {
   stroke: #fd3842;
   stroke-width: 10px;
   stroke-linecap: round;
@@ -150,23 +116,18 @@
   fill: none; 
 }
 
-    .hero-paragraph p{
+    .solution-hero-paragraph p{
         font-size: 15px;
         width: 400px;
         line-height: 25px;
     }
 
-    .flex-hero{
-      flex-direction: column;
-    }
-
     .flex-hero button{
    background-color:#fd3842;
-   width: 400px;
-   height: 40px;
+   width: 200px;
+   height: 35px;
    padding:  20px;
    display: flex;
-  
    justify-content: center;
    align-items: center;
    white-space:nowrap;
@@ -182,19 +143,15 @@
         margin-top: 100px;
     }
 
-    /* .hero h1{
-        font-size: 25px;
-        width: 300px;
-    
-    } */
 
-    .hero-design{
-        gap: 3px;
+
+    .solution-hero-design{
+        gap: 4px;
     }
 
-   .hero-optimize span,.hero-flex span{
+   .solution-hero-optimize span,.solution-hero-flex span{
       color: white;
-    font-size: 35px;
+    font-size: 30px;
     font-weight: 600;
     line-height: 60px;
     text-align: start;
@@ -202,26 +159,26 @@
 
 }
 
-.hero-svg svg {
+.solution-hero-svg svg {
   width: 100%;
   height: 70px; 
 }
 
-.hero-svg svg path {
+.solution-hero-svg svg path {
   stroke: #fd3842;
-  stroke-width: 10px;
+  stroke-width: 8px;
   stroke-linecap: round;
   stroke-linejoin: round;
   fill: none; 
 }
 
-    .hero-paragraph p{
+    .solution-hero-paragraph p{
         font-size: 15px;
         width: 350px;
         line-height: 25px;
     }
 
-    .flex-hero button{
+    .solution-flex-hero button{
    background-color:#fd3842;
    width: 160px;
    height: 35px;
@@ -234,5 +191,4 @@
   
 }
 }
-
 

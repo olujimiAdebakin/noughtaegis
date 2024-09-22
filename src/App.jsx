@@ -5,6 +5,7 @@ import Home from './Components/Home/Home'
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Solution from './Pages/Solutions/Solution';
 
 function App() {
   
@@ -24,6 +25,10 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
+
+          {/* PAGES */}
+
+          <Route path='/solutions' element={ <Solution/>} />
         </Routes>
       </div>
     </>

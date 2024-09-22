@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/logo.svg";
 import { GiHamburgerMenu } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -39,11 +40,10 @@ const Navbar = () => {
         </div>
 
         <div className={`nav-links ${menuOpen ? "active" : ""}`}>
-          <a href="#">Solutions</a>
-          <a href="#">Learn</a>
-          <a href="#">Why PacketLabs</a>
-          <a href="#">Partner Program</a>
-          <a href="#">Careers</a>
+          <Link to="/solutions">Solutions</Link>
+          <Link to="/">Learn</Link>
+          <Link to="#">Why PacketLabs</Link>
+          <Link to="#">Careers</Link>
         </div>
 
         <div className={`nav-end ${menuOpen ? "active" : ""}`}>

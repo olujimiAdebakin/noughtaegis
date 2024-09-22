@@ -1,16 +1,9 @@
 import React from 'react'
-import './Hero.css'
-import backgroundVideo from '../../assets/bg-video.mp4'
+import './Hero.css';
 
 const Hero = () => {
   return (
     <div className="hero" data-aos="fade-up-right">
-      {/* <div className="bg-video">
-        <video autoPlay muted loop className="hero-video">
-          <source src={backgroundVideo} type="video/mp4" />
-        </video>
-      </div> */}
-
       <div className="hero-design">
         <div className="hero-flex">
           <span> Protect </span>
@@ -37,11 +30,10 @@ const Hero = () => {
           delivering tailored solutions to protect your digital assets. Secure
           your future with us today.
         </p>
-
-        <div className="flex-hero">
-          <button className='buttonn'>Contact Us</button>
-          <button>Learn More About Our Services</button>
-        </div>
+      </div>
+      <div className="flex-hero">
+        <button >Contact Us</button>
+        <button>Learn More About Our Services</button>
       </div>
     </div>
   );
