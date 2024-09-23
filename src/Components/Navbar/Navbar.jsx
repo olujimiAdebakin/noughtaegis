@@ -40,6 +40,7 @@ const Navbar = () => {
         </div>
 
         <div className={`nav-links ${menuOpen ? "active" : ""}`}>
+          <Link to="/">Home</Link>
           <Link to="/solutions">Solutions</Link>
           <Link to="/">Learn</Link>
           <Link to="#">Why PacketLabs</Link>

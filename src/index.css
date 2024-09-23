@@ -17,15 +17,11 @@ html{
 }
 
 body{
-    width: 100vw;
-    /* height: 100vh; */
+   
     font-family: "Poppins", sans-serif;
-    /* font-size:0.88rem ; */
     background:#001a38 ;
     user-select: none;
-    /* overflow: hidden; */
     
-    /* overflow: hidden; */
     
 }
 
@@ -73,7 +69,6 @@ small{
 .swiper-button-prev {
   color: #fff !important;
     position: absolute;
-
     z-index: 10;
     cursor: pointer;
     font-size:30px !important;
@@ -82,6 +77,4 @@ small{
     justify-content: center; 
 }
 
-:root{
-    /* font-size: 30px; */
-}
+
