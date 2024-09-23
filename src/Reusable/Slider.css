@@ -1,0 +1,40 @@
+.slide{
+    background: #fd3842;
+    width: 100%;
+    height: 400px;
+    padding: 20px 40px;
+}
+
+.slide-header{
+    display: flex;
+    justify-content: center;
+}
+
+.slide-header h1{
+    color: #fff;
+
+}
+
+.slide-content{
+    display: flex;
+    align-items: start;
+}
+
+.slide-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.slide-content img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.slide-star{
+    display: flex;
+    align-items: center;
+    color: yellow;
+    fill: yellow;
+}
+

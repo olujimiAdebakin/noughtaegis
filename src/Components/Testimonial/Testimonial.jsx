@@ -60,6 +60,8 @@ const Testimonial = () => {
           modules={[Navigation]}
           spaceBetween={20}
           slidesPerView={3} 
+          onAutoplay={true}
+          
           navigation
           breakpoints={{
             1024: {

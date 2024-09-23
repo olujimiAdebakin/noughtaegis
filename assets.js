@@ -1,17 +1,18 @@
 const serviceDetailsData = [
   {
-    title: "Infrastructure Penetration Testing",
+    title: "Cybersecurity Awareness Training",
     description:
-      "An infrastructure penetration testing assessment uncovers vulnerabilities residing in your IT and network systems and provides a tailored approach to each environment.",
+      "Cybersecurity awareness training educates your employees on the latest security threats and best practices to mitigate risks, reducing the likelihood of successful cyberattacks.",
     points: [
-      "Reduce the risk of a breach within system infrastructure",
-      "Identify gaps in processes and procedures",
-      "Strengthen your cybersecurity posture",
-      "Protect your data from ransomware, trojans, and phishing attacks",
-      "Highlight how a vulnerability can lead to compromise",
-      "Explain to key stakeholders or board members where vulnerabilities lie and what to do about it",
+      "Educate employees on current cyber threats",
+      "Improve awareness of phishing and social engineering tactics",
+      "Reduce human errors leading to security breaches",
+      "Promote best practices for password management and online security",
+      "Empower employees to recognize and report suspicious activities",
+      "Build a security-conscious culture within your organization",
     ],
   },
+
   {
     title: "Application Penetration Testing",
     description:
@@ -90,6 +91,19 @@ const serviceDetailsData = [
     ],
   },
   {
+    title: "Infrastructure Penetration Testing",
+    description:
+      "An infrastructure penetration testing assessment uncovers vulnerabilities residing in your IT and network systems and provides a tailored approach to each environment.",
+    points: [
+      "Reduce the risk of a breach within system infrastructure",
+      "Identify gaps in processes and procedures",
+      "Strengthen your cybersecurity posture",
+      "Protect your data from ransomware, trojans, and phishing attacks",
+      "Highlight how a vulnerability can lead to compromise",
+      "Explain to key stakeholders or board members where vulnerabilities lie and what to do about it",
+    ],
+  },
+  {
     title: "Objective-Based Penetration Testing",
     description:
       "Objective-based penetration testing focuses on achieving specific goals within an organization, such as accessing sensitive data or compromising critical systems, to understand the impact of a targeted attack.",
@@ -127,6 +141,19 @@ const serviceDetailsData = [
       "Strengthen cloud-based defenses against breaches",
       "Test configurations and identity access controls",
       "Mitigate risks associated with cloud services",
+    ],
+  },
+  {
+    title: "Training and Certification", 
+    description:
+      "Provide specialized training and certifications to enhance skills in various cybersecurity domains, ensuring your team is equipped with the latest knowledge and industry-recognized credentials.",
+    points: [
+      "Offer industry-recognized certifications in cybersecurity",
+      "Provide hands-on training in threat detection and response",
+      "Enhance skills in penetration testing and secure coding",
+      "Stay up-to-date with the latest security tools and techniques",
+      "Prepare for professional certifications such as CISSP, CEH, and CISM",
+      "Empower teams to better defend against cyber threats",
     ],
   },
 ];

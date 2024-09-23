@@ -1,7 +1,7 @@
 footer{
     display: flex;
     flex-direction: column;
-    height: 400px;
+    /* height: 400px; */
     width: 100%;
     margin-top: 50px;
     overflow-x: hidden;
@@ -64,16 +64,30 @@ footer{
     color: white;
 }
 
-.footer-links ul{
+.futer {
    display: flex;
    flex-direction: column;
    gap: 13px; 
    align-items: start;
 }
 
-.footer-links ul li{
+.futer li{
     color: white;
     font-size: 13px;
+    position: relative;
+    padding-left: 20px;
+}
+
+.futer li::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  transform: translateY(-50%);
 }
 
 .footer-bottom{

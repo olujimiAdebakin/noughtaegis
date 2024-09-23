@@ -94,16 +94,21 @@ const Services = () => {
 
   const services = [
     [
-      "Infrastructure Penetration Testing",
+      
+      "Cybersecurity Awareness Training",
       "Application Penetration Testing",
       "Purple Teaming",
       "ICS/OT/Cyber Security Assessment",
     ],
-    ["Ransomware Penetration Testing", "DevSecOps", "Red Teaming"],
+    ["Ransomware Penetration Testing",
+      "DevSecOps",
+      "Red Teaming",
+      "Infrastructure Penetration Testing"],
     [
       "Objective-Based Penetration Testing",
       "Cyber Maturity Assessment",
       "Cloud Penetration Testing",
+      "Training and Certificaton",
     ],
   ];
 

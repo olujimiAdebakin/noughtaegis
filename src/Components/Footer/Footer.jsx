@@ -56,7 +56,7 @@ const Footer = () => {
 
         <div className="footer-links">
           <h2>SERVICES</h2>
-          <ul>
+          <ul className="futer">
             <li>Managed IT Services</li>
             <li>Cybersecurity Services</li>
             <li>IT Strategy</li>
@@ -69,7 +69,7 @@ const Footer = () => {
 
         <div className="footer-links">
           <h2>INDUSTRIES</h2>
-          <ul>
+          <ul className="futer">
             <li>Financial Institutions</li>
             <li>Health Institutions</li>
             <li>Technology & Startup</li>

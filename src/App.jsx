@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Solution from './Pages/Solutions/Solution';
+import ContactForm from './Pages/ContactForm/ContactForm';
 
 function App() {
   
@@ -28,7 +29,8 @@ function App() {
 
           {/* PAGES */}
 
-          <Route path='/solutions' element={ <Solution/>} />
+          <Route path="/solutions" element={<Solution />} />
+          <Route path="/contactform" element={<ContactForm/>} />
         </Routes>
       </div>
     </>
