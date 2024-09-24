@@ -1,5 +1,5 @@
 
-.slide {
+.slider-container {
   background: #fd3842;
   padding: 20px 50px;
   display: flex;
@@ -85,7 +85,7 @@ line-height: 20px;
     font-weight: 500;
 }
 
-.slider-container {
+.slider-box {
   width:100%;
   margin: 0 80px;
 }
@@ -161,7 +161,7 @@ line-height: 20px;
 
 /* Media Query for 500px */
 @media screen and (max-width: 500px) {
-  .slide {
+  .slider-container {
     padding: 20px;
     height: auto;
   }

@@ -109,11 +109,11 @@ const Slide = () => {
   ];
 
   return (
-    <div className="slide">
+    <div className="slider-container" >
       <div className="slide-header">
         <h1>What People Say About Us</h1>
       </div>
-      <div className="slider-container">
+      <div className="slider-box">
         <Slider {...settings}>
           {testimonials.map((testimonial, index) => (
             <div key={index} className="slider-content">
