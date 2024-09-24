@@ -74,7 +74,7 @@ nav:hover{
 
 
 .nav-end button{
-    background-color:rgba(255, 0, 136, 0.416);
+    background-color: #fd3842;
     color: white;
     height: 34px;
     width: 150px;
@@ -98,19 +98,27 @@ nav:hover{
 /* Mobile styles */
 @media (max-width: 768px) {
 
-    nav{
+     nav{
         padding: 30px 30px;
         /* height: 100%; */
         
-    }
+    } 
 
-    .nav-links, .nav-end {
-        display: none; 
-    
-    }
+    .nav-links,
+  .nav-end {
+    display: none;
+    flex-direction: column-reverse;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 1rem;
+  }
 
     .nav-links{
-        gap: 10px;
+        gap: 0px;
+       
     }
     .nav-toggle {
         display: block;
@@ -120,21 +128,24 @@ nav:hover{
     }
 
     .nav-links.active, .nav-end.active {
-        display: flex;
-        flex-direction: column;
+         display: flex;
+       
         position: absolute;
         top: 60px;
         left: 0;
         width: 100%;
-        background-color: #00274f;
+        
         padding: 10px;
         z-index: 10;
+        
+         background-color: #00274f;
+          flex-direction: column-reverse;
     }
 
     .nav-links.active a, .nav-end.active a {
-        font-size: 16px;
+        font-size: 13px;
         color: white;
-        padding: 30px 0;
+        padding: 20px 0;
     }
 
     .nav-end.active button {
@@ -168,7 +179,7 @@ nav:hover{
 
      .nav-links.active, .nav-end.active {
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         position: absolute;
         top: 50px;
         left: 0;

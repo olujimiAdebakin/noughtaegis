@@ -89,7 +89,7 @@ const Solution = () => {
         </div>
       </div>
 
-      {/* <Slide/> */}
+      <Slide/>
       <Footer />
     </>
   );
