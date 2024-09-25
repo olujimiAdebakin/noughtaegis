@@ -1,5 +1,5 @@
-import React from 'react'
-import './Hero.css';
+import React from "react";
+import "./Hero.css";
 
 const Hero = () => {
   return (
@@ -32,11 +32,11 @@ const Hero = () => {
         </p>
       </div>
       <div className="flex-hero">
-        <button >Contact Us</button>
+        <button>Contact Us</button>
         <button>Learn More About Our Services</button>
       </div>
     </div>
   );
-}
+};
 
-export default Hero
+export default Hero;

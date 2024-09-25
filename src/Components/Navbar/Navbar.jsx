@@ -43,10 +43,9 @@ const Navbar = () => {
           <Link to="/">Home</Link>
           <Link to="/solutions">Solutions</Link>
           <Link to="/">Learn</Link>
-          <Link to="#">Why PacketLabs</Link>
-          <Link to="#">Careers</Link>
+          <Link to="/whydevcent">Why PacketLabs</Link>
+          <Link to="/careers">Careers</Link>
         </div>
-
         <div className={`nav-end ${menuOpen ? "active" : ""}`}>
           <a href="#">Get a Quote</a>
           <button>Contact Us</button>

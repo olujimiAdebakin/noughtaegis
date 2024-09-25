@@ -2,9 +2,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
     background-color:transparent ;
-    /* height: 50px; */
     position: fixed;
     width: 100%;
     top: 0;
@@ -99,25 +97,23 @@ nav:hover{
 @media (max-width: 768px) {
 
      nav{
-        padding: 30px 30px;
-        /* height: 100%; */
-        
+        padding: 30px 30px;   
     } 
 
     .nav-links,
   .nav-end {
     display: none;
-    flex-direction: column-reverse;
+    /* flex-direction: column-reverse;
     position: absolute;
     top: 60px;
     left: 0;
     right: 0;
     background-color: white;
-    padding: 1rem;
+    padding: 1rem; */
   }
 
     .nav-links{
-        gap: 0px;
+        gap: 1px;
        
     }
     .nav-toggle {
@@ -129,9 +125,9 @@ nav:hover{
 
     .nav-links.active, .nav-end.active {
          display: flex;
-       
+      
         position: absolute;
-        top: 60px;
+        top: 50px;
         left: 0;
         width: 100%;
         
@@ -139,13 +135,18 @@ nav:hover{
         z-index: 10;
         
          background-color: #00274f;
-          flex-direction: column-reverse;
+          flex-direction: column;
+    }
+
+    .nav-links.active{
+        z-index: 40;
+        margin-top: 100px;
     }
 
     .nav-links.active a, .nav-end.active a {
         font-size: 13px;
         color: white;
-        padding: 20px 0;
+        padding: 10px 0;
     }
 
     .nav-end.active button {
@@ -162,7 +163,7 @@ nav:hover{
 @media (max-width:500px){
    
      nav{
-        padding: 10px 30px;
+        padding: 10px 50px;
        
     }
 
