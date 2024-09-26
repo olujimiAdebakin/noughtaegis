@@ -16,7 +16,7 @@ import amazingperson from "../../assets/amazingperson.webp";
 import alwayslearning from "../../assets/always-learning.webp";
 import no_egos from "../../assets/no-egos.webp";
 import dig_deeper from "../../assets/dig_deeper.webp";
-import Whydevcent from '../../assets/Whydevcent.webp';
+import whydevcent from '../../assets/whydevcent.webp';
 // import engineer from "../../assets/engineer.jpg";
 
 const Career = () => {
@@ -189,7 +189,7 @@ const Career = () => {
       </div>
 
       <div className="why-devcent">
-        <img src={Whydevcent} alt="" />
+        <img src={whydevcent} alt="" />
         <div className="why-devcent-right">
           <h2>Why Choose DevCent</h2>
           <p>
