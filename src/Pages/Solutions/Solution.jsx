@@ -6,6 +6,7 @@ import Services from '../../Components/Services/Services'
 import packett from '../../assets/packett.webp'
 import { Link } from 'react-router-dom'
 import Slide from '../../Reusable/Slide'
+import Marqee from '../../Reusable/Marqee/Marqee'
 
 const Solution = () => {
   return (
@@ -39,6 +40,7 @@ const Solution = () => {
             to safeguard your systems.
           </p>
         </div>
+        <Marqee />
       </div>
 
       <Services />
@@ -89,7 +91,7 @@ const Solution = () => {
         </div>
       </div>
 
-      <Slide/>
+      <Slide />
       <Footer />
     </>
   );

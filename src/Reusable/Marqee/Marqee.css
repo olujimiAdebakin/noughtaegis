@@ -1,0 +1,30 @@
+.marqee{
+      z-index:0; 
+  position: absolute;
+bottom: 0px;
+top: 450px;
+left: 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background-color: #000000; 
+  color: #fff; 
+height: 40px;
+ padding: 10px 0;
+}
+
+.marqee-content{
+      display: flex;
+  padding-left: 100%;
+  animation: marquee 20s linear infinite;
+  font-size: 1.5rem; 
+  letter-spacing: 1px;
+    padding-right: 50px;
+    
+}
+
+.marqee-content h1{
+font-size: 13px;
+  font-weight: 500;
+}

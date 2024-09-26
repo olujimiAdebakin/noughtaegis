@@ -3,7 +3,7 @@ import './CoreValues.css'
 
 const CoreValues = () => {
   return (
-    <div className="our-core-values">
+    <div className="our-core-values" data-aos="fade-up-right">
       <div className="values-header">
         <h2>
           Our Core Values: <br />

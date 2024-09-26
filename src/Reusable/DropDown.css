@@ -1,0 +1,11 @@
+.Dropdown{
+    background-color: black;
+    width: 100%;
+    height: auto;
+}
+
+.dropdown-content{
+    display: flex;
+    align-items: start;
+    gap: 40px;
+}

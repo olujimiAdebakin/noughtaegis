@@ -1,0 +1,442 @@
+.career-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top:5px;
+  height: 500px;
+  padding:0px 130px;
+  gap: 14px;
+  color: #fff;
+
+}
+
+.career-hero {
+  display: flex;
+  flex-direction: column;
+  background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url(../../assets/woman-sits.avif); 
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  height: 470px;
+  margin-top:60px;
+  gap: 50px;
+  align-items:start;
+   filter: blur(-1px);
+   position: relative;
+}
+
+.career-hero h2 {
+  font-size: 2rem;
+  width: 500px;
+  color: #fff;
+}
+
+.career-hero p {
+  font-size: 1rem;
+  width: 500px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #fff;
+}
+
+.why-join{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin-top: 100px; 
+}
+
+.why-join-header{
+  padding: 40px 130px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.why-join-header h2{
+  color: #fff;
+  font-size: 2rem;
+}
+
+.why-join-header p{
+color: #fff;
+font-size:0.9rem;
+font-weight: 500;
+width: 400px;
+line-height: 25px;
+}
+
+.who-we-aree{
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  /* align-items: start; */
+  margin-top: 60px;
+}
+
+.who-we-aree-header{
+  display: flex;
+  justify-content: start;
+}
+.who-we-aree-header h2{
+  color: #fff;
+  font-size: 2rem;
+}
+
+.who-we-aree-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  row-gap: 40px;
+  column-gap: 40px;
+  align-items: center;
+  justify-content: center; 
+  margin: 0 auto; 
+}
+
+.who-we-aree-card{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+}
+
+.who-we-aree-card h3{
+  color:#fd3842;
+  font-size: 1.3rem;
+}
+
+.who-we-aree-card p{
+  color: #fff;
+  font-size: 0.9rem;
+  width: 250px;
+}
+
+.who-we-aree-card img{
+  width: 100px;
+  height: auto;
+}
+
+.our-values{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 100px;
+}
+
+.our-values-header{
+ display: flex;
+justify-content: start;
+padding-left: 160px;
+}
+
+.our-values-header h2{
+color: #fff;
+font-size: 2rem;
+}
+
+.our-values-content{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap:25px;
+}
+
+.our-values-card{
+   background: #fff;
+   width:300px;
+   height: 400px;
+   border-radius: 10px;
+   padding: 12px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 15px;
+}
+
+   .our-values-card:hover{
+    box-shadow: none;
+       transform: scale(0.95); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  }
+
+.our-values-card h3{
+  color: #fd3842;
+  font-size: 17px;
+  text-align: center;
+}
+
+
+.our-values-card p{
+  font-size: 15px;
+  color: #001a38;
+  width: 260px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.our-values-card img{
+  width: 60px;
+  height:60px;
+  
+}
+
+.why-devcent{
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  justify-content: center;
+  margin-top: 90px;
+  border-bottom: 2px solid white;
+  padding-bottom: 20px;
+}
+
+.why-devcent h2{
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.why-devcent p{
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  width: 500px;
+  line-height: 25px;
+}
+
+.why-devcent img{
+  width: 400px;
+  height: auto;
+}
+
+.why-devcent-right{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.why-devcent-right button{
+  background-color: #fd3842;
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  width: 200px;
+  height: 35px;
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .career-hero {
+    padding: 0 50px;
+    height: 470px;
+  }
+  
+  .career-hero h2, .career-hero p {
+    width: 100%;
+    
+    text-align: center;
+  }
+.career-hero h2{
+  font-size: 20px;
+}
+
+  .why-join-header {
+    padding: 20px 35px;
+    gap: 40px;
+  }
+
+  
+  .who-we-aree{
+    align-items: center;
+    gap: 30px;
+
+  }
+
+  .who-we-aree-header h2{
+    font-size: 1.5rem;
+  }
+  .who-we-aree-content {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: start;
+    justify-content: start;
+    align-items: start;
+    padding:0px 35px ;
+    row-gap: 50px;
+    column-gap: 50px;
+  }
+   .who-we-aree-content p{
+    width: 180px;
+   }
+  .our-values-header {
+    padding-left: 100px;
+  }
+
+  .our-values-content{
+    gap: 40px;
+  }
+  
+  .our-values-card {
+    width: 400px;
+    gap: 12px;
+    height: 350px;
+    padding: 12px;
+  }
+  
+  .why-devcent {
+    flex-direction: column;
+    align-items: start;
+    padding: 50px 50px;
+    gap: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .why-devcent img {
+    width:400px;
+    height: auto;
+
+  }
+
+  .why-devcent-right h2{
+    font-size: 30px;
+  }
+
+   .why-devcent-right p{
+    width: 300px;
+   }
+}
+
+/* Media Query for screen width 500px and below */
+@media (max-width: 500px) {
+  .career-hero {
+    padding: 12px px;
+    height:100px;
+  }
+  
+  .career-hero h2{
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
+
+  .career-hero p {
+    font-size: 10px;
+  }
+
+  .why-join-header h2, .why-join-header p {
+    font-size: 1.2rem;
+  }
+
+  .who-we-aree-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .our-values-card {
+    width: 300px;
+    height: 400px;
+  }
+   .our-values-card:hover{
+    box-shadow: none;
+       transform: scale(0.95); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  }
+
+  .why-devcent {
+    padding-bottom: 10px;
+    gap: 30px;
+  }
+  
+  .why-devcent h2 {
+    font-size: 2.5rem;
+  }
+  
+  .why-devcent-right button {
+    width: 180px;
+    height: 30px;
+  }
+}
+
+/* Media Query for screen width 400px and below */
+@media (max-width: 400px) {
+  .career-hero {
+    padding: 0 10px;
+    height:450px;
+  }
+  
+  .career-hero h2 {
+    font-size: 1.2rem;
+    width: 350px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+ .career-hero p{
+  font-size: 14px;
+  font-weight: 600;
+ }
+
+  .why-join-header {
+    padding: 20px;
+  }
+
+    .why-join-header h2{
+      font-size: 20px;
+    }
+
+     .why-join-header p{
+      font-size: 13px;
+      width: 350px;
+      font-weight: 600;
+     }
+
+   .who-we-aree-content{
+    display: flex;
+    flex-direction: column-reverse;
+   }
+
+  .who-we-aree-card {
+    width: 100%;
+    align-items: start;
+  }
+
+  .who-we-aree-header h2{
+    font-size: 20px;
+    width: 260px;
+  }
+
+   .who-we-aree-card h2{
+    font-size: 25px;
+   }
+
+   
+   .who-we-aree-card p{
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 20px;
+   }
+  
+  .our-values-card {
+    width: 300px;
+    height: 340px;
+  }
+
+  .our-values-card:hover{
+    box-shadow: none;
+       transform: scale(0.95); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  }
+  .why-devcent img{
+    width: 300px;
+  }
+
+  .why-devcent-right button {
+    width: 160px;
+    height: 28px;
+  }
+}

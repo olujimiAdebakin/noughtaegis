@@ -7,16 +7,28 @@
     background-color: #001a38;
 } */
 .solution-hero{
-    margin-top: 200px;
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     gap: 35px;
+    padding:10px 140px;
+    background-image: url(../../assets/solutions-hero.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    background-blend-mode: overlay;
+    background-attachment: fixed;
+    height: 470px;
+    /* background-position-y: top; */
     background-color: #001a38;
+    position: relative;
 }
 
 .solution-hero-design{
     display: flex;
+
     flex-direction: column;
     gap: 10px;
         /* margin-right: 200px; */
@@ -36,6 +48,7 @@
     display: flex;
     gap: 10px;
     align-items: center;
+    margin-top: 50px;
 }
 
 
@@ -254,14 +267,16 @@ font-size: 14px;
 
     .solution-hero{
         align-items: start;
-        margin-left: 20px;
-        margin-top: 100px;
+        /* margin-left: 20px; */
+        padding: 25px;
+        margin-top: 60px;
     }
 
    
 
     .solution.hero-design{
         gap: 3px;
+       
     }
 
    .solution-hero-optimize span,.solution-hero-flex span{

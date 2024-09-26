@@ -1,9 +1,40 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./Hero.css";
+import gsap from "gsap";
+import { IoIosArrowRoundForward } from "react-icons/io";
+import Marqee from "../../Reusable/Marqee/Marqee";
 
 const Hero = () => {
+    const heroRef = useRef(null);
+   const spotlightRefs = useRef([]);
+
+   useEffect(() => {
+     spotlightRefs.current.forEach((spotlight) => {
+       gsap.to(spotlight, {
+         x: `${Math.random() * 400}%`,
+         y: `${Math.random() * 100}%`,
+         duration: Math.random() * 6 + 2,
+         repeat: -1,
+         yoyo: true,
+         ease: "power2.inOut",
+       });
+     });
+   }, []);
+
+   
+   const addSpotlight = (el) => {
+     if (el && !spotlightRefs.current.includes(el)) {
+       spotlightRefs.current.push(el);
+     }
+   };
+
   return (
-    <div className="hero" data-aos="fade-up-right">
+    <div className="hero" data-aos="fade-up-right" ref={heroRef}>
+      {/* <div className="spotlight" ref={spotlightRef}></div> */}
+      <div className="spotlight" ref={addSpotlight}></div>
+      <div className="spotlight" ref={addSpotlight}></div>
+      <div className="spotlight" ref={addSpotlight}></div>
+      <div className="spotlight" ref={addSpotlight}></div>
       <div className="hero-design">
         <div className="hero-flex">
           <span> Protect </span>
@@ -25,15 +56,14 @@ const Hero = () => {
       </div>
 
       <div className="hero-paragraph">
-        <p>
-          DevCent provides expert cybersecurity and managed IT services,
-          delivering tailored solutions to protect your digital assets. Secure
-          your future with us today.
-        </p>
+        <p>DevCent: The intersection of innovation and cybersecurity.</p>
       </div>
       <div className="flex-hero">
-        <button>Contact Us</button>
-        <button>Learn More About Our Services</button>
+        <button>
+          Get in Touch <IoIosArrowRoundForward style={{ fontSize: "23px" }} />
+        </button>
+        {/* <button>Learn More About Our Services</button> */}
+        <Marqee />
       </div>
     </div>
   );

@@ -11,7 +11,7 @@ const WhyDevcent = () => {
     <>
       <Navbar />
 
-      <div className="why-devcent-hero">
+      <div className="why-devcent-hero" data-aos="fade-up-right">
         <div className="why-devcent-hero-text">
           <h2>Why Packetlabs</h2>
           <p>
@@ -26,10 +26,10 @@ const WhyDevcent = () => {
         </div>
       </div>
 
-      <div className="who-we-are">
+      <div className="who-we-are" data-aos="fade-up-right">
         <h2>Who We Are</h2>
         <p>
-          Packetlabs is a passionate team of highly trained, proactive ethical
+          Devcent is a passionate team of highly trained, proactive ethical
           hackers. We protect and secure organizations from costly cybersecurity
           breaches by collaborating with them to enhance and strengthen their
           security posture.
@@ -44,7 +44,7 @@ const WhyDevcent = () => {
         </p>
       </div>
       <Certification />
-      <div className="our-purpose">
+      <div className="our-purpose" data-aos="fade-up-right">
         <div className="purpose-flex">
           <div className="purpose-left">
             <h2>Our Purpose</h2>
@@ -72,7 +72,7 @@ const WhyDevcent = () => {
       </div>
       <ProudMember />
       <CoreValues />
-      <div className="career-purpose">
+      <div className="career-purpose" data-aos="fade-up-right">
         <img src={whydevcent} alt="" />
         <div className="career-purpose-right">
           <h2>Join Our Team</h2>

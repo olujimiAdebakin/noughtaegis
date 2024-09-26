@@ -24,6 +24,7 @@ const serviceDetailsData = [
       "Mitigate risks in web and mobile applications",
     ],
   },
+  
   {
     title: "Purple Teaming",
     description:

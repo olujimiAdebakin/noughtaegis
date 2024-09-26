@@ -6,21 +6,24 @@ import Services from "../Services/Services";
 import Certification from '../Certification/Certification';
 import Serve from '../WhoWeServe/Serve';
 import Testimonial from '../Testimonial/Testimonial';
+import Marqee from '../../Reusable/Marqee/Marqee';
 
 const Home = () => {
   return (
-      <div>
-          <Navbar />
+    <div>
+      <Navbar />
       <Hero />
+      
+
+      <Testimonial />
       <Services />
       <Certification />
       <Serve />
-      <Testimonial/>
+
       {/* <hr /> */}
-      <Footer/>
-          
+      <Footer />
     </div>
-  )
+  );
 }
 
 export default Home

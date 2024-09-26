@@ -8,6 +8,8 @@ import 'aos/dist/aos.css';
 import Solution from './Pages/Solutions/Solution';
 import ContactForm from './Pages/ContactForm/ContactForm';
 import WhyDevcent from './Pages/WhyDevcent/WhyDevcent';
+import Career from './Pages/Career/Career';
+
 
 function App() {
   
@@ -24,7 +26,7 @@ function App() {
     <>
       <div className="app">
         {/* <meta name="color-scheme" content="dark" /> */}
-
+        
         <Routes>
           <Route path="/" element={<Home />} />
 
@@ -32,7 +34,8 @@ function App() {
 
           <Route path="/solutions" element={<Solution />} />
           <Route path="/contactform" element={<ContactForm />} />
-          <Route path='/whydevcent' element={<WhyDevcent/>}/>
+          <Route path="/whydevcent" element={<WhyDevcent />} />
+          <Route path="/career" element={<Career/>} />
         </Routes>
       </div>
     </>
