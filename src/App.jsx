@@ -26,7 +26,7 @@ function App() {
     <>
       <div className="app">
         {/* <meta name="color-scheme" content="dark" /> */}
-        
+
         <Routes>
           <Route path="/" element={<Home />} />
 
@@ -35,7 +35,8 @@ function App() {
           <Route path="/solutions" element={<Solution />} />
           <Route path="/contactform" element={<ContactForm />} />
           <Route path="/whydevcent" element={<WhyDevcent />} />
-          <Route path="/career" element={<Career/>} />
+          <Route path="/career" element={<Career />} />
+          <Route path="/contactform" element={<ContactForm />} />
         </Routes>
       </div>
     </>

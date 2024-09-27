@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useForm } from "react-hook-form";
 import './Footer.css'
-import logo from '../../assets/logo.svg'
+import logo from '../../assets/nought.png'
 import { FaFacebook, FaXTwitter, FaYoutube } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import { Link} from "react-router-dom";
@@ -48,10 +48,6 @@ const Footer = () => {
 
           <h2>Serving Clients Across the Nation.</h2>
 
-          <address className="address">
-            <p>Oke-Ilewo, Ogun Sate, Nigeria</p>
-            <p>info@cybersecurity.com</p>
-          </address>
         </div>
 
         <div className="footer-links">
@@ -94,7 +90,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>Copyright 2023 Cybersecurity Solutions. All Rights Reserved.</p>
+        <p>Copyright 2024 Cybersecurity Solutions. All Rights Reserved.</p>
         <div className="footer-privacy">
           <h4>Privacy Policy</h4>
           <h4>Terms of Service</h4>

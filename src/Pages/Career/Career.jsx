@@ -27,14 +27,14 @@ const Career = () => {
         <div className="career" data-aos="fade-up-right">
           <div className="career-hero" data-aos="fade-up-right">
             <h2>
-              Launch Your Tech Career with DevCent Where Innovation Meets
+              Launch Your Tech Career with Noughtaegis Where Innovation Meets
               Opportunity
             </h2>
             <p>
-              DevCent is powered by a passionate team of skilled,
+              Noughtaegis is powered by a passionate team of skilled,
               forward-thinking cybersecurity experts. It’s our people who define
               DevCent, and we're known for attracting top talent in the
-              industry. Discover why DevCent is the perfect place to grow,
+              industry. Discover why Noughtaegis is the perfect place to grow,
               learn, and succeed. Explore our open positions below and apply
               today
             </p>
@@ -46,9 +46,9 @@ const Career = () => {
           <div className="why-join-header">
             <h2>Discover Our Story</h2>
             <p>
-              Proactive Cybersecurity Experts: DevCent' team of highly trained
-              ethical hackers anticipates and mitigates threats, ensuring
-              organizations stay ahead of emerging risks
+              Proactive Cybersecurity Experts: Noughtaegis' team of highly
+              trained ethical hackers anticipates and mitigates threats,
+              ensuring organizations stay ahead of emerging risks
             </p>
             <p>
               Trustworthy Cybersecurity Partners: Our expert penetration testers
@@ -191,7 +191,7 @@ const Career = () => {
       <div className="why-devcent">
         <img src={whydevcent} alt="" />
         <div className="why-devcent-right">
-          <h2>Why Choose DevCent</h2>
+          <h2>Why Choose Noughtaegis</h2>
           <p>
             We deconstruct complexities, educate, and consult to empower
             resilient solutions. Your trusted partner in navigating cyber

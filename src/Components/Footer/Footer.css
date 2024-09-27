@@ -20,7 +20,7 @@ footer{
 
 .footer-left img{
     width: 150px;
-    height: 100px;
+    height: 150px;
 }
 
 .footer-left{
@@ -39,6 +39,7 @@ footer{
 
 .footer-left h2{
     color: white;
+    font-weight: 400;
 }
 
 .footer-img{

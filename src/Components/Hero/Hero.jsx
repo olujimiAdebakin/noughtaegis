@@ -5,40 +5,51 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import Marqee from "../../Reusable/Marqee/Marqee";
 
 const Hero = () => {
-    const heroRef = useRef(null);
-   const spotlightRefs = useRef([]);
+  const heroRef = useRef(null);
+  const spotlightRefs = useRef([]);
+  const textRef = useRef(null); // Added textRef for the text animation
 
-   useEffect(() => {
-     spotlightRefs.current.forEach((spotlight) => {
-       gsap.to(spotlight, {
-         x: `${Math.random() * 400}%`,
-         y: `${Math.random() * 100}%`,
-         duration: Math.random() * 6 + 2,
-         repeat: -1,
-         yoyo: true,
-         ease: "power2.inOut",
-       });
-     });
-   }, []);
+  useEffect(() => {
+    spotlightRefs.current.forEach((spotlight) => {
+      gsap.to(spotlight, {
+        x: `${Math.random() * 400}%`,
+        y: `${Math.random() * 100}%`,
+        duration: Math.random() * 6 + 2,
+        repeat: -1,
+        yoyo: true,
+        ease: "power2.inOut",
+      });
+    });
+  }, []);
 
-   
-   const addSpotlight = (el) => {
-     if (el && !spotlightRefs.current.includes(el)) {
-       spotlightRefs.current.push(el);
-     }
-   };
+  useEffect(() => {
+    // Animate the text using the textRef
+    gsap.to(textRef.current, {
+      scale: 1.2,
+      duration: 2,
+      yoyo: true, // Animation reverses back
+      repeat: -1, // Infinite repeat
+      ease: "power1.inOut",
+    });
+  }, []);
+
+  const addSpotlight = (el) => {
+    if (el && !spotlightRefs.current.includes(el)) {
+      spotlightRefs.current.push(el);
+    }
+  };
 
   return (
     <div className="hero" data-aos="fade-up-right" ref={heroRef}>
-      {/* <div className="spotlight" ref={spotlightRef}></div> */}
       <div className="spotlight" ref={addSpotlight}></div>
       <div className="spotlight" ref={addSpotlight}></div>
       <div className="spotlight" ref={addSpotlight}></div>
       <div className="spotlight" ref={addSpotlight}></div>
+
       <div className="hero-design">
         <div className="hero-flex">
-          <span> Protect </span>
-
+          {/* Add ref={textRef} to target the text */}
+          <span ref={textRef}> Protect </span>
           <span> Your Firm</span>
         </div>
         <div className="hero-optimize">
@@ -56,13 +67,13 @@ const Hero = () => {
       </div>
 
       <div className="hero-paragraph">
-        <p>DevCent: The intersection of innovation and cybersecurity.</p>
+        <p>Noughtaegis: The intersection of innovation and cybersecurity.</p>
       </div>
+
       <div className="flex-hero">
         <button>
           Get in Touch <IoIosArrowRoundForward style={{ fontSize: "23px" }} />
         </button>
-        {/* <button>Learn More About Our Services</button> */}
         <Marqee />
       </div>
     </div>

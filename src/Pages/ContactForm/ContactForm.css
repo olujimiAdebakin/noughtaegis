@@ -1,0 +1,33 @@
+.contact-form{
+    background-color: #fff;
+    margin-top: 60px;
+}
+
+.contact-form-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 17px;
+    padding: 50px 20px;
+}
+
+.contact-form-header h2{
+    color: #001a38;
+    font-size:25px;
+    font-weight: 600;
+    width: 900px;
+    text-align: center;
+}
+
+.contact-form-header p{
+    color: #001a38;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    width: 600px;
+}
+
+.form-contact{
+    display: flex;
+    flex-direction: column;
+}

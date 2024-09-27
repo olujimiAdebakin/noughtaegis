@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
-import logo from "../../assets/logo.svg";
+import logo from "../../assets/nought.png";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdArrowDropdown } from "react-icons/io"; 
 import { IoHomeOutline } from "react-icons/io5";
@@ -52,7 +52,7 @@ const Navbar = () => {
             <div className="dropdown-content">
               <div className="dropdown-flex">
                 <div className="dropdown-services">
-                  <Link to="/solutions">
+                  <Link to="/solutions" className="border-radius">
                     Services <IoMdArrowDropdown className="nav-icon" />
                   </Link>
                   <ul>
@@ -138,7 +138,7 @@ const Navbar = () => {
             </div>
           </div>
           <Link to="/whydevcent">
-            Why DevCent <IoMdArrowDropdown className="nav-icon" />
+            Why Noughtaegis <IoMdArrowDropdown className="nav-icon" />
           </Link>
           <Link to="/career">
             Careers <IoMdArrowDropdown className="nav-icon" />
@@ -146,7 +146,9 @@ const Navbar = () => {
         </div>
         <div className={`nav-end ${menuOpen ? "active" : ""}`}>
           <a href="#">Get a Quote</a>
-          <button>Contact Us</button>
+          <Link to="/contactform">
+            <button>Contact Us</button>
+          </Link>
         </div>
 
         <div className="nav-toggle" onClick={handleToggle}>
