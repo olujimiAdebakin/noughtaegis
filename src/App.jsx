@@ -9,6 +9,8 @@ import Solution from './Pages/Solutions/Solution';
 import ContactForm from './Pages/ContactForm/ContactForm';
 import WhyDevcent from './Pages/WhyDevcent/WhyDevcent';
 import Career from './Pages/Career/Career';
+import CyberServices from './Pages/Services-sub/CyberServices';
+import ItServices from './Pages/Services-sub/ItServices';
 
 
 function App() {
@@ -37,6 +39,11 @@ function App() {
           <Route path="/whydevcent" element={<WhyDevcent />} />
           <Route path="/career" element={<Career />} />
           <Route path="/contactform" element={<ContactForm />} />
+
+          {/* Sub-pages */}
+
+          <Route path='/Cyber-services' element={<CyberServices />} />
+          <Route path='/It-services' element={ <ItServices/>} />
         </Routes>
       </div>
     </>

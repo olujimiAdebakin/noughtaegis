@@ -1,0 +1,201 @@
+
+
+.cyber-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:25px;
+    margin-top: 60px;
+    background-image: url(../../assets/digital-padlock-depicted-blue-circuit-background-symbolizes-cybersecurity-measures_548264-12959.jpg);
+    height: 470px;
+    width: 100%;
+    /* background-position: center; */
+    background-repeat: no-repeat;
+    background-size: cover;  
+    padding: 60px;
+    position: absolute;
+}
+
+.cyber-hero span{
+    color: #fd3842;
+    font-size: 40px;
+}
+
+.cyber-hero h2{
+    color: #fff;
+    font-size: 40px;
+}
+
+.cyber-hero p{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    width: 600px;
+    line-height: 23px;
+    /* letter-spacing: 1px; */
+}
+
+.cyber-ul{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap:40px;
+    row-gap: 20px;
+ 
+}
+
+.cyber-ul li{
+    color: #fff;
+    font-weight:500;
+    font-size: 13px;
+    letter-spacing: 1px;
+    margin-right: 20px;
+     padding-left: 20px;
+       position:relative;
+}
+
+.cyber-ul li::before{
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  background-color: #fd3842;
+  border-radius: 50%;
+  transform: translateY(-50%);
+}
+
+.animated-text {
+  display: inline-block;
+  font-size: 5rem;
+  margin-right: 1rem;
+  animation: zoomRotate 6s infinite ease-in-out;
+}
+
+@keyframes zoomRotate {
+  0% {
+    transform: scale(1) rotate(0deg) translateX(-10px);
+  }
+  30% {
+    transform: scale(1.5) translateX(-10px);
+  }
+  60% {
+    transform: scale(1) translateX(-10px);
+  }
+}
+
+.cyber-services{
+    display: flex;
+    flex-direction: column;
+    margin-top:600px;
+    gap:60px;
+    /* z-index: 10; */
+}
+
+.cyber-services-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.cyber-services-header h2{
+    color: #fff;
+    font-size: 25px;
+}
+
+.cyber-services-header p{
+    color: #fd3842;
+    font-size: 13px;
+    font-weight: 500;
+    /* letter-spacing: 1px; */
+    width: 500px;
+    line-height: 20px;
+
+}
+
+.cyberservices-flex{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 100px;
+}
+
+.cyberservices-flex-right{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.cyber-text{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cyber-text h2{
+    color: #fff;
+    font-size: 17px;
+}
+
+.cyber-text p{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 400;
+    /* letter-spacing: 1px; */
+    width: 400px;
+}
+
+.cyberservices-flex-left img{
+    width: 600px;
+    height: 470px;
+    border-radius: 12px;
+}
+
+.cyber-spectrum{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.cyber-spectrum-header{
+    display: flex;
+    justify-content: center;
+}
+
+.cyber-spectrum-header h2{
+    color: #fff;
+    font-size: 25px;
+}
+
+.cyber-spectrum-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 40px;
+    column-gap: 100px;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+.cyber-spectrums{
+    display:flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.cyber-spectrums h3{
+    color: #fd3842;
+    font-size: 16px;
+    width: 200px;
+    line-height: 20px;
+}
+
+.cyber-spectrums p{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    width: 300px;
+    line-height: 20px;
+}

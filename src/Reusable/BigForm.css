@@ -39,6 +39,7 @@ label{
     width: 350px;
     height: 34px;
     border-radius: 7px;
+    color: #001a38;
     border: 1px solid #f5f8fa;
     background-color: #f5f8fa;
 }
@@ -162,3 +163,4 @@ form button{
     font-size: 14px;
     font-weight: 500;
 }
+
