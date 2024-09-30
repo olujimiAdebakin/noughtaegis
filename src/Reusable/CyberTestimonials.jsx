@@ -10,7 +10,7 @@ const CyberTestimonials = () => {
     slidesToScroll: 3,
     vertical: true,
     verticalSwiping: true,
-    autoplay: true, // Enable auto slide
+    autoplay: true, 
     autoplaySpeed: 3000,
 
     beforeChange: function (currentSlide, nextSlide) {
@@ -28,8 +28,8 @@ const CyberTestimonials = () => {
         <Slider {...settings}>
           <div className="cyber-testimonial-item">
             <p className="cyber-testimonial-text">
-              "Outstanding cybersecurity services that have made our business
-              more secure than ever!"
+              Outstanding cybersecurity services that have made our business
+              more secure than ever!
             </p>
             <h4 className="cyber-testimonial-author">
               John Doe, CEO of TechCorp

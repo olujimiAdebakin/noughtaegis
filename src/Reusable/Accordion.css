@@ -65,3 +65,14 @@
     margin-top: 90px;
     border-bottom: 2px solid #fff;
 }
+
+@media (max-width: 500px) {
+  .cyber-faq-accordion {
+  background-color: #001a38;
+  padding: 20px;
+  /* width: 500px; */
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+}

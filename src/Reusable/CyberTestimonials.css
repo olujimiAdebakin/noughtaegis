@@ -36,3 +36,67 @@
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  .cyber-testimonials {
+    padding: 100px;
+  }
+
+  .cyber-testimonials-title {
+    font-size: 24px;
+  }
+
+  .cyber-testimonials-slider {
+    max-width: 100%; 
+  }
+
+  .cyber-testimonial-item {
+    width: 100%; 
+    padding:26px 10px;
+  }
+
+  .cyber-testimonial-text {
+    font-size: 17px;
+  }
+
+  .cyber-testimonial-author {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 500px) {
+  .cyber-testimonials {
+    padding:10px 4px;
+    width: 80%;
+  }
+
+  .cyber-testimonials-title {
+    font-size: 20px;
+    text-align: center;
+    padding-left: 40px;
+  }
+
+  .cyber-testimonials-slider {
+    max-width:100%;
+    /* width: 00px; */
+    margin: 0 auto;
+    padding-right: 40px;
+  }
+
+  .cyber-testimonial-item {
+    width:100%; 
+    align-items: start;
+    padding: 14px;
+  }
+
+  .cyber-testimonial-text {
+    font-size: 13px;
+    width:300px;
+  }
+
+  .cyber-testimonial-author {
+    font-size: 12px;
+    padding-right: 60px;
+
+  }
+}
+

@@ -199,3 +199,164 @@
     width: 300px;
     line-height: 20px;
 }
+
+@media (max-width: 768px) {
+  .cyber-hero {
+    padding: 40px;
+    height: 470px;
+    background-position: center;
+    padding: 20px;
+  }
+
+  .cyber-hero span {
+    font-size: 30px;
+  }
+
+  .cyber-hero h2 {
+    font-size: 30px;
+  }
+
+  .cyber-hero p {
+    font-size: 12px;
+    width: 90%;
+    line-height: 20px;
+  }
+
+  .cyber-ul {
+    grid-template-columns: 1fr; 
+    column-gap: 20px;
+  }
+
+  .cyber-services {
+    margin-top: 600px;
+    gap: 40px;
+  }
+
+  .cyber-services-header{
+    margin-top: 170px;
+  }
+
+  .cyberservices-flex {
+    flex-direction: column; 
+    align-items: center;
+    margin: 20px auto;
+    gap: 50px;
+  }
+
+  .cyberservices-flex-left img {
+    width: 80%; 
+    margin: 0px auto;
+    height: auto;
+  }
+
+  .cyber-spectrum{
+    margin-top: 20px;
+  }
+
+  .cyber-services-header{
+    margin-top: 10px;
+  }
+
+.cyber-spectrum-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 40px;
+    column-gap: 100px;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
+}
+
+  .cyber-spectrum-header{
+    gap: 15px;
+  }
+  
+}
+
+@media (max-width: 500px) {
+  .cyber-hero {
+    padding: 30px;
+    height: 470px;
+  }
+
+  .cyber-hero span {
+    font-size: 25px;
+  }
+
+  .cyber-hero h2 {
+    font-size: 24px;
+  }
+
+  .cyber-hero p {
+    font-size: 11px;
+    width: 100%;
+    line-height: 18px;
+  }
+
+  .cyber-ul {
+    grid-template-columns: 1fr; 
+  }
+
+  .cyber-services {
+    margin-top: 550px;
+    gap: 30px;
+  }
+
+  .cyber-services-header {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    padding:35px;
+    margin-top: 10px;
+  }
+
+  .cyber-services-header p{
+    width: 90%;
+  }
+
+  .cyberservices-flex {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .cyber-text {
+padding: 20px;
+  }
+
+   .cyberservices-flex-right{
+    padding:0px 30px;
+    margin-top: 10px;
+   }
+
+   .cyber-text p{
+    width: 80%;
+   }
+
+  .cyberservices-flex-left img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cyber-spectrum-content {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    padding:0px 60px;
+    column-gap: 10px;
+    row-gap: 20px;
+  }
+
+  .cyber-spectrum-header h2 {
+    font-size: 20px;
+  }
+
+  .cyber-spectrums h3 {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .cyber-spectrums p {
+    font-size: 11px;
+    width:100%;
+  }
+}

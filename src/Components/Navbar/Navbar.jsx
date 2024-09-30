@@ -56,11 +56,14 @@ const Navbar = () => {
                     Services <IoMdArrowDropdown className="nav-icon" />
                   </Link>
                   <ul>
+                    <Link to="/Cyber-awareness">CyberSecurity Awareness-Training</Link>
                     <Link to="/Cyber-services">CyberSecurity Services</Link>
                     <Link to="/It-services">Managed IT Services</Link>
-                    <Link to="Cloud-services">Managed Cloud Services</Link>
+                    <Link to="/cloud-services">Managed Cloud Services</Link>
                     <Link to="It-strategy">IT Strategy</Link>
-                    <Link to="Professional-services">Professional Services</Link>
+                    <Link to="Professional-services">
+                      Professional Services
+                    </Link>
                   </ul>
                 </div>
                 <div className="dropdown-promotions">

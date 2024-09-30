@@ -56,3 +56,64 @@
     letter-spacing: 1px;
     width: 350px;
 }
+
+@media (max-width: 768px) {
+  .cyber-pros-header h2 {
+    font-size: 18px;
+    width: 80%;
+  }
+
+  .cyber-pros-header p {
+    font-size: 12px;
+    width: 500px; 
+  }
+
+  .cyber-pros-content {
+    grid-template-columns:repeat(2,1fr); 
+    column-gap: 30px;
+    row-gap: 20px;
+  }
+
+  .pros h3 {
+    font-size: 16px;
+  }
+
+  .pros p {
+    font-size: 11px;
+    width: 300px; 
+  }
+}
+
+@media (max-width: 500px) {
+  .cyber-pros-header h2 {
+    font-size: 16px;
+  }
+
+  .cyber-pros-header p {
+    font-size: 11px;
+    width: 100%; 
+    padding: 0 20px; 
+  }
+
+  .cyber-pros-content {
+    grid-template-columns: 1fr; 
+    align-items: start;
+    row-gap: 15px;
+    column-gap: 20px;
+  }
+.pros{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+  .pros h3 {
+    font-size: 14px;
+  }
+
+  .pros p {
+    font-size: 10px;
+    width: 80%;
+    padding: 0 20px; 
+  }
+}
+

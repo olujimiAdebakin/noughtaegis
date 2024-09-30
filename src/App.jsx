@@ -11,6 +11,8 @@ import WhyDevcent from './Pages/WhyDevcent/WhyDevcent';
 import Career from './Pages/Career/Career';
 import CyberServices from './Pages/Services-sub/CyberServices';
 import ItServices from './Pages/Services-sub/ItServices';
+import CloudService from './Pages/Services-sub/CloudService';
+import CyberAwareness from './Pages/Services-sub/CyberAwareness';
 
 
 function App() {
@@ -42,8 +44,10 @@ function App() {
 
           {/* Sub-pages */}
 
-          <Route path='/Cyber-services' element={<CyberServices />} />
-          <Route path='/It-services' element={ <ItServices/>} />
+          <Route path="/Cyber-awareness" element={<CyberAwareness />} />
+          <Route path="/Cyber-services" element={<CyberServices />} />
+          <Route path="/It-services" element={<ItServices />} />
+          <Route path="/cloud-services" element={<CloudService />} />
         </Routes>
       </div>
     </>
