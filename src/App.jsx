@@ -13,6 +13,7 @@ import CyberServices from './Pages/Services-sub/CyberServices';
 import ItServices from './Pages/Services-sub/ItServices';
 import CloudService from './Pages/Services-sub/CloudService';
 import CyberAwareness from './Pages/Services-sub/CyberAwareness';
+import HealthCare from './Pages/Industries-sub/HealthCare';
 
 
 function App() {
@@ -42,12 +43,16 @@ function App() {
           <Route path="/career" element={<Career />} />
           <Route path="/contactform" element={<ContactForm />} />
 
-          {/* Sub-pages */}
+          {/* services-Sub-pages */}
 
           <Route path="/Cyber-awareness" element={<CyberAwareness />} />
           <Route path="/Cyber-services" element={<CyberServices />} />
           <Route path="/It-services" element={<ItServices />} />
           <Route path="/cloud-services" element={<CloudService />} />
+
+          {/* Industries-sub-pages */}
+
+          <Route path='/healthcare' element={<HealthCare/>}/>
         </Routes>
       </div>
     </>

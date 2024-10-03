@@ -134,7 +134,7 @@ const Navbar = () => {
               <ul>
                 <li>Managed Service Provider</li>
                 <li>Procurement</li>
-                <li>HealthCare</li>
+                <Link to="/healthcare">HealthCare</Link>
                 <li>Non-Profit</li>
                 <li>Technology & Startup</li>
               </ul>
