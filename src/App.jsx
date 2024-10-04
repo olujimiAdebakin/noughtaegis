@@ -17,9 +17,7 @@ import CyberAwareness from './Pages/Services-sub/CyberAwareness';
 import ItSrategy from './Pages/Services-sub/ItSrategy';
 import ProffesionalServices from './Pages/Services-sub/ProffesionalServices';
 import TailoredSolutions from './Pages/Services-sub/TailoredSolutions';
-=======
 import HealthCare from './Pages/Industries-sub/HealthCare';
->>>>>>> 6eea3e6452acc7e8cfc05c0508595cd2c6b4a6eb
 
 
 function App() {
