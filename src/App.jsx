@@ -13,7 +13,7 @@ import CyberServices from './Pages/Services-sub/CyberServices';
 import ItServices from './Pages/Services-sub/ItServices';
 import CloudService from './Pages/Services-sub/CloudService';
 import CyberAwareness from './Pages/Services-sub/CyberAwareness';
-import ItSrategy from './Pages/Services-sub/ItSrategy';
+import ItStrategy from "./Pages/Services-sub/ItSrategy"
 import ProffesionalServices from './Pages/Services-sub/ProffesionalServices';
 import TailoredSolutions from './Pages/Services-sub/TailoredSolutions';
 import HealthCare from './Pages/Industries-sub/HealthCare';
