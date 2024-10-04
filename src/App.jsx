@@ -51,7 +51,7 @@ function App() {
           <Route path="/Cyber-awareness" element={<CyberAwareness />} />
           <Route path="/Cyber-services" element={<CyberServices />} />
           <Route path="/It-services" element={<ItServices />} />
-          <Route path="/it-strategy" element={<ItSrategy />} />
+          <Route path="/it-strategy" element={<ItStrategy />} />
           <Route path="/proffessional-services" element={<ProffesionalServices />} />
           <Route path='/tailored-solutions' element={<TailoredSolutions/>}/>
           <Route path="/cloud-services" element={<CloudService />} />

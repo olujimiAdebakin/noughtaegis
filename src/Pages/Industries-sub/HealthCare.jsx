@@ -14,7 +14,7 @@ const HealthCare = () => {
     <div>
       <Navbar />
 
-      <div className="healthcare-container">
+      <div className="healthcare-container" data-aos="fade-up-right">
         <div className="healthcare-text">
           <p>PROFICIENT HEALTHCARE</p>
           <h2>
@@ -34,7 +34,7 @@ const HealthCare = () => {
 
       <Testimonial />
 
-      <div className="evolving">
+      <div className="evolving" data-aos="fade-up-right">
         <div className="evolving-text">
           <h1>Evolving Healthcare IT Landscape</h1>
           <p>
@@ -54,7 +54,7 @@ const HealthCare = () => {
         </div>
       </div>
 
-      <div className="challenge-container">
+      <div className="challenge-container" data-aos="fade-up-right">
         <h1>Medical IT Hurdles</h1>
         <p>The primary hurdles in healthcare IT management include</p>
 
@@ -86,7 +86,7 @@ const HealthCare = () => {
 
       {/* <Certification /> */}
 
-      <div className="health-role-content">
+      <div className="health-role-content" data-aos="fade-up-right">
         <h1>
           Noughtaegis : Pioneering Next-Generation Healthcare IT Solutions
         </h1>
@@ -123,7 +123,7 @@ const HealthCare = () => {
         </div>
       </div>
 
-      <div className="trend">
+      <div className="trend" data-aos="fade-up-right">
         <h1> Data Trends</h1>
         <p>
           The healthcare sector is witnessing significant IT evolution,
@@ -135,8 +135,8 @@ const HealthCare = () => {
               <h3>Telehealth Revolution</h3>
               <p>
                 With over 70% of hospitals globally integrating telehealth
-                services post-pandemic, the demand for secure, scalable and reliable IT
-                infrastructure has skyrocketted. 
+                services post-pandemic, the demand for secure, scalable and
+                reliable IT infrastructure has skyrocketted.
               </p>
             </div>
             <div className="trend-image">
@@ -148,8 +148,8 @@ const HealthCare = () => {
               <h3>Ai: The next frontier of innovation</h3>
               <p>
                 Over 60% of healthcare providers are planning to massively
-                investment in AI technologies, aiming to ehance and modernize diagnostics and
-                patient care
+                investment in AI technologies, aiming to ehance and modernize
+                diagnostics and patient care
               </p>
             </div>
             <div className="trend-image">
@@ -159,7 +159,7 @@ const HealthCare = () => {
         </div>
       </div>
 
-      <Footer/>
+      <Footer />
     </div>
   );
 }
