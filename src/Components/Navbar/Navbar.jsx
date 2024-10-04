@@ -7,6 +7,7 @@ import { IoHomeOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import cuberimg from "../../assets/cuberimg.jpg";
 import compsci from "../../assets/computsci.avif";
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMoved, setIsMoved] = useState(false);
@@ -124,7 +125,6 @@ const Navbar = () => {
             </Link>
             <div className="dropdown-content-1">
               <div>
-               
                 <ul>
                   <Link>Education</Link>
                   <Link>Telecommunications</Link>
@@ -133,7 +133,7 @@ const Navbar = () => {
                   <Link>Law-firms</Link>
                 </ul>
               </div>
-              <ul >
+              <ul>
                 <Link>Managed Service Provider</Link>
                 <Link>Procurement</Link>
                 <Link to="/healthcare">HealthCare</Link>
