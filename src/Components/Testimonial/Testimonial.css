@@ -1,29 +1,29 @@
 .testimonial{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 13px;
     height: 500px;
     width: 100%;
-    padding: 20px 40px;
-    /* border-bottom: 2px solid white ; */
-    /* background: black; */
+    padding: 4rem 40px;
+    position: relative;
 }
 
 .testimonial-header{
     display: flex;
     align-items: start;
-
-   
 }
 
 .header-left{
     display: flex;
     flex-direction: column;
-    align-items: start;
     gap: 7px;
-    margin-right: 590px;
     margin-bottom: 15px;
     white-space: nowrap;
+    position:absolute;
+    left: 14rem;
+    z-index: 4;
+    bottom: 14rem;
+    top: 0;
     
 }
 

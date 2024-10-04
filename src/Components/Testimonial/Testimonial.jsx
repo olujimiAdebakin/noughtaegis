@@ -48,7 +48,7 @@ position: "Entrepreneur, Company F",
 const Testimonial = () => {
   return (
     <div className="testimonial">
-      <div className="testimonail-header">
+      <div className="testimonial-header">
         <div className="header-left">
           <small>REVIEWS</small>
           <h2>What our clients say</h2>

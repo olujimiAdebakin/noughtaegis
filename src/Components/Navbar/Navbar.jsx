@@ -56,12 +56,14 @@ const Navbar = () => {
                     Services <IoMdArrowDropdown className="nav-icon" />
                   </Link>
                   <ul>
-                    <Link to="/Cyber-awareness">CyberSecurity Awareness-Training</Link>
+                    <Link to="/Cyber-awareness">
+                      CyberSecurity Awareness-Training
+                    </Link>
                     <Link to="/Cyber-services">CyberSecurity Services</Link>
                     <Link to="/It-services">Managed IT Services</Link>
-                    <Link to="/cloud-services">Managed Cloud Services</Link>
-                    <Link to="It-strategy">IT Strategy</Link>
-                    <Link to="Professional-services">
+                    <Link to="/tailored-solutions">Tailored Solutions</Link>
+                    <Link to="/it-strategy">IT Strategy</Link>
+                    <Link to="/proffessional-services">
                       Professional Services
                     </Link>
                   </ul>
@@ -117,26 +119,26 @@ const Navbar = () => {
           </div>
 
           <div className="industries-drop-down">
-            <Link to="learn">
+            <Link>
               Industries <IoMdArrowDropdown className="nav-icon" />
             </Link>
             <div className="dropdown-content-1">
               <div>
-                <Link>Industries</Link>
+               
                 <ul>
-                  <li>Executive</li>
-                  <li>Security Program Leader</li>
-                  <li>Web/App Development Agency</li>
-                  <li>IT Professional</li>
-                  <li>Lawyers</li>
+                  <Link>Education</Link>
+                  <Link>Telecommunications</Link>
+                  <Link>Banking & Financial-Services</Link>
+                  <Link>Fintech</Link>
+                  <Link>Law-firms</Link>
                 </ul>
               </div>
-              <ul>
-                <li>Managed Service Provider</li>
-                <li>Procurement</li>
-                <li>HealthCare</li>
-                <li>Non-Profit</li>
-                <li>Technology & Startup</li>
+              <ul >
+                <Link>Managed Service Provider</Link>
+                <Link>Procurement</Link>
+                <Link>HealthCare</Link>
+                <Link>Non-Profit</Link>
+                <Link>Manufacturing</Link>
               </ul>
             </div>
           </div>

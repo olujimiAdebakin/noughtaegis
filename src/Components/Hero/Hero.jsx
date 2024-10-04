@@ -7,7 +7,7 @@ import Marqee from "../../Reusable/Marqee/Marqee";
 const Hero = () => {
   const heroRef = useRef(null);
   const spotlightRefs = useRef([]);
-  const textRef = useRef(null); // Added textRef for the text animation
+  const textRef = useRef(null); 
 
   useEffect(() => {
     spotlightRefs.current.forEach((spotlight) => {
@@ -23,12 +23,12 @@ const Hero = () => {
   }, []);
 
   useEffect(() => {
-    // Animate the text using the textRef
+   
     gsap.to(textRef.current, {
       scale: 1.2,
       duration: 2,
-      yoyo: true, // Animation reverses back
-      repeat: -1, // Infinite repeat
+      yoyo: true, 
+      repeat: -1, 
       ease: "power1.inOut",
     });
   }, []);
@@ -41,6 +41,7 @@ const Hero = () => {
 
   return (
     <div className="hero" data-aos="fade-up-right" ref={heroRef}>
+      <div className="spotlight" ref={addSpotlight}></div>
       <div className="spotlight" ref={addSpotlight}></div>
       <div className="spotlight" ref={addSpotlight}></div>
       <div className="spotlight" ref={addSpotlight}></div>
@@ -74,7 +75,7 @@ const Hero = () => {
         <button>
           Get in Touch <IoIosArrowRoundForward style={{ fontSize: "23px" }} />
         </button>
-        <Marqee />
+      
       </div>
     </div>
   );

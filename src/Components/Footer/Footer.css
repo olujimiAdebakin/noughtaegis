@@ -130,7 +130,7 @@ form p{
     font-size: 12px;
 }
 
-form input{
+.form input{
   width: 300px;
     height: 40px;
     background-color:transparent;
@@ -140,11 +140,11 @@ form input{
     color: #fff;
 }
 
-form input:focus{
+.form input:focus{
     outline-color:#fd3842 ;
     border: 1px solid #fd3842;
 }
-form button{
+.form button{
     width: 150px;
     height: 40px;
     background-color: white;

@@ -106,8 +106,8 @@ option{
 }
 
 .checkbox-flex input[type="checkbox"] {
-  width: 8px;
-  height: 7px;
+  width: 12px;
+  height: 12px;
   margin-right: 10px;
   cursor: pointer;
   border: 1px solid #001a38;

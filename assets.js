@@ -24,7 +24,7 @@ const serviceDetailsData = [
       "Mitigate risks in web and mobile applications",
     ],
   },
-  
+
   {
     title: "Purple Teaming",
     description:
@@ -145,7 +145,7 @@ const serviceDetailsData = [
     ],
   },
   {
-    title: "Training and Certification", 
+    title: "Training and Certification",
     description:
       "Provide specialized training and certifications to enhance skills in various cybersecurity domains, ensuring your team is equipped with the latest knowledge and industry-recognized credentials.",
     points: [
@@ -159,4 +159,66 @@ const serviceDetailsData = [
   },
 ];
 
-export default serviceDetailsData;
+const paragraphs = [
+  "Don't fall victim to cybercrime. Our training program equips you with the knowledge and tools to navigate the internet safely and securely.",
+  "Stay safe online! Our training program teaches you how to safeguard sensitive information, recognize cyber threats, and maintain your privacy.",
+  "In today's digital age, cybersecurity awareness is crucial. Protect yourself from hackers, data breaches, and malicious attacks with our comprehensive training program.",
+  "Safeguard your digital life. Discover how to protect your sensitive information and stay ahead of cyber threats with our expert training.",
+  "Cybersecurity is a shared responsibility. Take control of your digital presence with our easy-to-understand lessons on safe browsing and data protection.",
+  "Understand the risks of weak passwords and how attackers can exploit them. Our training teaches you to create strong passwords that keep you safe.",
+  "Prevent identity theft by learning how to secure your personal information. Our program offers actionable tips to protect your privacy.",
+  "The internet is full of threats, but you can navigate it safely with our security training. Learn to recognize phishing emails and avoid online scams.",
+  "Stay ahead of cybercriminals by keeping your software updated. Our training covers the importance of patching and using secure applications.",
+  "Data breaches are on the rise. Learn how to detect unusual activity and protect your accounts from unauthorized access with two-factor authentication.",
+  "The weakest link in cybersecurity is often human error. Learn how to spot social engineering attacks and protect your company from internal threats.",
+  "Is your Wi-Fi secure? Discover the importance of encrypting your network and avoiding public Wi-Fi risks with our comprehensive security modules.",
+  "Online threats evolve constantly, but so can you. Stay up-to-date with the latest cybersecurity practices and trends through our expert training.",
+  "Protect your digital footprint by understanding privacy settings and how to limit the data you share online. Safeguard your personal and professional life.",
+  "Avoid financial loss by learning how to secure online transactions. Our training teaches you to recognize secure websites and avoid e-commerce fraud.",
+  "Learn the importance of regularly backing up your data. Our training explains how to securely store and recover your information in case of attacks.",
+  "Understand ransomware and how to avoid becoming a victim. Our program covers prevention strategies and what to do if your system is compromised.",
+  "Secure your mobile devices just like your computer. Learn about mobile app security, safe downloading practices, and protecting your data on the go.",
+  "Work from home safely with our cybersecurity tips. Protect your remote setup from intruders and maintain confidentiality while working online.",
+  "Become your own first line of defense by mastering basic cybersecurity skills. Empower yourself to avoid the most common cyber threats with confidence.",
+];
+
+// const quizQuestions = [
+//   {
+//     question: "What is phishing?",
+//     options: [
+//       "A cyber attack to steal personal information",
+//       "A technique for securing your password",
+//       "An encryption method",
+//       "A type of firewall",
+//     ],
+//     answer: "A cyber attack to steal personal information",
+//   },
+//   {
+//     question: "Which of the following is a strong password?",
+//     options: ["password123", "MyPetDog", "@B#32$aH1!Z", "abc123"],
+//     answer: "@B#32$aH1!Z",
+//   },
+//   {
+//     question: "Which of the following helps protect your email?",
+//     options: [
+//       "Using public Wi-Fi",
+//       "Avoiding email attachments from unknown sources",
+//       "Ignoring updates",
+//       "Using the same password for all accounts",
+//     ],
+//     answer: "Avoiding email attachments from unknown sources",
+//   },
+//   {
+//     question: "How often should you update your passwords?",
+//     options: [
+//       "Once a year",
+//       "Every 3 months",
+//       "When it's compromised",
+//       "Both when it's compromised and periodically (e.g., every 3 months)",
+//     ],
+//     answer:
+//       "Both when it's compromised and periodically (e.g., every 3 months)",
+//   },
+// ];
+
+export default { serviceDetailsData, paragraphs};

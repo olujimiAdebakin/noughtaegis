@@ -1,0 +1,73 @@
+.it-strategy-hero{
+ margin-top: 60px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ background-image: url(../../assets/MSP-Professional-Services-scaled.webp);
+ gap: 20px;
+ height: 470px;
+ position: relative;
+ padding: 100px;
+}
+
+.it-strategy-hero h2{
+    color: #fff;
+    font-size: 30px;
+}
+
+.it-strategy-hero p{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    width: 530px;
+    text-align: center;
+    line-height: 23px;
+}
+
+.it-strategy-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 24px;
+      border-bottom: 1px solid white;
+    padding-bottom: 40px;
+}
+
+.it-strategy-card h3{
+color: rgb(247, 249, 251);
+font-size: 24px;
+text-align: center;
+}
+
+.it-strategy-card p{
+    color: #fff;
+    font-size: 13px;
+    font-weight:500;
+    width: 500px;
+    line-height: 23px;
+    text-align: center;
+}
+
+.it-strategy-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    justify-items: center;
+    margin: 0 auto;
+    row-gap: 23px;
+    column-gap: 23px;
+  
+}
+.it-strategy-grid-item h3{
+    color: #fd3842;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.it-strategy-grid-item p{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    width: 350px;
+}

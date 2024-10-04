@@ -77,7 +77,7 @@ const Footer = () => {
         </div>
         <div className="news-letter">
           <h3>Subscribe To Our Newsletter</h3>
-          <form onSubmit={handleSubmit(onSubmit)}>
+          <form className='form' onSubmit={handleSubmit(onSubmit)}>
             <input
               type="email"
               placeholder="Your email"
