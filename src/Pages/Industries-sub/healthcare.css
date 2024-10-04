@@ -157,7 +157,6 @@
 }
 .trend-box{
     display: flex;
-    /* background-color: rgb(193, 192, 192); */
     background: #333;
     border-radius: 8px;
     padding: 1.5rem;
@@ -258,9 +257,41 @@ gap: 1rem;
     padding: 20px;
 }
 
+.evolving-text h1{
+    font-size: 28px;
+}
+
 .evolving-image img{
     width: 720px;
 
+}
+
+.challenge-container{
+    padding: 20px;
+}
+
+.challenge-container h1{
+    font-size: 30px;
+}
+
+.health-role-content{
+    padding: 35px 20px;
+}
+
+.health-role-content h1{
+    font-size: 26px;
+}
+
+.trend{
+    padding: 30px 20px;
+}
+
+.trend h1{
+    font-size: 26px;
+}
+
+.trend-card{
+    flex-direction: column;
 }
 }
 
