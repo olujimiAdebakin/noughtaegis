@@ -62,7 +62,7 @@ const Navbar = () => {
                     </Link>
                     <Link to="/Cyber-services">CyberSecurity Services</Link>
                     <Link to="/It-services">Managed IT Services</Link>
-                    <Link to="/tailored-solutions">Tailored Solutions</Link>
+                    <Link to="/tailored-solutions">Tailored Consulting</Link>
                     <Link to="/it-strategy">IT Strategy</Link>
                     <Link to="/proffessional-services">
                       Professional Services

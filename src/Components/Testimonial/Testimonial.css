@@ -5,26 +5,19 @@
     height: 500px;
     width: 100%;
     padding: 4rem 40px;
-    position: relative;
 }
 
 .testimonial-header{
     display: flex;
-    align-items: start;
+    justify-content: center;
+     padding: 0px 40px;
+      width:50%
+ 
 }
 
 .header-left{
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-    margin-bottom: 15px;
-    white-space: nowrap;
-    position:absolute;
-    left: 14rem;
-    z-index: 4;
-    bottom: 14rem;
-    top: 0;
-    
+ text-align: start;
+
 }
 
 .header-left small{
@@ -136,7 +129,11 @@ font-weight: 700;
 .header-left h2{
     font-size: 30px;
 }
-
+/* @media (max-width:1440px){
+  .testimonial-header{
+  margin-left:20rem;
+    }
+} */
 
 @media (max-width: 768px) {
   .swiper-slide {

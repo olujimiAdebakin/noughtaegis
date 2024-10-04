@@ -179,28 +179,28 @@ const CyberAwareness = () => {
           </div>
         </section>
 
-        <div className="quiz-section">
+        {/* <div className="quiz-section">
         <Quiz/>
-        </div>
+        </div> */}
 
         {/* FAQ Section */}
-        <section className="faq">
+        {/* <section className="faqq">
           <h2>Frequently Asked Questions</h2>
-          <div className="faq-item">
+          <div className="faqq-item">
             <h3>What is phishing?</h3>
             <p>
               Phishing is an attempt to steal your information by posing as a
               trusted source.
             </p>
           </div>
-          <div className="faq-item">
+          <div className="faqq-item">
             <h3>How can I create secure passwords?</h3>
             <p>
               Use a combination of upper/lowercase letters, numbers, and
               symbols, and avoid using personal information.
             </p>
           </div>
-        </section>
+        </section> */}
 
         
         <section className="cyber-awareness-contact">

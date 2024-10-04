@@ -17,6 +17,12 @@ footer{
     /* justify-content: space-between; */
 }
 
+.footer-flexed{
+    display: flex;
+    align-items: start;
+    gap:70px;
+}
+
 
 .footer-left img{
     width: 150px;
@@ -101,7 +107,7 @@ footer{
 }
 
 .footer-bottom p, h4{
-    color: #333;
+    color: #fff;
     font-size: 13px;
     font-weight: bold;
 }
@@ -117,7 +123,7 @@ footer{
     margin-bottom:20px;
 }
 
-form{
+.form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -125,7 +131,7 @@ form{
   
 }
 
-form p{
+.form p{
     color: white;
     font-size: 12px;
 }
@@ -155,29 +161,67 @@ form p{
     footer{
         margin-top: 20px;
         height: 100%;
+        position: relative;
     }
 
     .footer-flex{
-           flex-direction: column;
-           gap: 30px;
-    align-items: flex-start;
+           flex-wrap: wrap;
+           gap: 5rem;
+           align-items: start;
     padding:10px 20px ;
 
     }
+
+    .news-letter h3{
+        font-size: 12px;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .news-letter{
+    position: absolute;
+    top:16rem;
+    left: 16rem;
+    bottom: 0;
+    right: 0;
+    gap: 2px;
+
+}
+
+.form button{
+    background-color: #fd3842;
+    color: #fff;
+    height: 30px;
+    font-size: 12px;
+}
 }
 
 @media  (max-width: 500px) {
     footer{
         margin-top: 20px;
         height: 100%;
+        position: relative;
     }
 
     .footer-flex{
-           flex-direction: column;
-           gap: 30px;
-    align-items: flex-start;
-    padding:10px 20px ;
+        flex-direction: column;
+        align-items: center;
+          /* flex-wrap: wrap; */
+    /* padding:10px 30px ; */
+    }
 
+    .footer-left{
+        align-items: center;
+    }
+
+     .footer-left p{
+        text-align: center;
+     }
+
+    .footer-flexed{
+        display: flex;
+        gap: 40px;
+        margin-bottom: 9.4rem;
     }
 
     .footer-privacy{
@@ -186,15 +230,34 @@ form p{
         gap: 9px;
     }
 
+    .footer-links{
+        display: none;
+    }
     .footer-privacy h4{
         white-space: nowrap;
     }
 
     .footer-bottom p{
-        width: 200px;
+        width: 150px;
     }
 
     .footer-bottom {
     padding: 20px;
     }
+
+       .news-letter h3{
+        font-size: 12px;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .news-letter{
+    position: absolute;
+    top:30rem;
+    left: 0rem;
+    bottom: 0;
+    right: 0;
+    gap: 2px;
+}
+    
 }

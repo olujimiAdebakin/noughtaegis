@@ -12,7 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url(../../assets/cuberimg.jpg);
+  background-image: url(../../assets/cuberimg.jpg);filter:brightness(80%);
   gap: 15px;
   /* background-repeat: no-repeat; */
   height:470px;
@@ -31,7 +31,8 @@
   border: none;
   cursor: pointer;
   margin-top: 20px;
-  border: 1px solid white;
+  font-weight: 600;
+  border: 1px solid #fd3842;
   width: 150px;
 }
 
@@ -164,4 +165,352 @@ height: 600px;
 
 .cyber-awareness-contact a{
   color: #fd3842;
+}
+
+@media (max-width: 768px) {
+
+.cyber-awareness-hero {
+  text-align: center;
+  background-color: #001a38;
+  color: #fff;
+  padding: 150px 20px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../../assets/cuberimg.jpg);filter:brightness(80%);
+  gap: 35px;
+  /* background-repeat: no-repeat; */
+  height:470px;
+  position:absolute;
+  width: 100%;
+}
+
+.cyber-awareness-hero h2{
+    font-size: 35px;
+}
+
+.cyber-awareness-hero p{
+font-size: 17px;
+font-weight: 700;
+}
+
+.cta-button {
+  background-color:transparent;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: 600;
+  border: 2px solid #fd3842;
+  width: 150px;
+}
+
+.cta-button:hover{
+  background: #fd3842;
+  color: white;
+}
+
+.cyber-awareness-flex{
+flex-direction: column;
+  gap: 60px;
+  margin-top: 600px;
+  padding: 20px 0px;
+}
+
+.cyber-awareness-flex img{
+width:100%;
+/* flex: 1; */
+height: 600px;
+}
+
+.introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.introduction h2{
+    color:#fff;
+    font-size: 27px;
+    font-weight: 600;
+    white-space:nowrap;
+}
+
+.introduction p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 700;
+    width:500px;
+    text-align: center;
+
+}
+
+
+.modules{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top:4rem ;
+}
+
+.modules h2{
+  text-align: center;
+  color: #fff;
+  font-size: 27px;
+}
+
+.module-cards{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  justify-content: center;
+  justify-items: center;
+  row-gap: 20px;
+  column-gap: 30px;
+  margin:30px auto;
+
+}
+
+.module-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 25px;
+  height: 250px;
+}
+
+.module-card h3{
+  color: #fd3842;
+  font-size: 17px;
+  font-weight: 500;
+
+}
+
+.module-card p{
+  color:black;
+  font-size: 13px;
+  font-weight: 600;
+  width: 300px;
+}
+
+.module-card button{
+  background-color: #fd3842;
+  color: #fff;
+  width: 200px;
+  height: 34px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.quiz-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.cyber-awareness-contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 20px;
+}
+
+.cyber-awareness-contact h2{
+  color: #fff;
+  font-size: 16px;
+}
+
+.cyber-awareness-contact p{
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.cyber-awareness-contact a{
+  color: #fd3842;
+}
+
+}
+
+@media (max-width: 500px) {
+
+.cyber-awareness-hero {
+  text-align: center;
+  background-color: #001a38;
+  color: #fff;
+  padding:120px 30px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(../../assets/cuberimg.jpg);filter:brightness(80%);
+  gap: 25px;
+  /* background-repeat: no-repeat; */
+  height:470px;
+  position:absolute;
+  width: 100%;
+}
+
+.cyber-awareness-hero h2{
+    font-size:15px;
+}
+
+.cyber-awareness-hero p{
+font-size: 13px;
+font-weight: 700;
+line-height: 23px;
+}
+
+.cta-button {
+  background-color:transparent;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+  font-weight: 600;
+  border: 2px solid #fd3842;
+  width: 150px;
+}
+
+.cta-button:hover{
+  background: #fd3842;
+  color: white;
+}
+
+.cyber-awareness-flex{
+flex-direction: column;
+  gap: 60px;
+  margin-top: 600px;
+  padding: 20px 0px;
+}
+
+.cyber-awareness-flex img{
+width:100%;
+/* flex: 1; */
+height: 600px;
+}
+
+.introduction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.introduction h2{
+    color:#fff;
+    font-size: 20px;
+    font-weight: 600;
+    white-space:nowrap;
+}
+
+.introduction p{
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 700;
+    width:370px;
+    text-align: center;
+
+}
+
+
+.modules{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top:4rem ;
+}
+
+.modules h2{
+  text-align: center;
+  color: #fff;
+  font-size: 27px;
+}
+
+.module-cards{
+  display: grid;
+  grid-template-columns:1fr;
+  justify-content: center;
+  justify-items: center;
+  row-gap: 20px;
+  column-gap: 30px;
+  margin:30px auto;
+
+}
+
+.module-card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 25px;
+  height: 250px;
+}
+
+.module-card h3{
+  color: #fd3842;
+  font-size: 17px;
+  font-weight: 500;
+
+}
+
+.module-card p{
+  color:black;
+  font-size: 13px;
+  font-weight: 600;
+  width: 300px;
+}
+
+.module-card button{
+  background-color: #fd3842;
+  color: #fff;
+  width: 200px;
+  height: 34px;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.quiz-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.cyber-awareness-contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  border-bottom: 1px solid #fff;
+  padding-bottom: 40px;
+}
+
+.cyber-awareness-contact h2{
+  color: #fff;
+  font-size: 16px;
+}
+
+.cyber-awareness-contact p{
+  color: #fff;
+  font-size: 13px;
+  width: 350px;
+  font-weight: 500;
+}
+
+.cyber-awareness-contact a{
+  color: #fd3842;
+}
+
 }
