@@ -133,6 +133,12 @@ const Navbar = () => {
                   <Link>Law-firms</Link>
                 </ul>
               </div>
+              <ul >
+                <Link>Managed Service Provider</Link>
+                <Link>Procurement</Link>
+                <Link to="/healthcare">HealthCare</Link>
+                <Link>Non-Profit</Link>
+                <Link>Manufacturing</Link>
               <ul>
                 <li>Managed Service Provider</li>
                 <li>Procurement</li>
