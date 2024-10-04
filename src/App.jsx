@@ -13,13 +13,7 @@ import CyberServices from './Pages/Services-sub/CyberServices';
 import ItServices from './Pages/Services-sub/ItServices';
 import CloudService from './Pages/Services-sub/CloudService';
 import CyberAwareness from './Pages/Services-sub/CyberAwareness';
-<<<<<<< HEAD
-import ItSrategy from './Pages/Services-sub/ItSrategy';
-import ProffesionalServices from './Pages/Services-sub/ProffesionalServices';
-import TailoredSolutions from './Pages/Services-sub/TailoredSolutions';
-=======
 import HealthCare from './Pages/Industries-sub/HealthCare';
->>>>>>> 6eea3e6452acc7e8cfc05c0508595cd2c6b4a6eb
 
 
 function App() {
@@ -54,7 +48,7 @@ function App() {
           <Route path="/Cyber-awareness" element={<CyberAwareness />} />
           <Route path="/Cyber-services" element={<CyberServices />} />
           <Route path="/It-services" element={<ItServices />} />
-          <Route path="/it-strategy" element={<ItSrategy />} />
+          <Route path="/it-strategy" element={<ItStrategy />} />
           <Route path="/proffessional-services" element={<ProffesionalServices />} />
           <Route path='/tailored-solutions' element={<TailoredSolutions/>}/>
           <Route path="/cloud-services" element={<CloudService />} />
