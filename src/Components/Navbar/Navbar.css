@@ -292,7 +292,7 @@ font-size: 13px;
 @media (max-width: 768px) {
 
      nav{
-        padding: 30px 30px;   
+        padding: 30px 50px;   
     } 
 
     .nav-links,
@@ -325,6 +325,7 @@ font-size: 13px;
 
     .nav-end{
       display: flex;
+      display: none;
       gap: 2px;
     }
     .nav-links.active{

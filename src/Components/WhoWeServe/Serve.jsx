@@ -10,17 +10,21 @@ const Serve = () => {
         <div className="serve-left">
           <h3>Industries We Serve</h3>
           <div className="serve-left-link">
-            <Link to="">Retail & Eccormerce</Link>
-            <Link to="">Finance</Link>
-            <Link to="">Government</Link>
-            <Link to="">Technology</Link>
-            <Link to="">HealthCare</Link>
+            <Link to="">Education</Link>
+            <Link to="">Telicommunications</Link>
+            <Link to="">Banking & Finance</Link>
+            <Link to="">Fintech</Link>
+            <Link to="/healthcare">HealthCare</Link>
+            <Link to="">Law-Firms</Link>
+            <Link to="">Non-Profit</Link>
+            <Link to="">Manufacturing</Link>
+            <Link to="">Utilities & Energy</Link>
             <Link to="">Utilities & Energy</Link>
           </div>
           <button>See All Industries</button>
         </div>
-              <div className="serve-right">
-                  <img src={packet} alt="" />
+        <div className="serve-right">
+          <img src={packet} alt="" />
         </div>
       </div>
     </>

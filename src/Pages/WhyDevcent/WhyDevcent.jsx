@@ -13,11 +13,11 @@ const WhyDevcent = () => {
 
       <div className="why-devcent-hero" data-aos="fade-up-right">
         <div className="why-devcent-hero-text">
-          <h2>Why Packetlabs</h2>
+          <h2>Why NoughtAegis</h2>
           <p>
-            At Devcent, our goal is to leave your digital landscape more secure
-            than we found it. We take a comprehensive approach, breaking down
-            complex issues to construct stronger, more resilient systems.
+            At NoughtAegis, our goal is to leave your digital landscape more
+            secure than we found it. We take a comprehensive approach, breaking
+            down complex issues to construct stronger, more resilient systems.
             Through education and tailored consulting, we serve as your trusted
             ally, guiding you through the intricate challenges of cybersecurity.
             Together, we’ll navigate the digital world with confidence, ensuring
@@ -29,7 +29,7 @@ const WhyDevcent = () => {
       <div className="who-we-are" data-aos="fade-up-right">
         <h2>Who We Are</h2>
         <p>
-          Devcent is a passionate team of highly trained, proactive ethical
+          NoughtAegis is a passionate team of highly trained, proactive ethical
           hackers. We protect and secure organizations from costly cybersecurity
           breaches by collaborating with them to enhance and strengthen their
           security posture.
@@ -77,7 +77,7 @@ const WhyDevcent = () => {
         <div className="career-purpose-right">
           <h2>Join Our Team</h2>
           <p>
-            Discover why Devcent is not just a place to work, but a place to
+            Discover why NoughtAegis is not just a place to work, but a place to
             grow, innovate, and achieve your full potential. Be part of a
             dynamic team that values learning, collaboration, and personal
             development.

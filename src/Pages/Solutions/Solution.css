@@ -133,16 +133,18 @@
   gap:12px;
 }
 
-.industries-right ul li {
+.industries-right ul a {
   color: #ffff;
   position: relative;
   padding-left: 20px;
   margin-bottom: 10px;
   font-size: 12px;
   font-weight: 500;
+   border-bottom: 2px solid #fff;
+  padding-bottom: 2px;
 }
 
-.industries-right ul li::before {
+.industries-right ul a::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -179,16 +181,18 @@
   gap: 14px;
 }
 
-.industries-left ul li {
+.industries-left ul a {
   color: #ffff;
   position: relative;
   padding-left: 20px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 12px;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 2px;
 }
 
-.industries-left ul li::before {
+.industries-left ul a::before {
   content: "";
   position: absolute;
   top: 50%;

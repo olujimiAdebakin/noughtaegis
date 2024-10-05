@@ -203,12 +203,13 @@ transition: border-bottom 0.3s ease;
    .services-container{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 40px;
     padding-left: 25px;
    }
 
-   .services h2{
-    padding-left: 25px;
+   .services-header h2{
+    padding-left: 80px;
     margin-bottom: 20px;
     
    }
@@ -251,19 +252,25 @@ transition: border-bottom 0.3s ease;
   
    .services{
     display: block;
+    margin-top: 1rem;
    }
 
    .services-container{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
     padding-left: 25px;
    }
 
    .services h2{
-    padding-left: 25px;
+    padding-left:60px;
     margin-bottom: 20px;
     
+   }
+
+   .services-below-header h2{
+    font-size: 18px;
+    padding-left: 0px;
    }
 
      .services-container-content {
@@ -271,32 +278,46 @@ transition: border-bottom 0.3s ease;
    }
    .service-below{
     display: inline;
-   }
+    /* padding: 30px; */
 
-   .services-below h2{
-    padding-left: 25px;
-    font-size: 26px;
    }
 
    .service-below-flex{
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    padding-left: 25px;
+    padding: 0px 25px;
+    width: 100%;
+    
+    gap: 10px;
    }
 
   .services-ul li{
-
     font-size: 10px;
    }
 
    .service-left,.service-right{
-    width: 80%;
+    width:100%;
+   
    }
+
+   .service-right h3{
+      font-size: 18px;
+      width: 300px;
+    }
+
+    .service-right{
+       align-items: start;
+       padding-left: 12px;
+    }
+
+     .service-left h3{
+        font-size: 18px;
+      width: 300px;
+     }
 
    .service-left div p{
     font-size: 13px;
-    width: 350px;
+    width: 300px;
    }
 
    .service-right button{
