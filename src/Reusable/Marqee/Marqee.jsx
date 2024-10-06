@@ -27,22 +27,32 @@ const Marqee = () => {
     <>
       <div className="marqee">
         <div
-          className="marqee-content" ref={marqueeRef}
-        style={{ transform: `translateX(${offset}px)` }}
+          className="marqee-content"
+          ref={marqueeRef}
+          style={{ transform: `translateX(${offset}px)` }}
         >
           <h1>
-            Welcome to DevCent - Your Gateway to Tech Excellence! | Web
-            Development | Cybersecurity | Data Science | Cloud Computing | AI
-            and Machine Learning | Unlock your potential with expert-led courses
-            and real-world projects! | Join DevCent Today and Be the Future of
-            Tech!
-                  </h1>
-                   <h1>
-            Welcome to DevCent - Your Gateway to Tech Excellence! | Web
-            Development | Cybersecurity | Data Science | Cloud Computing | AI
-            and Machine Learning | Unlock your potential with expert-led courses
-            and real-world projects! | Join DevCent Today and Be the Future of
-            Tech!
+            Welcome to NoughtAegis - Your Gateway to Tech Excellence in
+            Cybersecurity! | Protect Your Digital World with Advanced Security
+            Solutions | Stay One Step Ahead of Cyber Threats with Our
+            Cutting-Edge Cybersecurity Courses and Certifications | Empower Your
+            Future in Cybersecurity Today!
+          </h1>
+
+          <h1>
+            Our Services - Safeguard Your Business with NoughtAegis! | Cyber
+            Risk Assessments | Network Security | Cloud Security | Incident
+            Response | Compliance & Regulatory Solutions | Vulnerability
+            Management | Stay Secure and Compliant with Industry-Leading
+            Cybersecurity Services from NoughtAegis!
+          </h1>
+
+          <h1>
+            Industries We Serve - Tailored Cybersecurity Solutions for Every
+            Sector | Finance | Healthcare | Retail | Government | Technology |
+            Manufacturing | Defense | Whether You’re a Startup or a Global
+            Enterprise, NoughtAegis Protects Your Critical Infrastructure and
+            Data!
           </h1>
         </div>
       </div>

@@ -1,10 +1,23 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import './ProffesionalServices.css'
 import Navbar from '../../Components/Navbar/Navbar'
 import Testimonial from '../../Components/Testimonial/Testimonial';
 import Footer from '../../Components/Footer/Footer';
+import gsap from 'gsap';
+import Marqee from '../../Reusable/Marqee/Marqee';
 
 const ProffesionalServices = () => {
+  const textRef = useRef(null);
+  
+     useEffect(() => {
+       gsap.to(textRef.current, {
+         scale: 1.2,
+         duration: 2,
+         yoyo: true,
+         repeat: -1,
+         ease: "power1.inOut",
+       });
+     }, []);
   return (
     <>
       <Navbar />
@@ -12,12 +25,13 @@ const ProffesionalServices = () => {
       <div className="professional-services">
         <div className="professional-services-hero">
           <h2>
-            Unlock <span>Expert IT </span> Solutions
+            Unlock <h4 ref={textRef}>Expert IT </h4> Solutions
           </h2>
           <p>
             Empowering your business with cutting-edge technology, tailored to
             drive growth and efficiency.
           </p>
+          <Marqee/>
         </div>
         <div className="proffessional-services-testimonial">
           <Testimonial />
@@ -89,9 +103,9 @@ const ProffesionalServices = () => {
               </p>
             </div>
           </div>
-              </div>
-              
-              <Footer/>
+        </div>
+
+        <Footer />
       </div>
     </>
   );

@@ -50,25 +50,21 @@ const Solution = () => {
           <div className="industries-left">
             <h3>Roles We Work With</h3>
             <ul>
-              <li>Executive</li>
-              <li>Security Program Leader</li>
-              <li>Web/App Development Agency</li>
-              <li>IT Professional</li>
-              <li>Lawyers</li>
-              <li>Managed Service Provider</li>
-              <li>Procurement</li>
+              <Link>Education</Link>
+              <Link>Telecommunications</Link>
+              <Link>Banking & Financial-Services</Link>
+              <Link>Fintech</Link>
+              <Link>Law-Firms</Link>
             </ul>
           </div>
           <div className="industries-right">
             <h3>Industries We&apos;ve Helped</h3>
             <ul>
-              <li>Retail/Ecommerce</li>
-              <li>Government</li>
-              <li>Finance</li>
-              <li>Utilities/Energy</li>
-              <li>Technology</li>
-              <li>Education</li>
-              <li>HealthCare</li>
+              <Link>Retail/Ecommerce</Link>
+              <Link>Manufacturing</Link>
+              <Link to="/healthcare">Healthcare</Link>
+              <Link>Non-Profit</Link>
+              <Link>Procurement</Link>
             </ul>
           </div>
         </div>

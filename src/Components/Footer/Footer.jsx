@@ -47,37 +47,37 @@ const Footer = () => {
           </div>
 
           <h2>Serving Clients Across the Nation.</h2>
-
         </div>
+        <div className="footer-flexed">
+          <div className="footer-links">
+            <h2>SERVICES</h2>
+            <ul className="futer">
+              <li>Managed IT Services</li>
+              <li>Cybersecurity Services</li>
+              <li>IT Strategy</li>
+              <li>IT Consulting</li>
+              <li>Network Management</li>
+              <li>Cloud Services</li>
+              <li>Help Desk Support</li>
+            </ul>
+          </div>
 
-        <div className="footer-links">
-          <h2>SERVICES</h2>
-          <ul className="futer">
-            <li>Managed IT Services</li>
-            <li>Cybersecurity Services</li>
-            <li>IT Strategy</li>
-            <li>IT Consulting</li>
-            <li>Network Management</li>
-            <li>Cloud Services</li>
-            <li>Help Desk Support</li>
-          </ul>
-        </div>
-
-        <div className="footer-links">
-          <h2>INDUSTRIES</h2>
-          <ul className="futer">
-            <li>Financial Institutions</li>
-            <li>Health Institutions</li>
-            <li>Technology & Startup</li>
-            <li>Law Firms</li>
-            <li>Private Equity</li>
-            <li>Manufacturing</li>
-            <li>Entertainment</li>
-          </ul>
+          <div className="footer-links">
+            <h2>INDUSTRIES</h2>
+            <ul className="futer">
+              <li>Financial Institutions</li>
+              <li>Health Institutions</li>
+              <li>Technology & Startup</li>
+              <li>Law Firms</li>
+              <li>Private Equity</li>
+              <li>Manufacturing</li>
+              <li>Entertainment</li>
+            </ul>
+          </div>
         </div>
         <div className="news-letter">
           <h3>Subscribe To Our Newsletter</h3>
-          <form className='form' onSubmit={handleSubmit(onSubmit)}>
+          <form className="form" onSubmit={handleSubmit(onSubmit)}>
             <input
               type="email"
               placeholder="Your email"
@@ -90,10 +90,10 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>Copyright 2024 Cybersecurity Solutions. All Rights Reserved.</p>
+        <p>© Copyright 2024 All Right Reserved.</p>
         <div className="footer-privacy">
-          <h4>Privacy Policy</h4>
-          <h4>Terms of Service</h4>
+          <h4>Built with ❤️ By Spin.</h4>
+          <h4></h4>
         </div>
       </div>
     </footer>

@@ -1,5 +1,215 @@
 .tailored-solutions-hero{
 display: flex;
 flex-direction: column;
-gap: 15px;
+align-items: center;
+gap:25px;
+margin-top:4.2rem;
+padding: 100px;
+height: 470px;
+/* background-size: cover; */
+position: relative;
+opacity: 10%;
+width: 100vw;
+opacity: 3;
+opacity: 1;
+background-image: url(../../assets/digital-technology-technical-support-customer-service-concept_555983-3818.jpg); filter: brightness(80%);
+}
+
+.tailored-solutions-hero h3{
+    color: #fd3842;
+    font-size: 2rem;
+    text-align: center;
+   
+}
+
+.tailored-solutions-hero span{
+    font-size: 2rem;
+}
+
+.tailored-solutions-hero h2{
+    color: #fff;
+    font-size: 1.4rem;
+    width: 30rem;
+    text-align: center;
+}
+
+.tailored-solutions-hero p{
+    font-size: 13px;
+    color: #fffff0;
+    font-weight: 500;
+    width: 700px;
+    text-align: center;
+    line-height: 24px;
+     filter: brightness(100%);
+}
+
+.tailored-solutions-testimonials{
+    margin-top: 3rem;
+}
+
+
+.tailored-solutions-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+    border-bottom: 1px solid #fff;
+}
+
+.tailored-solutions-content-header{
+    display: flex;
+    justify-content: center;
+}
+
+.tailored-solutions-content-header span{
+color: #fd3842;
+}
+
+.tailored-solutions-content-header h2{
+    color: #fff;
+    font-size: 2rem;
+}
+
+.tailored-solution{
+    display: flex;
+    flex-direction: column;
+    gap:1rem;
+}
+
+.tailored-solution-wrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    padding: 2rem 4rem;
+}
+
+.tailored-solution h3{
+    color: #fd3842;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.tailored-solution p{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    width: 300px;
+    line-height: 24px;
+}
+
+@media (max-width: 768px) {
+    .tailored-solutions-hero p{
+    font-size: 15px;
+    color: #fffff0;
+    font-weight: 700;
+    width: 700px;
+    text-align: center;
+    line-height: 24px;
+     filter: brightness(100%);
+}
+
+.tailored-solutions-testimonials{
+    margin-top:4rem;
+    margin-bottom: 0;
+}
+
+.tailored-solutions-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    /* margin-top: 1rem; */
+    border-bottom: 1px solid #fff;
+}
+
+.tailored-solution-wrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 2rem 1rem;
+}
+
+.tailored-solution{
+    align-items: center;
+}
+
+.tailored-solution p{
+    text-align: center;
+    width: 320px;
+}
+}
+
+@media (max-width: 500px) {
+
+    .tailored-solutions-hero{
+        display: flex;
+        padding: 100px 0px;
+    }
+    
+.tailored-solutions-hero h3{
+    color: #fd3842;
+    font-size: 1.6rem;
+    /* text-align: center; */
+    width: 100%;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.tailored-solutions-hero h2{
+    font-size: 1.3rem;
+    width: 400px;
+}
+.tailored-solutions-hero span{
+    font-size: 1.6rem;
+}
+    .tailored-solutions-hero p{
+    font-size: 15px;
+    color: #fffff0;
+    font-weight: 700;
+    width: 380px;
+    text-align: center;
+    line-height: 24px;
+     filter: brightness(100%);
+}
+
+.tailored-solutions-testimonials{
+    margin-top:4rem;
+    margin-bottom: 0;
+}
+
+.tailored-solutions-content{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    /* margin-top: 1rem; */
+    border-bottom: 1px solid #fff;
+}
+
+.tailored-solution-wrap{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 2rem 1rem;
+}
+
+.tailored-solution{
+    align-items: center;
+}
+
+.tailored-solution p{
+    text-align: center;
+    width: 320px;
+}
+
+.tailored-solutions-testimonials{
+    height: 230px;
+}
+
+.tailored-solutions-content-header h2{
+    font-size: 1.4rem;
+}
 }
