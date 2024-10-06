@@ -10,7 +10,9 @@
     height: 675px;
     padding: 170px;
 }
-
+.care{
+    color: #fd3842 ;
+}
 .healthcare-text{
     display: flex;
     flex-direction: column;
@@ -63,7 +65,7 @@
 }
 
 .challenge-container h1{
-    font-size: 40px;
+    font-size: 35px;
 }
 
 

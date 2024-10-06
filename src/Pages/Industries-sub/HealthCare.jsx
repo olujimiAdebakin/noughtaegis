@@ -18,7 +18,8 @@ const HealthCare = () => {
         <div className="healthcare-text">
           <p>PROFICIENT HEALTHCARE</p>
           <h2>
-            Revolutionary Healthcare IT Management and Cybersecurity Solutions
+            Revolutionary <span className='care'>Healthcare</span> IT Management and
+            Cybersecurity Solutions
           </h2>
           <p>
             In the rapidly evolving healthcare industry, effective IT management

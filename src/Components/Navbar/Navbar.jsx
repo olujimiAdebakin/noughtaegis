@@ -137,17 +137,10 @@ const Navbar = () => {
                 <Link>Managed Service Provider</Link>
                 <Link>Procurement</Link>
                 <Link to="/healthcare">HealthCare</Link>
-                <Link>Non-Profit</Link>
+                <Link to="/non-profit">Non-Profit</Link>
                 <Link>Manufacturing</Link>
               </ul>
               
-              <ul>
-                <li>Managed Service Provider</li>
-                <li>Procurement</li>
-                <Link to="/healthcare">HealthCare</Link>
-                <Link to="/non-profit">Non-Profit</Link>
-                <li>Technology & Startup</li>
-              </ul>
             </div>
           </div>
           <Link to="/whydevcent">
