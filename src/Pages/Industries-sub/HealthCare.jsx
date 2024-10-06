@@ -3,8 +3,7 @@ import './healthcare.css'
 import Navbar from '../../Components/Navbar/Navbar'
 import Testimonial from '../../Components/Testimonial/Testimonial';
 import Health from '../../assets/health.jpg'
-import Slide from '../../Reusable/Slide';
-import Certification from '../../Components/Certification/Certification';
+
 import RedChart from "../../assets/graphic-lines-red.webp";
 import BlueChart from "../../assets/graphic-lines-blue.webp"
 import Footer from '../../Components/Footer/Footer';
@@ -85,7 +84,6 @@ const HealthCare = () => {
         </div>
       </div>
 
-      {/* <Certification /> */}
 
       <div className="health-role-content" data-aos="fade-up-right">
         <h1>

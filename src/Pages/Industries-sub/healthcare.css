@@ -195,7 +195,7 @@
 .evolving{
     flex-direction: column-reverse;
     align-items: center;
-    padding: 0px 20px;
+    /* padding: 0px 20px; */
 }
 
 .evolving-text h1{
@@ -222,7 +222,7 @@
     width: 350px;
 }
 .health-role-content h1{
-    font-size: 22px;
+    font-size: 18px;
 }
 
 .health-role-content p{
@@ -244,12 +244,16 @@ gap: 1rem;
 .trend{
     padding: 20px;
 }
+
+.trend-box{
+   flex-direction: column;
+}
 .trend-card{
     flex-direction: column;
 }
 
 .trend-image img{
-    width: 150px;
+    width: 100%;
 }
 }
 /* tablet */
