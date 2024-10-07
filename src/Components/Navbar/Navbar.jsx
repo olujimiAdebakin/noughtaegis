@@ -138,7 +138,7 @@ const Navbar = () => {
                 <Link>Procurement</Link>
                 <Link to="/healthcare">HealthCare</Link>
                 <Link to="/non-profit">Non-Profit</Link>
-                <Link>Manufacturing</Link>
+                <Link to="/manufacturing">Manufacturing</Link>
               </ul>
             </div>
           </div>

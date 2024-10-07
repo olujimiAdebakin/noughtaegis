@@ -1,0 +1,354 @@
+.manufacturing-container{
+    color: white;
+    margin-top: 60px;
+ background-image: 
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+  url(../../assets/empowering.webp);
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+      height: 460px;
+    padding: 100px;
+}
+
+.manufacturing-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.manufacturing-text h2{
+    font-size: 30px;
+    width: 600px;
+    text-align: center;
+    color:#fd3842 ;
+}
+
+.manufacturing-text p{
+   font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center; 
+    width: 700px;
+}
+
+.testi{
+    margin-top: 60px;
+}
+
+.manufacturing-current{
+    color: white;
+    display: flex;
+    gap: 3rem;
+    padding: 30px 150px;
+    align-items: center;
+}
+
+.manufacturing-current-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+    width: 700px;
+}
+
+.manufacturing-current-text h2{
+    color: #fd3842;
+    font-size: 1.5rem;
+}
+
+.manufacturing-current-text p{
+     line-height: 25px;
+     font-weight: 600;
+}
+
+.manufacturing-current-image img{
+    border-radius: 12px;
+    width: 600px;
+    height: auto;
+}
+
+
+.manufacturing-current-container{
+    color: white;
+    padding: 30px 150px;
+
+}
+
+.manufacturing-current-container h1{
+    font-size:27px;
+    color: #fd3842;
+}
+
+
+.manufacturing-current-box{
+    display: flex;
+    gap: 2rem;
+    margin-top: 40px;
+}
+
+
+.manufacturing-current-card{
+    background-color: white;
+    color: black;
+    padding:1rem;
+    width: 500px;
+    height: 200px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.manufacturing-current-card h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.manufacturing-current-card p{
+    line-height: 18px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.manufacturing-role-content h1{
+    font-size: 27px;
+    color: #fd3842;
+}
+
+.manufacturing-role-content p{
+    font-size: 13px;
+}
+
+
+.manufacturing-role-content{
+    color: white;
+    padding: 30px 150px;
+}
+
+.manufacturing-role-box{
+    display: flex;
+    gap: 2rem;
+    margin-top: 40px;
+
+}
+
+.manufacturing-role-card{
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    width: 500px;
+    height: 220px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;;
+}
+
+.manufacturing-role-card h2{
+    font-size: 20px;
+}
+
+.manufacturing-role-card p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.trend{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 90px 150px;
+    gap: 1rem;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 2rem;
+}
+
+.trend h1{
+    color: #fd3842;
+    font-size: 30px;
+}
+
+.trend-image img{
+    width: 150px;
+    height: 150px;
+}
+.trend-card{
+    display: flex;
+    gap: 2rem;
+}
+.trend-box{
+    display: flex;
+    background: #333;
+    border-radius: 8px;
+    padding: 1.5rem;
+    gap: 1.5rem;
+}
+
+.trend-text h3{
+    font-size: 20px;
+}
+
+.trend-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+/* mobile */
+@media(max-width:500px){
+.nonprofit-container{
+    padding: 140px;
+    height: 678px;
+    object-fit: fill;
+}
+
+.nonprofit-text h2{
+    width: 380px;
+    font-size: 24px;
+}
+
+.nonprofit-text p{
+    width: 360px;
+}
+
+.testi{
+    margin-top: 20px;
+}
+.current{
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0px;
+}
+
+.current-text{
+    width: 350px;
+}
+
+.current-text h1{
+    font-size: 20px;
+}
+
+.current-image img{
+    width: 500px;
+
+}
+.current-container{
+    padding: 80px 20px;
+}
+
+.current-container h1{
+    font-size: 28px;
+}
+.current-box{
+    flex-direction: column;
+    align-items: center;
+}
+
+.current-card{
+    width: 350px;
+}
+.current-role-content h1{
+    font-size: 22px;
+}
+
+.current-role-content p{
+    padding-top: 1rem;
+}
+.current-role-content{
+    padding: 20px;
+}
+
+
+.current-role-box{
+    flex-direction: column;
+    align-items: center;
+}
+
+.current-role-card{
+width: 350px;
+gap: 1rem;
+}
+
+.trend{
+    padding: 20px;
+}
+
+
+.trend-card{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.trend-image img{
+    width: 100%;
+}
+
+
+}
+
+/* tablet */
+@media(max-width:768px){
+.current{
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+.current-text h1{
+    font-size: 28px;
+}
+
+.current-card h2{
+    font-size: 17px;
+}
+
+.current-card p{
+    line-height: 18px;
+    
+}
+
+.current-image img{
+    width: 720px;
+
+}
+
+.current-container{
+    padding:40px  20px;
+}
+
+.current-container h1{
+    font-size: 28px;
+}
+
+.current-role-content{
+    padding: 35px 20px;
+}
+
+.current-role-card{
+    gap: 1rem;
+}
+
+.current-role-card h2{
+    font-size: 17px;
+}
+
+.current-role-content h1{
+    font-size: 26px;
+}
+
+.trend{
+    padding: 30px 20px;
+}
+
+.trend h1{
+    font-size: 26px;
+}
+
+.trend-card{
+    flex-direction: column;
+}
+}

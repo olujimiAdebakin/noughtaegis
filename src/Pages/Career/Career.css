@@ -129,8 +129,8 @@ line-height: 25px;
 
 .our-values-header{
  display: flex;
-justify-content: start;
-padding-left: 160px;
+justify-content:center;
+/* padding-left: 160px; */
 }
 
 .our-values-header h2{
@@ -313,8 +313,8 @@ font-size: 2rem;
 /* Media Query for screen width 500px and below */
 @media (max-width: 500px) {
   .career-hero {
-    padding: 12px px;
-    height:100px;
+    padding: 12px 40px;
+    height:470px;
   }
   
   .career-hero h2{
@@ -324,12 +324,31 @@ font-size: 2rem;
   }
 
   .career-hero p {
-    font-size: 10px;
+    font-size: 13px;
+    width:330px;
   }
 
-  .why-join-header h2, .why-join-header p {
-    font-size: 1.2rem;
+    .why-join-header{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 30px;
+    }
+
+    .why-join-header p{
+      width: 330px;
+    }
+
+  .why-join-header h2 {
+    font-size: 1rem;
+    width: 100%;
   }
+
+  .who-we-aree-header h2{
+    font-size: 1.2rem;
+    width: 100%;
+  }
+
 
   .who-we-aree-content {
     grid-template-columns: 1fr;
@@ -339,11 +358,34 @@ font-size: 2rem;
     width: 300px;
     height: 400px;
   }
+
+    .our-values-header{
+      width: 100%;
+      padding: 0px 56px;
+    }
+
+  .our-values-header h2{
+text-align: center;
+  }
    .our-values-card:hover{
     box-shadow: none;
        transform: scale(0.95); 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
 
+   .who-we-aree-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+  .who-we-aree-card p{
+    width: 300px;
+    text-align: center;
+  }
+
+  .who-we-aree{
+    align-items: center;
   }
 
   .why-devcent {
@@ -354,6 +396,11 @@ font-size: 2rem;
   .why-devcent h2 {
     font-size: 2.5rem;
   }
+
+  .our-values-content{
+    flex-direction: column;
+    align-items: center;
+  }
   
   .why-devcent-right button {
     width: 180px;
@@ -361,82 +408,3 @@ font-size: 2rem;
   }
 }
 
-/* Media Query for screen width 400px and below */
-@media (max-width: 400px) {
-  .career-hero {
-    padding: 0 10px;
-    height:450px;
-  }
-  
-  .career-hero h2 {
-    font-size: 1.2rem;
-    width: 350px;
-    line-height: 25px;
-    text-align: center;
-  }
-
- .career-hero p{
-  font-size: 14px;
-  font-weight: 600;
- }
-
-  .why-join-header {
-    padding: 20px;
-  }
-
-    .why-join-header h2{
-      font-size: 20px;
-    }
-
-     .why-join-header p{
-      font-size: 13px;
-      width: 350px;
-      font-weight: 600;
-     }
-
-   .who-we-aree-content{
-    display: flex;
-    flex-direction: column-reverse;
-   }
-
-  .who-we-aree-card {
-    width: 100%;
-    align-items: start;
-  }
-
-  .who-we-aree-header h2{
-    font-size: 20px;
-    width: 260px;
-  }
-
-   .who-we-aree-card h2{
-    font-size: 25px;
-   }
-
-   
-   .who-we-aree-card p{
-    font-size: 15px;
-    font-weight: 900;
-    line-height: 20px;
-   }
-  
-  .our-values-card {
-    width: 300px;
-    height: 340px;
-  }
-
-  .our-values-card:hover{
-    box-shadow: none;
-       transform: scale(0.95); 
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-  }
-  .why-devcent img{
-    width: 300px;
-  }
-
-  .why-devcent-right button {
-    width: 160px;
-    height: 28px;
-  }
-}

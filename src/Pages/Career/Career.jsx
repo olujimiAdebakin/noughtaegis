@@ -33,7 +33,7 @@ const Career = () => {
             <p>
               Noughtaegis is powered by a passionate team of skilled,
               forward-thinking cybersecurity experts. It’s our people who define
-              DevCent, and we're known for attracting top talent in the
+              Noughtaegis, and we're known for attracting top talent in the
               industry. Discover why Noughtaegis is the perfect place to grow,
               learn, and succeed. Explore our open positions below and apply
               today
@@ -64,7 +64,7 @@ const Career = () => {
       <Certification />
       <div className="who-we-aree" data-aos="fade-up-right">
         <div className="who-we-aree-header">
-          <h2>Why You Should Join the Devcent Family</h2>
+          <h2>Why You Should Join the NoughtAegis Family</h2>
         </div>
         <div className="who-we-aree-content">
           <div className="who-we-aree-card">

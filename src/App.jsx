@@ -18,6 +18,7 @@ import ProffesionalServices from './Pages/Services-sub/ProffesionalServices';
 import TailoredSolutions from './Pages/Services-sub/TailoredSolutions';
 import HealthCare from './Pages/Industries-sub/HealthCare';
 import NonProfit from './Pages/Industries-sub/NonProfit';
+import ManuFacturing from './Pages/Industries-sub/ManuFacturing';
 
 
 function App() {
@@ -53,14 +54,18 @@ function App() {
           <Route path="/Cyber-services" element={<CyberServices />} />
           <Route path="/It-services" element={<ItServices />} />
           <Route path="/it-strategy" element={<ItStrategy />} />
-          <Route path="/proffessional-services" element={<ProffesionalServices />} />
-          <Route path='/tailored-solutions' element={<TailoredSolutions/>}/>
+          <Route
+            path="/proffessional-services"
+            element={<ProffesionalServices />}
+          />
+          <Route path="/tailored-solutions" element={<TailoredSolutions />} />
           <Route path="/cloud-services" element={<CloudService />} />
 
           {/* Industries-sub-pages */}
 
-          <Route path='/healthcare' element={<HealthCare/>}/>
-          <Route path='/non-profit' element={<NonProfit/>}/>
+          <Route path="/healthcare" element={<HealthCare />} />
+          <Route path="/non-profit" element={<NonProfit />} />
+          <Route path="/manufacturing" element={<ManuFacturing />} />
         </Routes>
       </div>
     </>
