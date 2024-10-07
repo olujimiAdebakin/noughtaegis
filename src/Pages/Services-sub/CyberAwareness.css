@@ -46,13 +46,21 @@
   align-items: center;
   gap: 60px;
   margin-top: 600px;
-  padding: 20px 50px;
+  padding: 20px 30px;
 }
 
-.cyber-awareness-flex img{
-width: 40%;
+.image-container {
+  position: relative;
+  width: 100%;
+  /* display: inline-block;  */
+}
+
+.img-container img{
+width: 90%;
 /* flex: 1; */
 height: 600px;
+ /* display: block; */
+ box-shadow: 0 23 0 100px #001a38;
 }
 
 .introduction{
@@ -121,10 +129,11 @@ height: 600px;
 }
 
 .module-card p{
-  color:black;
+  color:#001a38;
   font-size: 13px;
-  font-weight: 600;
+  font-weight: 500;
   width: 300px;
+  text-align: center;
 }
 
 .module-card button{

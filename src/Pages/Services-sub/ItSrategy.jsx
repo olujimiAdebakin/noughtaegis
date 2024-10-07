@@ -19,14 +19,15 @@ const ItSrategy = () => {
               and leverage emerging technologies. This approach ensures
               efficient processes, cost savings, and the ability to adapt to
               changing market needs while fostering long-term success.
-                    </p>
-                    <Marqee/>
+            </p>
+            <div className="it-strategy-marquee">
+              <Marqee />
+            </div>
           </div>
 
-          <div className="it-strategy-testimoial">
+          <div className="it-strategy-testimonial">
             <Testimonial />
-                </div>
-                
+          </div>
 
           <div className="it-strategy-card">
             <h3>IT Strategies to Drive Business Growth and Innovation</h3>

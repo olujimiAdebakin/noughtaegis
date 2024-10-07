@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import "./CyberAwareness.css";
 import Marqee from "../../Reusable/Marqee/Marqee";
-import cyber_awareness from "../../assets/cyberawareness.webp"
+import cyber_awareness from "../../assets/ai-image.jpg"
 import Footer from "../../Components/Footer/Footer"
 import paragraphs from '../../../assets'
 import Quiz from "../../Reusable/Quiz";
@@ -37,14 +37,15 @@ const CyberAwareness = () => {
   const [color, setColor] = useState("#fff");
 
 
-  const generateRandomColor = () => {
-    const letters = "0123456789ABCDEF";
-    let color = "#";
-    for (let i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
-  };
+const generateVisibleColor = () => {
+  const letters = "89ABCDEF"; 
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * letters.length)];
+  }
+  return color;
+};
+
 
   useEffect(() => {
     
@@ -75,7 +76,9 @@ const CyberAwareness = () => {
             <h2>Why Cybersecurity Awareness Matters</h2>
             <p style={{ color }}>{paragraphs.paragraphs[currentParagraph]}</p>
           </div>
-          <img src={cyber_awareness} alt="" />
+          <div className="img-container">
+            <img src={cyber_awareness} alt="" />
+          </div>
         </section>
 
         {/* Training Modules Section */}
@@ -202,7 +205,6 @@ const CyberAwareness = () => {
           </div>
         </section> */}
 
-        
         <section className="cyber-awareness-contact">
           <h2>Need Help?</h2>
           <p>
@@ -211,7 +213,7 @@ const CyberAwareness = () => {
           </p>
         </section>
       </div>
-      
+
       <Footer />
     </>
   );
