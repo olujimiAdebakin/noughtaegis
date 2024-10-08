@@ -11,6 +11,7 @@ import LawFirm from './LawFirm';
 
 
 
+
 const ManuFacturing = () => {
   return (
     <div>
@@ -61,7 +62,7 @@ const ManuFacturing = () => {
           <img src={manufacture} alt="Manufacturing Cybersecurity" />
         </div>
       </div>
-      
+      {/* <LawFirm/> */}
 
       <div className="manufacturing-current-container" data-aos="fade-up-right">
         <h1>IT Challenges in the Manufacturing Industry</h1>

@@ -21,7 +21,7 @@ const LawFirm = () => {
             seamless case management, and maintaining confidentiality are
             paramount to success. Law firms depend on secure, cutting-edge
             technology to manage case files, ensure compliance, and protect
-            confidential information. At CyberDuo, we specialize in delivering
+            confidential information. At NoughtAegis, we specialize in delivering
             tailored IT and cybersecurity solutions that streamline your firm's
             operations, reduce risks, and safeguard your legal practice against
             evolving cyber threats.
@@ -55,7 +55,7 @@ const LawFirm = () => {
         </div>
       </div>
 
-      <div className="law-container" data-aos="fade-up-right">
+      <div className="law-firm-challenges-container" data-aos="fade-up-right">
         <h1>IT Challenges in the Legal Industry</h1>
         <p>The primary IT challenges faced by law firms include:</p>
 
@@ -89,7 +89,7 @@ const LawFirm = () => {
       </div>
 
       <div className="law-firm-role-content" data-aos="fade-up-right">
-        <h1>Noughtaegis in Empowering the Legal Industry</h1>
+        <h1>Noughtaegis in Empowering the Legal Industry:</h1>
         <p>
           Noughtaegis provides a comprehensive suite of IT and cybersecurity
           solutions designed to address the unique challenges faced by law

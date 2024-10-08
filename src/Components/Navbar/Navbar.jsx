@@ -129,12 +129,12 @@ const Navbar = () => {
                   <Link>Education</Link>
                   <Link>Telecommunications</Link>
                   <Link>Banking & Financial-Services</Link>
-                  <Link>Fintech</Link>
+                  <Link>Government</Link>
                   <Link to="/law-firm">Law-Firms</Link>
                 </ul>
               </div>
               <ul>
-                <Link>Managed Service Provider</Link>
+                <Link>Military</Link>
                 <Link>Procurement</Link>
                 <Link to="/healthcare">HealthCare</Link>
                 <Link to="/non-profit">Non-Profit</Link>
@@ -143,7 +143,7 @@ const Navbar = () => {
             </div>
           </div>
           <Link to="/whydevcent">
-            Why Noughtaegis <IoMdArrowDropdown className="nav-icon" />
+            Who We Are <IoMdArrowDropdown className="nav-icon" />
           </Link>
           <Link to="/career">
             Careers <IoMdArrowDropdown className="nav-icon" />

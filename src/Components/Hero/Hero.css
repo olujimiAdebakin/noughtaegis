@@ -1,16 +1,23 @@
 .hero{
-    margin-top: 130px;
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     align-items:center;
     background-color: #001a38;
      overflow: hidden;
       position: relative;
-      background-image: url(../../assets/public/footer-grid.svg);
+        background-image: 
+        linear-gradient(transparent 90%, #001a38), 
+        linear-gradient(to top, transparent 30%, #001a38), 
+        linear-gradient(to left, transparent 20%, #001a38), 
+        linear-gradient(to right, transparent 20%, #001a38),  
+        url(../../assets/woman-working-late-night-modern-office-her-face-focused-illuminated-by-laptop-screen-surrounded-by-city-lights-outside-window_95891-53767.jpg);
       background-size: cover;
       background-position: center;
       width: 100%;
-      margin-bottom: 40px;
+      height:300px;
+      margin-bottom: 20px;
+      padding: 80px;
 }
 
 .spotlight {

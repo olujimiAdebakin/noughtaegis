@@ -13,7 +13,7 @@ const WhyDevcent = () => {
 
       <div className="why-devcent-hero" data-aos="fade-up-right">
         <div className="why-devcent-hero-text">
-          <h2>Why NoughtAegis</h2>
+          <h2>About Us</h2>
           <p>
             At NoughtAegis, our goal is to leave your digital landscape more
             secure than we found it. We take a comprehensive approach, breaking
