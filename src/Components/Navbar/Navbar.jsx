@@ -130,7 +130,7 @@ const Navbar = () => {
                   <Link>Telecommunications</Link>
                   <Link>Banking & Financial-Services</Link>
                   <Link>Fintech</Link>
-                  <Link>Law-firms</Link>
+                  <Link to="/law-firm">Law-Firms</Link>
                 </ul>
               </div>
               <ul>

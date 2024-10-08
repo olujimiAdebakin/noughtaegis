@@ -7,6 +7,7 @@ import manufacture from "../../assets/manufacturing-hand.avif"
 import Marqee from '../../Reusable/Marqee/Marqee';
 import RedChart from "../../assets/graphic-lines-red.webp";
 import BlueChart from "../../assets/graphic-lines-blue.webp";
+import LawFirm from './LawFirm';
 
 
 
@@ -60,6 +61,7 @@ const ManuFacturing = () => {
           <img src={manufacture} alt="Manufacturing Cybersecurity" />
         </div>
       </div>
+      
 
       <div className="manufacturing-current-container" data-aos="fade-up-right">
         <h1>IT Challenges in the Manufacturing Industry</h1>
@@ -148,7 +150,7 @@ const ManuFacturing = () => {
               </p>
             </div>
             <div className="trend-image">
-              <img src={RedChart} alt="Industry 4.0 technologies" />
+              <img src={BlueChart} alt="Industry 4.0 technologies" />
             </div>
           </div>
     

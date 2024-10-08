@@ -1,0 +1,354 @@
+.law-container{
+    color: white;
+    margin-top: 60px;
+ background-image: 
+  linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+  url(../../assets/empowering.webp);
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+      height: 460px;
+    padding: 100px;
+}
+
+.law-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.law-text h2{
+    font-size: 30px;
+    width: 600px;
+    text-align: center;
+    color:#fd3842 ;
+}
+
+.law-text p{
+   font-size: 13px;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center; 
+    width: 700px;
+}
+
+.testi{
+    margin-top: 60px;
+}
+
+.law-current{
+    color: white;
+    display: flex;
+    gap: 3rem;
+    padding: 30px 150px;
+    align-items: center;
+}
+
+.law-current-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; 
+    width: 700px;
+}
+
+.law-current-text h2{
+    color: #fd3842;
+    font-size: 1.5rem;
+}
+
+.law-current-text p{
+     line-height: 25px;
+     font-weight: 600;
+}
+
+.law-current-image img{
+    border-radius: 12px;
+    width: 600px;
+    height: auto;
+}
+
+
+.law-firm-challenges-container{
+    color: white;
+    padding: 30px 150px;
+
+}
+
+.law-firm-challenges-container h1{
+    font-size:27px;
+    color: #fd3842;
+}
+
+
+.law-firm-challenges-box{
+    display: flex;
+    gap: 2rem;
+    margin-top: 40px;
+}
+
+
+.law-firm-challenges-card{
+    background-color: white;
+    color: black;
+    padding:1rem;
+    width: 500px;
+    height: 200px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+
+.law-firm-challenges-card h2{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.law-firm-challenges-card p{
+    line-height: 18px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.law-firm-role-content h1{
+    font-size: 27px;
+    color: #fd3842;
+}
+
+.law-firm-role-content p{
+    font-size: 13px;
+}
+
+
+.law-firm-role-content{
+    color: white;
+    padding: 30px 150px;
+}
+
+.law-firm-role-box{
+    display: flex;
+    gap: 2rem;
+    margin-top: 40px;
+
+}
+
+.law-firm-role-card{
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    width: 500px;
+    height: 220px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;;
+}
+
+.law-firm-role-card h2{
+    font-size: 20px;
+}
+
+.law-firm-role-card p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.trend{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 90px 150px;
+    gap: 1rem;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 2rem;
+}
+
+.trend h1{
+    color: #fd3842;
+    font-size: 30px;
+}
+
+.trend-image img{
+    width: 150px;
+    height: 150px;
+}
+.trend-card{
+    display: flex;
+    gap: 2rem;
+}
+.trend-box{
+    display: flex;
+    background: #333;
+    border-radius: 8px;
+    padding: 1.5rem;
+    gap: 1.5rem;
+}
+
+.trend-text h3{
+    font-size: 20px;
+}
+
+.trend-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+/* mobile */
+@media(max-width:500px){
+.law-container{
+    padding: 100px;
+    height: 480px;
+    object-fit: fill;
+}
+
+.law-text h2{
+    width: 380px;
+    font-size: 24px;
+}
+
+.law-text p{
+    width: 360px;
+}
+
+.testi{
+    margin-top: 20px;
+}
+.law-current{
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0px;
+}
+
+.law-current-text{
+    width: 350px;
+}
+
+.law-current-text h1{
+    font-size: 20px;
+}
+
+.law-current-image img{
+    width: 500px;
+
+}
+.law-container{
+    padding: 80px 20px;
+}
+
+.law-container h1{
+    font-size: 28px;
+}
+.law-firm-challenges-box{
+    flex-direction: column;
+    align-items: center;
+}
+
+.law-firm-challenges-card{
+    width: 350px;
+}
+.law-firm-role-content h1{
+    font-size: 22px;
+}
+
+.law-firm-role-content p{
+    padding-top: 1rem;
+}
+.law-firm-role-content{
+    padding: 20px;
+}
+
+
+.law-firm-role-box{
+    flex-direction: column;
+    align-items: center;
+}
+
+.law-firm-role-card{
+width: 350px;
+gap: 1rem;
+}
+
+.trend{
+    padding: 20px;
+}
+
+
+.trend-card{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.trend-image img{
+    width: 100%;
+}
+
+
+}
+
+/* tablet */
+@media(max-width:768px){
+.manufacturing-current{
+    flex-direction: column;
+    padding: 0px 20px;
+}
+
+.current-text h1{
+    font-size: 28px;
+}
+
+.manufacturing-current-card h2{
+    font-size: 17px;
+}
+
+.manufacturing-current-card p{
+    line-height: 18px;
+    
+}
+
+.manufacturing-current-image img{
+    width: 720px;
+
+}
+
+.manufacturing-current-container{
+    padding:40px  20px;
+}
+
+.manufacturing-current-container h1{
+    font-size: 28px;
+}
+
+.manufacturing-role-content{
+    padding: 35px 20px;
+}
+
+.manufacturing-role-card{
+    gap: 1rem;
+}
+
+.manufacturing-role-card h2{
+    font-size: 17px;
+}
+
+.manufacturing-role-content h1{
+    font-size: 26px;
+}
+
+.trend{
+    padding: 30px 20px;
+}
+
+.trend h1{
+    font-size: 26px;
+}
+
+.trend-card{
+    flex-direction: column;
+}
+}

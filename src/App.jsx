@@ -19,6 +19,7 @@ import TailoredSolutions from './Pages/Services-sub/TailoredSolutions';
 import HealthCare from './Pages/Industries-sub/HealthCare';
 import NonProfit from './Pages/Industries-sub/NonProfit';
 import ManuFacturing from './Pages/Industries-sub/ManuFacturing';
+import LawFirm from './Pages/Industries-sub/LawFirm';
 
 
 function App() {
@@ -66,6 +67,7 @@ function App() {
           <Route path="/healthcare" element={<HealthCare />} />
           <Route path="/non-profit" element={<NonProfit />} />
           <Route path="/manufacturing" element={<ManuFacturing />} />
+          <Route path="/law-firm" element={<LawFirm/>} />
         </Routes>
       </div>
     </>
