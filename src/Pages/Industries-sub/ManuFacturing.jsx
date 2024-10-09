@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./ManuFacturing.css"
 import Navbar from '../../Components/Navbar/Navbar';
 import Testimonial from '../../Components/Testimonial/Testimonial';
@@ -13,6 +13,29 @@ import LawFirm from './LawFirm';
 
 
 const ManuFacturing = () => {
+
+  
+    const [showMarquee, setShowMarquee] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY) {
+        // Scrolling down
+        setShowMarquee(false);
+      } else {
+        // Scrolling up
+        setShowMarquee(true);
+      }
+      setLastScrollY(currentScrollY);
+    };
+
+    useEffect(() => {
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, [lastScrollY]);
   return (
     <div>
       <Navbar />
@@ -36,8 +59,7 @@ const ManuFacturing = () => {
           </p>
         </div>
         <div className="manufacturing-marqee">
-          <Marqee />
-        </div>
+          {showMarquee && <Marqee />}</div>
       </div>
 
       <div className="testi">
@@ -154,7 +176,7 @@ const ManuFacturing = () => {
               <img src={BlueChart} alt="Industry 4.0 technologies" />
             </div>
           </div>
-    
+
           <div className="trend-box">
             <div className="trend-text">
               <h3>Data-Driven Manufacturing Decisions</h3>
@@ -168,7 +190,6 @@ const ManuFacturing = () => {
               <img src={RedChart} alt="Data-driven manufacturing" />
             </div>
           </div>
-         
         </div>
       </div>
 

@@ -1,18 +1,19 @@
-.healthcare-container{
+.military-container{
     background-image: 
-     linear-gradient(transparent 60%, #001a38), 
+    linear-gradient(transparent 80%, #001a38), 
         linear-gradient(to top, transparent 76%, #001a38), 
         linear-gradient(to left, transparent 40%, #001a38), 
         linear-gradient(to right, transparent 40%, #001a38), 
-  url(../../assets/cyberduo-healthcare-scaled.webp);
+  url(../../assets/commander-managing.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     color: white;
     margin-top: 60px;
-    height: 470px;
-    padding: 100px;
+    height:470px;
+    padding: 120px;
 }
+
 .care{
     color: #fd3842 ;
 }
@@ -27,6 +28,7 @@
     font-size: 33px;
     width: 700px;
     text-align: center;
+    color: #fd3842;
 }
 
 .healthcare-text p{
@@ -68,7 +70,8 @@
 }
 
 .challenge-container h1{
-    font-size: 35px;
+    font-size: 30px;
+    color: #fd3842;
 }
 
 
@@ -83,7 +86,7 @@
     color: black;
     padding: 1rem;
     width: 500px;
-    height: 180px;
+    height: 220px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -102,7 +105,8 @@
 }
 
 .health-role-content h1{
-    font-size: 33px;
+    font-size: 30px;
+    color: #fd3842;
 }
 
 .health-role-content p{
@@ -127,7 +131,7 @@
     color: black;
     padding: 1rem;
     width: 500px;
-    height: 180px;
+    height: 220px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -154,7 +158,7 @@
 }
 
 .trend-image img{
-    width: 300px;
+    width: 200px;
 }
 .trend-card{
     display: flex;
@@ -166,6 +170,7 @@
     border-radius: 8px;
     padding: 1.5rem;
     gap: 1.5rem;
+
 }
 
 .trend-text h3{
@@ -178,87 +183,14 @@
     gap: 1rem;
 }
 
-/* mobile */
-@media(max-width:500px){
-.healthcare-container{
-    padding: 140px;
-    height: 678px;
-    object-fit: fill;
+.trend-text p{
+    width: 200px;
+    font-size: 13px;
+    font-weight: 600;
 }
 
-.healthcare-text h2{
-    width: 380px;
-    font-size: 24px;
-}
 
-.healthcare-text p{
-    width: 360px;
-}
 
-.evolving{
-    flex-direction: column-reverse;
-    align-items: center;
-    /* padding: 0px 20px; */
-}
-
-.evolving-text h1{
-    font-size: 24px;
-}
-
-.evolving-image img{
-    width: 500px;
-
-}
-.challenge-container{
-    padding: 80px 20px;
-}
-
-.challenge-container h1{
-    font-size: 28px;
-}
-.challenge-box{
-    flex-direction: column;
-    align-items: center;
-}
-
-.challenge-card{
-    width: 350px;
-}
-.health-role-content h1{
-    font-size: 18px;
-}
-
-.health-role-content p{
-    padding-top: 1rem;
-}
-.health-role-content{
-    padding: 20px;
-}
-.health-role-box{
-    flex-direction: column;
-    align-items: center;
-}
-
-.health-role-card{
-width: 350px;
-gap: 1rem;
-}
-
-.trend{
-    padding: 20px;
-}
-
-.trend-box{
-   flex-direction: column;
-}
-.trend-card{
-    flex-direction: column;
-}
-
-.trend-image img{
-    width: 100%;
-}
-}
 /* tablet */
 @media(max-width:768px){
 .evolving{
@@ -304,7 +236,89 @@ gap: 1rem;
 }
 }
 
-/*  */
-@media(max-width:1440px){
 
+
+/* mobile */
+
+@media(max-width:500px){
+.military-container{
+    padding: 100px;
+    height: 470px;
+    margin-bottom: 2rem;
+  
+}
+
+.healthcare-text h2{
+    width: 380px;
+    font-size: 24px;
+}
+
+.healthcare-text p{
+    width: 360px;
+}
+
+.evolving{
+    flex-direction: column-reverse;
+    align-items: center;
+    /* padding: 0px 20px; */
+}
+
+.evolving-text h1{
+    font-size: 24px;
+}
+
+.evolving-image img{
+    width: 500px;
+
+}
+.challenge-container{
+    padding: 80px 20px;
+}
+
+.challenge-container h1{
+    font-size: 28px;
+}
+.challenge-box{
+    flex-direction: column;
+    align-items: center;
+}
+
+.challenge-card{
+    width: 350px;
+    height: 200px;
+}
+.health-role-content h1{
+    font-size: 18px;
+}
+
+.health-role-content p{
+    padding-top: 1rem;
+}
+.health-role-content{
+    padding: 20px;
+}
+.health-role-box{
+    flex-direction: column;
+    align-items: center;
+}
+
+.health-role-card{
+width: 350px;
+gap: 1rem;
+}
+
+.trend{
+    padding: 20px;
+}
+
+.trend-box{
+   flex-direction: column;
+}
+.trend-card{
+    flex-direction: column;
+}
+
+.trend-image img{
+    width: 100%;
+}
 }

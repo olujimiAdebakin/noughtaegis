@@ -75,8 +75,8 @@ const Hero = () => {
         <button>
           Get in Touch <IoIosArrowRoundForward style={{ fontSize: "23px" }} />
         </button>
-      
       </div>
+     
     </div>
   );
 };

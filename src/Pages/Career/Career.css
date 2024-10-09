@@ -14,24 +14,29 @@
 .career-hero {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-image: 
-    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-    url(../../assets/woman-sits.avif); 
+     linear-gradient(transparent 60%, #000000), 
+        linear-gradient(to top, transparent 60%, #000000), 
+        linear-gradient(to left, transparent 20%, #000000), 
+        linear-gradient(to right, transparent 40%, #000),url(../../assets/woman-sits.avif); 
   background-repeat: no-repeat;
   background-position:center;
   background-size: cover;
   height: 470px;
   margin-top:60px;
-  gap: 50px;
-  align-items:start;
+  gap:27px;
+  
    filter: blur(-1px);
    position: relative;
 }
 
 .career-hero h2 {
-  font-size: 2rem;
-  width: 500px;
-  color: #fff;
+  font-size: 1.9rem;
+  text-align: center;
+
+  width: 400px;
+  color: #fd3842;
 }
 
 .career-hero p {
@@ -40,6 +45,7 @@
   font-weight: 500;
   line-height: 25px;
   color: #fff;
+  text-align: center;
 }
 
 .why-join{

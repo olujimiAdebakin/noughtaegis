@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "./LawFirm.css"
 import Footer from '../../Components/Footer/Footer';
 import Marqee from '../../Reusable/Marqee/Marqee';
@@ -9,6 +9,30 @@ import BlueChart from "../../assets/graphic-lines-blue.webp";
 import lawCybersecurity from "../../assets/lawyer.jpg";
 
 const LawFirm = () => {
+
+  
+    const [showMarquee, setShowMarquee] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY) {
+        // Scrolling down
+        setShowMarquee(false);
+      } else {
+        // Scrolling up
+        setShowMarquee(true);
+      }
+      setLastScrollY(currentScrollY);
+    };
+
+    useEffect(() => {
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, [lastScrollY]);
+  
   return (
     <div>
       <Navbar />
@@ -28,7 +52,7 @@ const LawFirm = () => {
           </p>
         </div>
         <div className="law-marqee">
-          <Marqee />
+             {showMarquee && <Marqee />}
         </div>
       </div>
 

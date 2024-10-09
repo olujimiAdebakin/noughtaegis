@@ -5,14 +5,16 @@
         linear-gradient(transparent 60%, #001a38), 
         linear-gradient(to top, transparent 76%, #001a38), 
         linear-gradient(to left, transparent 40%, #001a38), 
-        linear-gradient(to right, transparent 60%, #001a38),  
-        url(../../assets/Packetlabs_Canadian_Penetration_Testing.avif);
+        linear-gradient(to right, transparent 30%, #001a38),  
+        url(../../assets/industrial-engineers-working-with-robotic-arms-performing-quality-control-maintenance-modern-car-factory_1103944-15317.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     position: relative;
     height: 460px;
     padding: 80px;
+    width: 100%;
+   
 }
 
 

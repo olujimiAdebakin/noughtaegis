@@ -2,15 +2,16 @@ import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import logo from "../../assets/nought.png";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { IoMdArrowDropdown } from "react-icons/io"; 
+import { IoMdArrowDropdown } from "react-icons/io";
 import { IoHomeOutline } from "react-icons/io5";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import cuberimg from "../../assets/cuberimg.jpg";
 import compsci from "../../assets/computsci.avif";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMoved, setIsMoved] = useState(false);
+  const location = useLocation(); // Get current location
 
   const handleToggle = () => {
     setMenuOpen(!menuOpen);
@@ -31,6 +32,9 @@ const Navbar = () => {
     };
   }, []);
 
+  // Function to check if a link is active
+  const isActive = (path) => location.pathname === path;
+
   return (
     <div>
       <nav
@@ -43,11 +47,16 @@ const Navbar = () => {
         </div>
 
         <div className={`nav-links ${menuOpen ? "active" : ""}`}>
-          <Link to="/">
+          <Link to="/" className={isActive("/") ? "active" : ""}>
             Home <IoHomeOutline style={{ color: "white" }} />
           </Link>
           <div className="dropdown">
-            <Link to="/solutions" className="dropdown-toggle">
+            <Link
+              to="/solutions"
+              className={`dropdown-toggle ${
+                isActive("/solutions") ? "active" : ""
+              }`}
+            >
               Services <IoMdArrowDropdown className="nav-icon" />
             </Link>
             <div className="dropdown-content">
@@ -57,14 +66,44 @@ const Navbar = () => {
                     Services <IoMdArrowDropdown className="nav-icon" />
                   </Link>
                   <ul>
-                    <Link to="/Cyber-awareness">
+                    <Link
+                      to="/Cyber-awareness"
+                      className={isActive("/Cyber-awareness") ? "active" : ""}
+                    >
                       CyberSecurity Awareness-Training
                     </Link>
-                    <Link to="/Cyber-services">CyberSecurity Services</Link>
-                    <Link to="/It-services">Managed IT Services</Link>
-                    <Link to="/tailored-solutions">Tailored Consulting</Link>
-                    <Link to="/it-strategy">IT Strategy</Link>
-                    <Link to="/proffessional-services">
+                    <Link
+                      to="/Cyber-services"
+                      className={isActive("/Cyber-services") ? "active" : ""}
+                    >
+                      CyberSecurity Services
+                    </Link>
+                    <Link
+                      to="/It-services"
+                      className={isActive("/It-services") ? "active" : ""}
+                    >
+                      Managed IT Services
+                    </Link>
+                    <Link
+                      to="/tailored-solutions"
+                      className={
+                        isActive("/tailored-solutions") ? "active" : ""
+                      }
+                    >
+                      Tailored Consulting
+                    </Link>
+                    <Link
+                      to="/it-strategy"
+                      className={isActive("/it-strategy") ? "active" : ""}
+                    >
+                      IT Strategy
+                    </Link>
+                    <Link
+                      to="/proffessional-services"
+                      className={
+                        isActive("/proffessional-services") ? "active" : ""
+                      }
+                    >
                       Professional Services
                     </Link>
                   </ul>
@@ -120,32 +159,73 @@ const Navbar = () => {
           </div>
 
           <div className="industries-drop-down">
-            <Link>
+            <Link className={isActive("/industries") ? "active" : ""}>
               Industries <IoMdArrowDropdown className="nav-icon" />
             </Link>
             <div className="dropdown-content-1">
               <div>
                 <ul>
-                  <Link>Education</Link>
-                  <Link>Telecommunications</Link>
-                  <Link>Banking & Financial-Services</Link>
-                  <Link>Government</Link>
-                  <Link to="/law-firm">Law-Firms</Link>
+                  <Link to="/education" className={isActive("/education") ? "active" : ""}>
+                    Education
+                  </Link>
+                  <Link
+                    className={isActive("/telecommunications") ? "active" : ""}
+                  >
+                    Telecommunications
+                  </Link>
+                  <Link
+                    className={
+                      isActive("/banking-financial-services") ? "active" : ""
+                    }
+                  >
+                    Banking & Financial-Services
+                  </Link>
+                  <Link className={isActive("/government") ? "active" : ""}>
+                    Government
+                  </Link>
+                  <Link
+                    to="/law-firm"
+                    className={isActive("/law-firm") ? "active" : ""}
+                  >
+                    Law-Firms
+                  </Link>
                 </ul>
               </div>
               <ul>
-                <Link>Military</Link>
-                <Link>Procurement</Link>
-                <Link to="/healthcare">HealthCare</Link>
-                <Link to="/non-profit">Non-Profit</Link>
-                <Link to="/manufacturing">Manufacturing</Link>
+                <Link to="/military" className={isActive("/military") ? "active" : ""}>
+                  Military
+                </Link>
+                <Link to="/procurement" className={isActive("/procurement") ? "active" : ""}>
+                  Procurement
+                </Link>
+                <Link
+                  to="/healthcare"
+                  className={isActive("/healthcare") ? "active" : ""}
+                >
+                  HealthCare
+                </Link>
+                <Link
+                  to="/non-profit"
+                  className={isActive("/non-profit") ? "active" : ""}
+                >
+                  Non-Profit
+                </Link>
+                <Link
+                  to="/manufacturing"
+                  className={isActive("/manufacturing") ? "active" : ""}
+                >
+                  Manufacturing
+                </Link>
               </ul>
             </div>
           </div>
-          <Link to="/whydevcent">
+          <Link
+            to="/whydevcent"
+            className={isActive("/whydevcent") ? "active" : ""}
+          >
             Who We Are <IoMdArrowDropdown className="nav-icon" />
           </Link>
-          <Link to="/career">
+          <Link to="/career" className={isActive("/career") ? "active" : ""}>
             Careers <IoMdArrowDropdown className="nav-icon" />
           </Link>
         </div>

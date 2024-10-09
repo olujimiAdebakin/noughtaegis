@@ -2,7 +2,7 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Home from './Components/Home/Home'
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Solution from './Pages/Solutions/Solution';
@@ -20,9 +20,14 @@ import HealthCare from './Pages/Industries-sub/HealthCare';
 import NonProfit from './Pages/Industries-sub/NonProfit';
 import ManuFacturing from './Pages/Industries-sub/ManuFacturing';
 import LawFirm from './Pages/Industries-sub/LawFirm';
+import Military from './Pages/Industries-sub/Military';
+import Marqee from './Reusable/Marqee/Marqee';
+import Procurement from './Pages/Industries-sub/Procurement';
+import Education from './Pages/Industries-sub/Education';
 
 
 function App() {
+
   
   useEffect(() => {
     AOS.init({
@@ -67,7 +72,10 @@ function App() {
           <Route path="/healthcare" element={<HealthCare />} />
           <Route path="/non-profit" element={<NonProfit />} />
           <Route path="/manufacturing" element={<ManuFacturing />} />
-          <Route path="/law-firm" element={<LawFirm/>} />
+          <Route path="/law-firm" element={<LawFirm />} />
+          <Route path="/military" element={<Military />} />
+          <Route path="/procurement" element={<Procurement />} />
+          <Route path="/education" element={<Education />} />
         </Routes>
       </div>
     </>

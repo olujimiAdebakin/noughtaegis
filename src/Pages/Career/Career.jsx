@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './Career.css'
 import Navbar from '../../Components/Navbar/Navbar'
 import Footer from '../../Components/Footer/Footer';
@@ -20,6 +20,28 @@ import whydevcent from '../../assets/whydevcent.webp';
 // import engineer from "../../assets/engineer.jpg";
 
 const Career = () => {
+
+    const [showMarquee, setShowMarquee] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY) {
+        // Scrolling down
+        setShowMarquee(false);
+      } else {
+        // Scrolling up
+        setShowMarquee(true);
+      }
+      setLastScrollY(currentScrollY);
+    };
+
+    useEffect(() => {
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, [lastScrollY]);
   return (
     <>
       <Navbar />
@@ -38,7 +60,7 @@ const Career = () => {
               learn, and succeed. Explore our open positions below and apply
               today
             </p>
-            <Marqee />
+            {showMarquee && <Marqee />}
           </div>
         </div>
         {/* <WaveAnimation /> */}

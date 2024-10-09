@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './nonprofit.css'
 import Navbar from '../../Components/Navbar/Navbar'
 import Testimonial from '../../Components/Testimonial/Testimonial';
@@ -6,8 +6,34 @@ import Landscape from '../../assets/nonP.avif'
 import RedChart from "../../assets/graphic-lines-red.webp";
 import BlueChart from "../../assets/graphic-lines-blue.webp";
 import Footer from '../../Components/Footer/Footer';
+import Marqee from '../../Reusable/Marqee/Marqee';
 
 const NonProfit = () => {
+
+  
+  
+    const [showMarquee, setShowMarquee] = useState(true);
+    const [lastScrollY, setLastScrollY] = useState(0);
+
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY > lastScrollY) {
+        // Scrolling down
+        setShowMarquee(false);
+      } else {
+        // Scrolling up
+        setShowMarquee(true);
+      }
+      setLastScrollY(currentScrollY);
+    };
+
+    useEffect(() => {
+      window.addEventListener("scroll", handleScroll);
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+      };
+    }, [lastScrollY]);
+  
   return (
     <div>
       <Navbar />
@@ -26,6 +52,7 @@ const NonProfit = () => {
             address the unique challenges faced by non-profit organizations.
           </p>
         </div>
+        {showMarquee && <Marqee />}
       </div>
 
       <div className="testi">
