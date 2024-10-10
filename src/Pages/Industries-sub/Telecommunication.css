@@ -1,0 +1,326 @@
+.telecom-container{
+    background-image: 
+    linear-gradient(transparent 70%, #001a38), 
+        linear-gradient(to top, transparent 76%, #001a38), 
+        linear-gradient(to left, transparent 40%, #001a38), 
+        linear-gradient(to right, transparent 30%, #001a38), 
+           linear-gradient(to bottom, transparent 30%, #001a38), 
+  url(../../assets/telecom.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    margin-top: 60px;
+    height:470px;
+    padding: 90px;
+}
+
+.care{
+    color: #fd3842 ;
+}
+.telecom-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.4rem;
+}
+
+.telecom-text h2{
+    font-size: 33px;
+    width: 700px;
+    text-align: center;
+    color: #fd3842;
+}
+
+.telecom-text p{
+    font-size: 13px;
+    font-weight: 600;
+    width: 600px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.telecom-evolving{
+    display: flex;
+    align-items: start;
+    gap: 2rem;
+    color: white;
+    padding: 30px 150px;
+}
+
+.telecom-evolving-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.telecom-evolving-text p{
+    line-height: 25px;
+}
+
+.telecom-evolving-image img{
+    border-radius: 12px;
+    width: 600px;
+    height:auto;
+
+}
+
+.telecom-challenge-container{
+    color: white;
+    padding: 30px 150px;
+
+}
+
+.challenge-container h1{
+    font-size: 30px;
+    color: #fd3842;
+}
+
+
+.telecom-challenge-box{
+    display: flex;
+    gap: 2rem;
+    margin-top: 40px;
+}
+
+.telecom-challenge-card{
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    width: 500px;
+    height: 220px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.telecom-challenge-card h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.telecom-challenge-card p{
+    line-height: 18px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.telecom-role-content h1{
+    font-size: 30px;
+    color: #fd3842;
+}
+
+.telecom-role-content p{
+    font-size: 13px;
+}
+
+
+.telecom-role-content{
+    color: white;
+    padding: 30px 150px;
+}
+
+.telecom-role-box{
+    display: flex;
+    gap: 2rem;
+    margin-top: 40px;
+
+}
+
+.telecom-role-card{
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    width: 500px;
+    height: 220px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;;
+}
+
+.telecom-role-card h2{
+    font-size: 22px;
+}
+
+.telecom-role-card p{
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.telecom-trend{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 90px 150px;
+    gap: 1rem;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 2rem;
+}
+
+.telecom-trend-image img{
+    width: 200px;
+}
+.telecom-trend-card{
+    display: flex;
+    gap: 2rem;
+}
+.telecom-trend-box{
+    display: flex;
+    background: #333;
+    border-radius: 8px;
+    padding: 1.5rem;
+    gap: 1.5rem;
+
+}
+
+.telecom-trend-text h3{
+    font-size: 24px;
+}
+
+.telecom-trend-text{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.telecom-trend-text p{
+    width: 200px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+
+/* tablet */
+@media(max-width:768px){
+.telecom-evolving{
+    flex-direction: column;
+    padding: 20px;
+}
+
+.telecom-evolving-text h1{
+    font-size: 28px;
+}
+
+.telecom-evolving-image img{
+    width: 720px;
+
+}
+
+.telecom-challenge-container{
+    padding: 20px;
+}
+
+.telecom-challenge-container h1{
+    font-size: 30px;
+}
+
+.telecom-role-content{
+    padding: 35px 20px;
+}
+
+.telecom-role-content h1{
+    font-size: 26px;
+}
+
+.telecom-trend{
+    padding: 30px 20px;
+}
+
+.telecom-trend h1{
+    font-size: 26px;
+}
+
+.telecom-trend-card{
+    flex-direction: column;
+}
+}
+
+
+
+/* mobile */
+
+@media(max-width:500px){
+.telecom-container{
+    padding: 100px;
+    height: 470px;
+    margin-bottom: 2rem;
+  
+}
+
+.telecom-text h2{
+    width: 380px;
+    font-size: 24px;
+}
+
+.telecom-text p{
+    width: 360px;
+}
+
+.telecom-evolving{
+    flex-direction: column-reverse;
+    align-items: center;
+    /* padding: 0px 20px; */
+}
+
+.telecom-evolving-text h1{
+    font-size: 24px;
+}
+
+.telecom-evolving-image img{
+    width: 500px;
+
+}
+.telecom-challenge-container{
+    padding: 80px 20px;
+}
+
+.telecom-challenge-container h1{
+    font-size: 28px;
+}
+.telecom-challenge-box{
+    flex-direction: column;
+    align-items: center;
+}
+
+.telecom-challenge-card{
+    width: 350px;
+    height: 200px;
+}
+.telecom-role-content h1{
+    font-size: 18px;
+}
+
+.telecom-role-content p{
+    padding-top: 1rem;
+}
+.telecom-role-content{
+    padding: 20px;
+}
+.telecom-role-box{
+    flex-direction: column;
+    align-items: center;
+}
+
+.telecom-role-card{
+width: 350px;
+gap: 1rem;
+}
+
+.telecom-trend{
+    padding: 20px;
+}
+
+.telecom-trend-box{
+   flex-direction: column;
+}
+.telecom-trend-card{
+    flex-direction: column;
+}
+
+.telecom-trend-image img{
+    width: 100%;
+}
+}

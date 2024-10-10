@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import "./Education.css";
+import "./Telecommunication.css";
 import Footer from "../../Components/Footer/Footer";
 import Testimonial from "../../Components/Testimonial/Testimonial";
 import Navbar from "../../Components/Navbar/Navbar";
 import Marqee from "../../Reusable/Marqee/Marqee";
 import RedChart from "../../assets/graphic-lines-red.webp";
 import BlueChart from "../../assets/graphic-lines-blue.webp";
-import procurement_cyber from "../../assets/portrait-young.avif";
+import telecom_image from "../../assets/teleecom.jpg";
 
 const Telecommunication = () => {
   const [showMarquee, setShowMarquee] = useState(true);
@@ -34,8 +34,8 @@ const Telecommunication = () => {
     <div>
       <Navbar />
 
-      <div className="education-container" data-aos="fade-up-right">
-        <div className="healthcare-text">
+      <div className="telecom-container" data-aos="fade-up-right">
+        <div className="telecom-text">
           <p>EFFICIENT TELECOMMUNICATION</p>
           <h2>
             Advanced <span className="procurement">Cybersecurity</span>{" "}
@@ -59,8 +59,8 @@ const Telecommunication = () => {
         <Testimonial />
       </div>
 
-      <div className="evolving" data-aos="fade-up-right">
-        <div className="evolving-text">
+      <div className="telecom-evolving" data-aos="fade-up-right">
+        <div className="telecom-evolving-text">
           <h1>Evolving Cybersecurity Landscape in Telecommunications</h1>
           <p>
             Telecommunication providers are rapidly adapting to an increasingly
@@ -71,20 +71,20 @@ const Telecommunication = () => {
             privacy concerns, and regulatory compliance.
           </p>
         </div>
-        <div className="evolving-image">
-          <img src={procurement_cyber} alt="Cybersecurity in Education" />
+        <div className="telecom-evolving-image">
+          <img src={telecom_image} alt="Cybersecurity in Telecommunication" />
         </div>
       </div>
 
-      <div className="challenge-container" data-aos="fade-up-right">
+      <div className="telecom-challenge-container" data-aos="fade-up-right">
         <h1>Cybersecurity Hurdles in Telecommunications</h1>
         <p>
           The primary hurdles in cybersecurity management within the
           telecommunications sector include:
         </p>
 
-        <div className="challenge-box">
-          <div className="challenge-card">
+        <div className="telecom-challenge-box">
+          <div className="telecom-challenge-card">
             <h2>Data Protection</h2>
             <p>
               Ensuring the security of sensitive student and faculty information
@@ -92,7 +92,7 @@ const Telecommunication = () => {
               challenging in a digital learning environment.
             </p>
           </div>
-          <div className="challenge-card">
+          <div className="telecom-challenge-card">
             <h2>Network Security</h2>
             <p>
               Maintaining secure networks to protect against cyber threats,
@@ -100,7 +100,7 @@ const Telecommunication = () => {
               institutions.
             </p>
           </div>
-          <div className="challenge-card">
+          <div className="telecom-challenge-card">
             <h2>Compliance with Regulations</h2>
             <p>
               Adhering to legal and regulatory requirements related to data
@@ -111,7 +111,7 @@ const Telecommunication = () => {
         </div>
       </div>
 
-      <div className="health-role-content" data-aos="fade-up-right">
+      <div className="telecom-role-content" data-aos="fade-up-right">
         <h1>
           Noughtaegis: Pioneering Next-Generation Cybersecurity Solutions for
           Telecommunications
@@ -123,8 +123,8 @@ const Telecommunication = () => {
           strategies:
         </p>
 
-        <div className="health-role-box">
-          <div className="health-role-card">
+        <div className="telecom-role-box">
+          <div className="telecom-role-card">
             <h2>Data Protection and Privacy</h2>
             <p>
               Implementing advanced encryption and access controls to safeguard
@@ -133,7 +133,7 @@ const Telecommunication = () => {
             </p>
           </div>
 
-          <div className="health-role-card">
+          <div className="telecom-role-card">
             <h2>Threat Detection and Response</h2>
             <p>
               Utilizing real-time monitoring and threat intelligence to detect
@@ -142,7 +142,7 @@ const Telecommunication = () => {
             </p>
           </div>
 
-          <div className="health-role-card">
+          <div className="telecom-role-card">
             <h2>Training and Awareness Programs</h2>
             <p>
               Providing comprehensive training for staff and students on
@@ -153,15 +153,15 @@ const Telecommunication = () => {
         </div>
       </div>
 
-      <div className="trend" data-aos="fade-up-right">
+      <div className="telecom-trend" data-aos="fade-up-right">
         <h1>Telecommunication Trends</h1>
         <p>
           The telecommunication sector is experiencing significant evolution,
           including:
         </p>
-        <div className="trend-card">
-          <div className="trend-box">
-            <div className="trend-text">
+        <div className="telecom-trend-card">
+          <div className="telecom-trend-box">
+            <div className="telecom-trend-text">
               <h3>Digital Communication Platforms</h3>
               <p>
                 With the rise of digital communication, over 70% of
@@ -169,12 +169,12 @@ const Telecommunication = () => {
                 platforms to enhance connectivity and customer experiences.
               </p>
             </div>
-            <div className="trend-image">
+            <div className="telecom-trend-image">
               <img src={RedChart} alt="Digital Learning" />
             </div>
           </div>
-          <div className="trend-box">
-            <div className="trend-text">
+          <div className="telecom-trend-box">
+            <div className="telecom-trend-text">
               <h3>Cybersecurity in Telecommunications</h3>
               <p>
                 As cyber threats continue to rise, nearly 60% of
@@ -183,8 +183,8 @@ const Telecommunication = () => {
                 compliance with industry regulations.
               </p>
             </div>
-            <div className="trend-image">
-              <img src={BlueChart} alt="Cybersecurity in Education" />
+            <div className="telecomtrend-image">
+              <img src={BlueChart} alt="Cybersecurity in Telecommunication" />
             </div>
           </div>
         </div>

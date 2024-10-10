@@ -35,19 +35,19 @@ const Government = () => {
       <Navbar />
       <div className="education-container" data-aos="fade-up-right">
         <div className="healthcare-text">
-          <p>EFFICIENT EDUCATION</p>
+          <p>Comprehensive IT Solutions for Government Agencies</p>
           <h2>
-            Advanced <span className="procurement">Cybersecurity</span>{" "}
-            Solutions for Education
+            Enhancing Government Operations with Advanced IT & Cybersecurity
           </h2>
           <p>
-            Our expertise in cybersecurity ensures that educational institutions
-            can procure the right technology and services securely and
-            effectively. We provide robust frameworks for protecting sensitive
-            data, such as student records and financial information, during the
-            procurement process. By implementing strong cybersecurity measures,
-            educational entities can mitigate risks associated with data
-            breaches and ensure compliance with regulations.
+            In the public sector, safeguarding sensitive citizen data, ensuring
+            efficient administration, and maintaining confidentiality are
+            critical to operational success. Government agencies rely on secure,
+            cutting-edge technology to manage information, ensure regulatory
+            compliance, and protect confidential records. At NoughtAegis, we
+            specialize in delivering tailored IT and cybersecurity solutions
+            that streamline government operations, mitigate risks, and protect
+            public institutions from evolving cyber threats.
           </p>
         </div>
         <div className="education-marqee">{showMarquee && <Marqee />}</div>
@@ -59,14 +59,14 @@ const Government = () => {
 
       <div className="evolving" data-aos="fade-up-right">
         <div className="evolving-text">
-          <h1>Evolving Cybersecurity Landscape in Education</h1>
+          <h1>Evolving Cybersecurity Landscape in Government</h1>
           <p>
-            Educational institutions are rapidly adapting to a digital-first
+            Government agencies are rapidly adapting to a digital-first
             environment, employing advanced cybersecurity strategies and
-            technologies to protect sensitive information. As schools and
-            universities increasingly rely on digital tools, they face
-            significant challenges related to data breaches and compliance with
-            regulations.
+            technologies to protect sensitive information. As public
+            institutions increasingly rely on digital systems, they face
+            significant challenges related to data breaches, privacy concerns,
+            and regulatory compliance.
           </p>
         </div>
         <div className="evolving-image">
@@ -75,8 +75,11 @@ const Government = () => {
       </div>
 
       <div className="challenge-container" data-aos="fade-up-right">
-        <h1>Cybersecurity Hurdles in Education</h1>
-        <p>The primary hurdles in cybersecurity management include:</p>
+        <h1>Cybersecurity Hurdles in Government</h1>
+        <p>
+          The primary hurdles in cybersecurity management within government
+          agencies include:
+        </p>
 
         <div className="challenge-box">
           <div className="challenge-card">
@@ -107,15 +110,11 @@ const Government = () => {
       </div>
 
       <div className="health-role-content" data-aos="fade-up-right">
-        <h1>
-          Noughtaegis: Pioneering Next-Generation Cybersecurity Solutions for
-          Education
-        </h1>
+        <h1>Noughtaegis in Empowering Government Agencies:</h1>
         <p>
-          Noughtaegis delivers comprehensive cybersecurity innovations that
-          address the unique challenges educational institutions face in today's
-          digital landscape. Our approach integrates the following key
-          strategies:
+          Noughtaegis provides a comprehensive suite of IT and cybersecurity
+          solutions designed to address the unique challenges faced by
+          government agencies:
         </p>
 
         <div className="health-role-box">
@@ -149,18 +148,19 @@ const Government = () => {
       </div>
 
       <div className="trend" data-aos="fade-up-right">
-        <h1>Education Trends</h1>
+        <h1>Government Trends</h1>
         <p>
-          The education sector is experiencing significant evolution, including:
+          Significant trends shaping government agencies' strategies include:
         </p>
+
         <div className="trend-card">
           <div className="trend-box">
             <div className="trend-text">
-              <h3>Digital Learning Platforms</h3>
+              <h3>Digital Governance Platforms</h3>
               <p>
-                With the rise of online education, over 70% of educational
-                institutions are adopting digital learning tools to enhance
-                teaching and learning experiences.
+                With the rise of digital transformation, over 70% of government
+                agencies are adopting digital platforms to enhance public
+                service delivery and operational efficiency.
               </p>
             </div>
             <div className="trend-image">
@@ -169,10 +169,10 @@ const Government = () => {
           </div>
           <div className="trend-box">
             <div className="trend-text">
-              <h3>Cybersecurity in Education</h3>
+              <h3>Cybersecurity in Government</h3>
               <p>
-                As cyber threats increase, nearly 60% of educational leaders are
-                prioritizing cybersecurity measures to protect sensitive student
+                As cyber threats increase, nearly 60% of government leaders are
+                prioritizing cybersecurity measures to protect sensitive citizen
                 data and ensure compliance with data protection regulations.
               </p>
             </div>

@@ -36,19 +36,19 @@ const BankFinance = () => {
 
       <div className="education-container" data-aos="fade-up-right">
         <div className="healthcare-text">
-          <p>EFFICIENT EDUCATION</p>
+          <p>EFFICIENT BANKING</p>
           <h2>
             Advanced <span className="procurement">Cybersecurity</span>{" "}
-            Solutions for Education
+            Solutions for Banking and Financial Services
           </h2>
           <p>
-            Our expertise in cybersecurity ensures that educational institutions
+            Our expertise in cybersecurity ensures that financial institutions
             can procure the right technology and services securely and
-            effectively. We provide robust frameworks for protecting sensitive
-            data, such as student records and financial information, during the
-            procurement process. By implementing strong cybersecurity measures,
-            educational entities can mitigate risks associated with data
-            breaches and ensure compliance with regulations.
+            efficiently. We provide robust frameworks for protecting sensitive
+            data, such as customer information and transaction records, during
+            the procurement process. By implementing strong cybersecurity
+            measures, financial entities can mitigate risks associated with data
+            breaches and ensure compliance with industry regulations.
           </p>
         </div>
         <div className="education-marqee">{showMarquee && <Marqee />}</div>
@@ -60,14 +60,16 @@ const BankFinance = () => {
 
       <div className="evolving" data-aos="fade-up-right">
         <div className="evolving-text">
-          <h1>Evolving Cybersecurity Landscape in Education</h1>
+          <h1>
+            Evolving Cybersecurity Landscape in Banking and Financial Services
+          </h1>
           <p>
-            Educational institutions are rapidly adapting to a digital-first
+            Financial institutions are rapidly adapting to a digital-first
             environment, employing advanced cybersecurity strategies and
-            technologies to protect sensitive information. As schools and
-            universities increasingly rely on digital tools, they face
-            significant challenges related to data breaches and compliance with
-            regulations.
+            technologies to protect sensitive information. As banks and
+            financial services increasingly rely on digital tools, they face
+            significant challenges related to data breaches, fraud prevention,
+            and compliance with regulations.
           </p>
         </div>
         <div className="evolving-image">
@@ -76,23 +78,26 @@ const BankFinance = () => {
       </div>
 
       <div className="challenge-container" data-aos="fade-up-right">
-        <h1>Cybersecurity Hurdles in Education</h1>
-        <p>The primary hurdles in cybersecurity management include:</p>
+        <h1>Cybersecurity Hurdles in Banking and Financial Services</h1>
+        <p>
+          The primary hurdles in cybersecurity management within the financial
+          services sector include:
+        </p>
 
         <div className="challenge-box">
           <div className="challenge-card">
             <h2>Data Protection</h2>
             <p>
-              Ensuring the security of sensitive student and faculty information
-              against breaches and unauthorized access, which is increasingly
-              challenging in a digital learning environment.
+              Ensuring the security of sensitive customer and financial
+              information against breaches and unauthorized access, which is
+              increasingly challenging in a digital banking environment.
             </p>
           </div>
           <div className="challenge-card">
             <h2>Network Security</h2>
             <p>
               Maintaining secure networks to protect against cyber threats,
-              including ransomware and phishing attacks that target educational
+              including ransomware and phishing attacks that target financial
               institutions.
             </p>
           </div>
@@ -101,7 +106,7 @@ const BankFinance = () => {
             <p>
               Adhering to legal and regulatory requirements related to data
               privacy and cybersecurity, which can vary across jurisdictions and
-              impact how institutions manage data.
+              impact how financial institutions manage customer data.
             </p>
           </div>
         </div>
@@ -110,11 +115,11 @@ const BankFinance = () => {
       <div className="health-role-content" data-aos="fade-up-right">
         <h1>
           Noughtaegis: Pioneering Next-Generation Cybersecurity Solutions for
-          Education
+          Banking and Financial Services
         </h1>
         <p>
           Noughtaegis delivers comprehensive cybersecurity innovations that
-          address the unique challenges educational institutions face in today's
+          address the unique challenges financial institutions face in today's
           digital landscape. Our approach integrates the following key
           strategies:
         </p>
@@ -124,8 +129,8 @@ const BankFinance = () => {
             <h2>Data Protection and Privacy</h2>
             <p>
               Implementing advanced encryption and access controls to safeguard
-              sensitive student and faculty information, ensuring compliance
-              with regulations like FERPA.
+              sensitive customer and financial information, ensuring compliance
+              with regulations like GDPR and PCI DSS.
             </p>
           </div>
 
@@ -134,34 +139,36 @@ const BankFinance = () => {
             <p>
               Utilizing real-time monitoring and threat intelligence to detect
               and respond to cyber threats swiftly, minimizing potential impacts
-              on learning environments.
+              on financial operations.
             </p>
           </div>
 
           <div className="health-role-card">
             <h2>Training and Awareness Programs</h2>
             <p>
-              Providing comprehensive training for staff and students on
-              cybersecurity best practices, empowering them to recognize and
-              mitigate risks effectively.
+              Providing comprehensive training for employees on cybersecurity
+              best practices, empowering them to recognize and mitigate risks
+              effectively.
             </p>
           </div>
         </div>
       </div>
 
       <div className="trend" data-aos="fade-up-right">
-        <h1>Education Trends</h1>
+        <h1>Financial Services Trends</h1>
         <p>
-          The education sector is experiencing significant evolution, including:
+          The banking and financial services sector is experiencing significant
+          evolution, including:
         </p>
+
         <div className="trend-card">
           <div className="trend-box">
             <div className="trend-text">
-              <h3>Digital Learning Platforms</h3>
+              <h3>Digital Banking Platforms</h3>
               <p>
-                With the rise of online education, over 70% of educational
-                institutions are adopting digital learning tools to enhance
-                teaching and learning experiences.
+                With the rise of digital banking, over 70% of financial
+                institutions are adopting digital tools to enhance customer
+                service and operational efficiency.
               </p>
             </div>
             <div className="trend-image">
@@ -170,11 +177,12 @@ const BankFinance = () => {
           </div>
           <div className="trend-box">
             <div className="trend-text">
-              <h3>Cybersecurity in Education</h3>
+              <h3>Cybersecurity in Financial Services</h3>
               <p>
-                As cyber threats increase, nearly 60% of educational leaders are
-                prioritizing cybersecurity measures to protect sensitive student
-                data and ensure compliance with data protection regulations.
+                As cyber threats increase, nearly 60% of financial leaders are
+                prioritizing cybersecurity measures to protect sensitive
+                customer data and ensure compliance with data protection
+                regulations.
               </p>
             </div>
             <div className="trend-image">
