@@ -248,7 +248,7 @@ transition: border-bottom 0.3s ease;
    }
 }
 
-@media (max-width:420px){
+@media (max-width:393px){
   
    .services{
     display: block;
@@ -264,9 +264,8 @@ transition: border-bottom 0.3s ease;
    }
 
    .services h2{
-    padding-left:40px;
+    padding-left:50px;
     margin-bottom: 20px;
-    
    }
 
       .service-below{
@@ -289,9 +288,13 @@ transition: border-bottom 0.3s ease;
     width: 90%;
    }
    .service-below{
-    display: inline;
-    /* padding: 30px; */
+    flex-direction: column;
+    align-items: start;
 
+   }
+
+   .services-below-header{
+    align-items: start;
    }
 
    .service-below-flex{

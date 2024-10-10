@@ -21,7 +21,7 @@ body{
     font-family: "Poppins", sans-serif;
     background:#001a38;
     user-select: none;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 
