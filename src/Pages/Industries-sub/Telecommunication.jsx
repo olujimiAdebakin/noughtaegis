@@ -156,16 +156,17 @@ const Telecommunication = () => {
       <div className="trend" data-aos="fade-up-right">
         <h1>Telecommunication Trends</h1>
         <p>
-          The telecommunication sector is experiencing significant evolution, including:
+          The telecommunication sector is experiencing significant evolution,
+          including:
         </p>
         <div className="trend-card">
           <div className="trend-box">
             <div className="trend-text">
-              <h3>Digital Learning Platforms</h3>
+              <h3>Digital Communication Platforms</h3>
               <p>
-                With the rise of online education, over 70% of educational
-                institutions are adopting digital learning tools to enhance
-                teaching and learning experiences.
+                With the rise of digital communication, over 70% of
+                telecommunication providers are adopting advanced communication
+                platforms to enhance connectivity and customer experiences.
               </p>
             </div>
             <div className="trend-image">
@@ -174,11 +175,12 @@ const Telecommunication = () => {
           </div>
           <div className="trend-box">
             <div className="trend-text">
-              <h3>Cybersecurity in Education</h3>
+              <h3>Cybersecurity in Telecommunications</h3>
               <p>
-                As cyber threats increase, nearly 60% of educational leaders are
-                prioritizing cybersecurity measures to protect sensitive student
-                data and ensure compliance with data protection regulations.
+                As cyber threats continue to rise, nearly 60% of
+                telecommunication leaders are prioritizing cybersecurity
+                measures to protect sensitive customer data and ensure
+                compliance with industry regulations.
               </p>
             </div>
             <div className="trend-image">
