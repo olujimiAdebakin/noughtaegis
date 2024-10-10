@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import "./Education.css";
+import "./Government.css";
 import Footer from "../../Components/Footer/Footer";
 import Testimonial from "../../Components/Testimonial/Testimonial";
 import Navbar from "../../Components/Navbar/Navbar";
 import Marqee from "../../Reusable/Marqee/Marqee";
 import RedChart from "../../assets/graphic-lines-red.webp";
 import BlueChart from "../../assets/graphic-lines-blue.webp";
-import procurement_cyber from "../../assets/portrait-young.avif";
+import procurement_cyber from "../../assets/govt.jpg";
 
 const Government = () => {
   const [showMarquee, setShowMarquee] = useState(true);
@@ -33,8 +33,8 @@ const Government = () => {
   return (
     <div>
       <Navbar />
-      <div className="education-container" data-aos="fade-up-right">
-        <div className="healthcare-text">
+      <div className="government-container" data-aos="fade-up-right">
+        <div className="govt-text">
           <p>Comprehensive IT Solutions for Government Agencies</p>
           <h2>
             Enhancing Government Operations with Advanced IT & Cybersecurity
@@ -57,8 +57,8 @@ const Government = () => {
         <Testimonial />
       </div>
 
-      <div className="evolving" data-aos="fade-up-right">
-        <div className="evolving-text">
+      <div className="govt-evolving" data-aos="fade-up-right">
+        <div className="govt-evolving-text">
           <h1>Evolving Cybersecurity Landscape in Government</h1>
           <p>
             Government agencies are rapidly adapting to a digital-first
@@ -69,20 +69,20 @@ const Government = () => {
             and regulatory compliance.
           </p>
         </div>
-        <div className="evolving-image">
+        <div className="govt evolving-image">
           <img src={procurement_cyber} alt="Cybersecurity in Education" />
         </div>
       </div>
 
-      <div className="challenge-container" data-aos="fade-up-right">
+      <div className="govt-challenge-container" data-aos="fade-up-right">
         <h1>Cybersecurity Hurdles in Government</h1>
         <p>
           The primary hurdles in cybersecurity management within government
           agencies include:
         </p>
 
-        <div className="challenge-box">
-          <div className="challenge-card">
+        <div className="govt-challenge-box">
+          <div className="govt-challenge-card">
             <h2>Data Protection</h2>
             <p>
               Ensuring the security of sensitive student and faculty information
@@ -90,7 +90,7 @@ const Government = () => {
               challenging in a digital learning environment.
             </p>
           </div>
-          <div className="challenge-card">
+          <div className="govt-challenge-card">
             <h2>Network Security</h2>
             <p>
               Maintaining secure networks to protect against cyber threats,
@@ -98,7 +98,7 @@ const Government = () => {
               institutions.
             </p>
           </div>
-          <div className="challenge-card">
+          <div className="govt-challenge-card">
             <h2>Compliance with Regulations</h2>
             <p>
               Adhering to legal and regulatory requirements related to data
@@ -109,7 +109,7 @@ const Government = () => {
         </div>
       </div>
 
-      <div className="health-role-content" data-aos="fade-up-right">
+      <div className="govt-role-content" data-aos="fade-up-right">
         <h1>Noughtaegis in Empowering Government Agencies:</h1>
         <p>
           Noughtaegis provides a comprehensive suite of IT and cybersecurity
@@ -117,8 +117,8 @@ const Government = () => {
           government agencies:
         </p>
 
-        <div className="health-role-box">
-          <div className="health-role-card">
+        <div className="govt-role-box">
+          <div className="govt-role-card">
             <h2>Data Protection and Privacy</h2>
             <p>
               Implementing advanced encryption and access controls to safeguard
@@ -127,7 +127,7 @@ const Government = () => {
             </p>
           </div>
 
-          <div className="health-role-card">
+          <div className="govt-role-card">
             <h2>Threat Detection and Response</h2>
             <p>
               Utilizing real-time monitoring and threat intelligence to detect
@@ -136,7 +136,7 @@ const Government = () => {
             </p>
           </div>
 
-          <div className="health-role-card">
+          <div className="govt-role-card">
             <h2>Training and Awareness Programs</h2>
             <p>
               Providing comprehensive training for staff and students on
@@ -147,15 +147,15 @@ const Government = () => {
         </div>
       </div>
 
-      <div className="trend" data-aos="fade-up-right">
+      <div className="govt-trend" data-aos="fade-up-right">
         <h1>Government Trends</h1>
         <p>
           Significant trends shaping government agencies' strategies include:
         </p>
 
-        <div className="trend-card">
-          <div className="trend-box">
-            <div className="trend-text">
+        <div className="govt-trend-card">
+          <div className="govt-trend-box">
+            <div className="govt-trend-text">
               <h3>Digital Governance Platforms</h3>
               <p>
                 With the rise of digital transformation, over 70% of government
@@ -163,12 +163,12 @@ const Government = () => {
                 service delivery and operational efficiency.
               </p>
             </div>
-            <div className="trend-image">
+            <div className="govt-trend-image">
               <img src={RedChart} alt="Digital Learning" />
             </div>
           </div>
-          <div className="trend-box">
-            <div className="trend-text">
+          <div className="govt-trend-box">
+            <div className="govt-trend-text">
               <h3>Cybersecurity in Government</h3>
               <p>
                 As cyber threats increase, nearly 60% of government leaders are
@@ -176,7 +176,7 @@ const Government = () => {
                 data and ensure compliance with data protection regulations.
               </p>
             </div>
-            <div className="trend-image">
+            <div className="govt-trend-image">
               <img src={BlueChart} alt="Cybersecurity in Education" />
             </div>
           </div>

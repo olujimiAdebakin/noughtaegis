@@ -1,11 +1,11 @@
-.education-container{
+.government-container{
     background-image: 
     linear-gradient(transparent 70%, #001a38), 
         linear-gradient(to top, transparent 76%, #001a38), 
         linear-gradient(to left, transparent 40%, #001a38), 
         linear-gradient(to right, transparent 30%, #001a38), 
            linear-gradient(to bottom, transparent 30%, #001a38), 
-  url(../../assets/young-student.avif);
+  url(../../assets/government.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -19,21 +19,21 @@
 .care{
     color: #fd3842 ;
 }
-.healthcare-text{
+.govt-text{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.4rem;
 }
 
-.healthcare-text h2{
+.govt-text h2{
     font-size: 33px;
     width: 700px;
     text-align: center;
     color: #fd3842;
 }
 
-.healthcare-text p{
+.govt-text p{
     font-size: 13px;
     font-weight: 600;
     width: 600px;
@@ -41,7 +41,7 @@
     text-align: center;
 }
 
-.evolving{
+.govt-evolving{
     display: flex;
     align-items: start;
     gap: 2rem;
@@ -49,42 +49,42 @@
     padding: 30px 150px;
 }
 
-.evolving-text{
+.govt-evolving-text{
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.evolving-text p{
+.govt-evolving-text p{
     line-height: 25px;
 }
 
-.evolving-image img{
+.govt-evolving-image img{
     border-radius: 12px;
     width: 600px;
     height:auto;
 
 }
 
-.challenge-container{
+.govt-challenge-container{
     color: white;
     padding: 30px 150px;
 
 }
 
-.challenge-container h1{
+.govt-challenge-container h1{
     font-size: 30px;
     color: #fd3842;
 }
 
 
-.challenge-box{
+.govt-challenge-box{
     display: flex;
     gap: 2rem;
     margin-top: 40px;
 }
 
-.challenge-card{
+.govt-challenge-card{
     background-color: white;
     color: black;
     padding: 1rem;
@@ -96,40 +96,40 @@
     gap: 1rem;
 }
 
-.challenge-card h2{
+.govt-challenge-card h2{
     font-size: 24px;
     font-weight: 700;
 }
 
-.challenge-card p{
+.govt-challenge-card p{
     line-height: 18px;
     font-size: 1rem;
     font-weight: 600;
 }
 
-.health-role-content h1{
+.govt-role-content h1{
     font-size: 30px;
     color: #fd3842;
 }
 
-.health-role-content p{
+.govt-role-content p{
     font-size: 13px;
 }
 
 
-.health-role-content{
+.govt-role-content{
     color: white;
     padding: 30px 150px;
 }
 
-.health-role-box{
+.govt-role-box{
     display: flex;
     gap: 2rem;
     margin-top: 40px;
 
 }
 
-.health-role-card{
+.govt-role-card{
     background-color: white;
     color: black;
     padding: 1rem;
@@ -141,16 +141,16 @@
     gap: 2rem;;
 }
 
-.health-role-card h2{
+.govt-role-card h2{
     font-size: 22px;
 }
 
-.health-role-card p{
+.govt-role-card p{
     font-size: 1rem;
     font-weight: 600;
 }
 
-.trend{
+.govt-trend{
     display: flex;
     flex-direction: column;
     color: white;
@@ -160,14 +160,14 @@
     padding-bottom: 2rem;
 }
 
-.trend-image img{
+.govt-trend-image img{
     width: 200px;
 }
-.trend-card{
+.govt-trend-card{
     display: flex;
     gap: 2rem;
 }
-.trend-box{
+.govt-trend-box{
     display: flex;
     background: #333;
     border-radius: 8px;
@@ -176,17 +176,17 @@
 
 }
 
-.trend-text h3{
+.govt-trend-text h3{
     font-size: 24px;
 }
 
-.trend-text{
+.govt-trend-text{
     display: flex;
     flex-direction: column;
     gap: 1rem;
 }
 
-.trend-text p{
+.govt-trend-text p{
     width: 200px;
     font-size: 13px;
     font-weight: 600;
@@ -196,45 +196,45 @@
 
 /* tablet */
 @media(max-width:768px){
-.evolving{
+.govt-evolving{
     flex-direction: column;
     padding: 20px;
 }
 
-.evolving-text h1{
+.govt-evolving-text h1{
     font-size: 28px;
 }
 
-.evolving-image img{
+.govt-evolving-image img{
     width: 720px;
 
 }
 
-.challenge-container{
+.govt-challenge-container{
     padding: 20px;
 }
 
-.challenge-container h1{
+.govt-challenge-container h1{
     font-size: 30px;
 }
 
-.health-role-content{
+.govt-role-content{
     padding: 35px 20px;
 }
 
-.health-role-content h1{
+.govt-role-content h1{
     font-size: 26px;
 }
 
-.trend{
+.govt-trend{
     padding: 30px 20px;
 }
 
-.trend h1{
+.govt-trend h1{
     font-size: 26px;
 }
 
-.trend-card{
+.govt-trend-card{
     flex-direction: column;
 }
 }
@@ -244,84 +244,84 @@
 /* mobile */
 
 @media(max-width:500px){
-.education-container{
+.government-container{
     padding: 100px;
     height: 470px;
     margin-bottom: 2rem;
   
 }
 
-.healthcare-text h2{
+.govt-text h2{
     width: 380px;
     font-size: 24px;
 }
 
-.healthcare-text p{
+.govt-text p{
     width: 360px;
 }
 
-.evolving{
+.govt-evolving{
     flex-direction: column-reverse;
     align-items: center;
     /* padding: 0px 20px; */
 }
 
-.evolving-text h1{
+.govt-evolving-text h1{
     font-size: 24px;
 }
 
-.evolving-image img{
+.govt-evolving-image img{
     width: 500px;
 
 }
-.challenge-container{
+.govt-challenge-container{
     padding: 80px 20px;
 }
 
-.challenge-container h1{
+.govt-challenge-container h1{
     font-size: 28px;
 }
-.challenge-box{
+.govt-challenge-box{
     flex-direction: column;
     align-items: center;
 }
 
-.challenge-card{
+.govt-challenge-card{
     width: 350px;
     height: 200px;
 }
-.health-role-content h1{
+.govt-role-content h1{
     font-size: 18px;
 }
 
-.health-role-content p{
+.govt-role-content p{
     padding-top: 1rem;
 }
-.health-role-content{
+.govt-role-content{
     padding: 20px;
 }
-.health-role-box{
+.govt-role-box{
     flex-direction: column;
     align-items: center;
 }
 
-.health-role-card{
+.govt-role-card{
 width: 350px;
 gap: 1rem;
 }
 
-.trend{
+.govt-trend{
     padding: 20px;
 }
 
-.trend-box{
+.govt-trend-box{
    flex-direction: column;
 }
-.trend-card{
+.govt-trend-card{
     flex-direction: column;
 }
 
-.trend-image img{
+.govt-trend-image img{
     width: 100%;
 }
 }
