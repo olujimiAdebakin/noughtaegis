@@ -27,6 +27,7 @@ import Education from './Pages/Industries-sub/Education';
 import Telecommunication from './Pages/Industries-sub/Telecommunication';
 import Government from './Pages/Industries-sub/Government';
 import BankFinance from './Pages/Industries-sub/BankFinance';
+import ScrollTop from './ScrollTop';
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
   return (
     <>
       <div className="app">
+        <ScrollTop/>
         {/* <meta name="color-scheme" content="dark" /> */}
 
         <Routes>
