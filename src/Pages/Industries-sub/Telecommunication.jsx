@@ -36,19 +36,20 @@ const Telecommunication = () => {
 
       <div className="education-container" data-aos="fade-up-right">
         <div className="healthcare-text">
-          <p>EFFICIENT EDUCATION</p>
+          <p>EFFICIENT TELECOMMUNICATION</p>
           <h2>
             Advanced <span className="procurement">Cybersecurity</span>{" "}
-            Solutions for Education
+            Solutions for Telecommunications
           </h2>
           <p>
-            Our expertise in cybersecurity ensures that educational institutions
-            can procure the right technology and services securely and
-            effectively. We provide robust frameworks for protecting sensitive
-            data, such as student records and financial information, during the
-            procurement process. By implementing strong cybersecurity measures,
-            educational entities can mitigate risks associated with data
-            breaches and ensure compliance with regulations.
+            Our expertise in cybersecurity ensures that telecommunication
+            providers can procure the right technology and services securely and
+            effectively. We offer comprehensive frameworks to protect critical
+            data, including customer information and communication logs,
+            throughout the procurement process. By implementing strong
+            cybersecurity measures, telecom companies can mitigate risks
+            associated with data breaches and ensure compliance with industry
+            regulations.
           </p>
         </div>
         <div className="education-marqee">{showMarquee && <Marqee />}</div>
@@ -60,14 +61,14 @@ const Telecommunication = () => {
 
       <div className="evolving" data-aos="fade-up-right">
         <div className="evolving-text">
-          <h1>Evolving Cybersecurity Landscape in Education</h1>
+          <h1>Evolving Cybersecurity Landscape in Telecommunications</h1>
           <p>
-            Educational institutions are rapidly adapting to a digital-first
-            environment, employing advanced cybersecurity strategies and
-            technologies to protect sensitive information. As schools and
-            universities increasingly rely on digital tools, they face
-            significant challenges related to data breaches and compliance with
-            regulations.
+            Telecommunication providers are rapidly adapting to an increasingly
+            digital environment, employing advanced cybersecurity strategies and
+            technologies to safeguard critical data. As networks and
+            communication systems become more reliant on digital infrastructure,
+            the industry faces growing challenges related to data breaches,
+            privacy concerns, and regulatory compliance.
           </p>
         </div>
         <div className="evolving-image">
@@ -76,8 +77,11 @@ const Telecommunication = () => {
       </div>
 
       <div className="challenge-container" data-aos="fade-up-right">
-        <h1>Cybersecurity Hurdles in Education</h1>
-        <p>The primary hurdles in cybersecurity management include:</p>
+        <h1>Cybersecurity Hurdles in Telecommunications</h1>
+        <p>
+          The primary hurdles in cybersecurity management within the
+          telecommunications sector include:
+        </p>
 
         <div className="challenge-box">
           <div className="challenge-card">
@@ -110,12 +114,12 @@ const Telecommunication = () => {
       <div className="health-role-content" data-aos="fade-up-right">
         <h1>
           Noughtaegis: Pioneering Next-Generation Cybersecurity Solutions for
-          Education
+          Telecommunications
         </h1>
         <p>
           Noughtaegis delivers comprehensive cybersecurity innovations that
-          address the unique challenges educational institutions face in today's
-          digital landscape. Our approach integrates the following key
+          address the unique challenges telecommunication providers face in
+          today’s digital landscape. Our approach integrates the following key
           strategies:
         </p>
 
@@ -150,9 +154,9 @@ const Telecommunication = () => {
       </div>
 
       <div className="trend" data-aos="fade-up-right">
-        <h1>Education Trends</h1>
+        <h1>Telecommunication Trends</h1>
         <p>
-          The education sector is experiencing significant evolution, including:
+          The telecommunication sector is experiencing significant evolution, including:
         </p>
         <div className="trend-card">
           <div className="trend-box">
