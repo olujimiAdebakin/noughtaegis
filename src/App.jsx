@@ -24,6 +24,9 @@ import Military from './Pages/Industries-sub/Military';
 import Marqee from './Reusable/Marqee/Marqee';
 import Procurement from './Pages/Industries-sub/Procurement';
 import Education from './Pages/Industries-sub/Education';
+import Telecommunication from './Pages/Industries-sub/Telecommunication';
+import Government from './Pages/Industries-sub/Government';
+import BankFinance from './Pages/Industries-sub/BankFinance';
 
 
 function App() {
@@ -76,6 +79,9 @@ function App() {
           <Route path="/military" element={<Military />} />
           <Route path="/procurement" element={<Procurement />} />
           <Route path="/education" element={<Education />} />
+          <Route path="/telecommunications" element={<Telecommunication />} />
+          <Route path="/government" element={<Government />} />
+          <Route path="/banking-financial-services" element={<BankFinance />} />
         </Routes>
       </div>
     </>

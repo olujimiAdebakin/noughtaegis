@@ -168,19 +168,19 @@ const Navbar = () => {
                   <Link to="/education" className={isActive("/education") ? "active" : ""}>
                     Education
                   </Link>
-                  <Link
+                  <Link to="/telecommunications"
                     className={isActive("/telecommunications") ? "active" : ""}
                   >
                     Telecommunications
                   </Link>
-                  <Link
+                  <Link to="/banking-financial-services"
                     className={
                       isActive("/banking-financial-services") ? "active" : ""
                     }
                   >
                     Banking & Financial-Services
                   </Link>
-                  <Link className={isActive("/government") ? "active" : ""}>
+                  <Link to="/government" className={isActive("/government") ? "active" : ""}>
                     Government
                   </Link>
                   <Link
