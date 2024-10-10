@@ -267,6 +267,7 @@ font-size: 13px;
   z-index: 0;
   transform: translateX(-39%);
   transition: all 500ms ease-in-out;
+  
 }
 
 /* .dropdown-content-1 a{
@@ -379,7 +380,7 @@ font-size: 13px;
     display: none !important;
   }
 }
-@media (max-width:500px){
+@media (max-width:420px){
    
      nav{
         padding: 10px 20px;

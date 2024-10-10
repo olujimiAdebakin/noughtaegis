@@ -193,7 +193,7 @@ font-weight: 700;
 
 }
 
-@media (max-width: 500px) {
+@media (max-width:420px) {
 
 
   .testimonial{
@@ -204,12 +204,13 @@ font-weight: 700;
     display: flex;
     flex-direction: column;
     align-items: start;
+    overflow: auto;
   }
 
   .testimonial-card{
     height: 200px;
     width:100%;
-    padding: 14px;
+    padding:23px;
     /* margin-right: 250px; */
   }
 
@@ -225,7 +226,7 @@ font-weight: 700;
    }
   .testimonial-wrapper{
   margin: 0%;
-    width:1100px;
+    width:1300px;
   }
 
   .header-left{
