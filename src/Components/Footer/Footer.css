@@ -109,7 +109,7 @@ footer{
 .footer-bottom p, h4{
     color: #fff;
     font-size: 13px;
-    font-weight: bold;
+    font-weight:400;
 }
 
 .footer-privacy{

@@ -1,10 +1,10 @@
 .military-container{
     background-image: 
-    linear-gradient(transparent 80%, #001a38), 
-        linear-gradient(to top, transparent 76%, #001a38), 
-        linear-gradient(to left, transparent 40%, #001a38), 
-        linear-gradient(to right, transparent 40%, #001a38), 
-  url(../../assets/commander-managing.jpg);
+    linear-gradient(transparent 50%, #000000), 
+        linear-gradient(to top, transparent 76%, #000000), 
+        linear-gradient(to left, transparent 40%, #000000), 
+        linear-gradient(to right, transparent 40%, #000000), 
+  url(../../assets/army.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

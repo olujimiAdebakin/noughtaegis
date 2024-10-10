@@ -4,15 +4,16 @@
     align-items: center;
     gap: 15px;
     margin-top: 70px;
-    background-image:      linear-gradient(transparent 60%, #001a38), 
+    background-image:      linear-gradient(transparent 60%, #000c38), 
         linear-gradient(to top, transparent 30%, #001a38), 
-        linear-gradient(to left, transparent 20%, #001a38), 
-        linear-gradient(to right, transparent 40%, #001a38),url(../../assets/image.png);
+        linear-gradient(to left, transparent 20%, #000000), 
+        linear-gradient(to right, transparent 40%, #000000),url(../../assets/image.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width:100%;
     padding: 100px 60px;
+   
 }
 
 .why-devcent-hero-text{
