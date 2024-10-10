@@ -197,16 +197,16 @@
 
 }
 
-@media (max-width:420px) {
+@media (max-width:425px) {
       .hero{
-        /* align-items: center; */
-        margin-bottom: 50px;
+        margin-bottom: 70px;
         flex-direction: column;
-        align-items: center !important;
-        margin-left: 0px !important;
+        align-items: center;
         height:400px;
-        /* align-items: center; */
-        /* padding-left: 40px; */
+        width: 100%;
+        padding: 10px 30px;
+        gap: 30px;
+        
     }
 
     /* .hero h1{
@@ -217,7 +217,8 @@
 
     .hero-design{
         gap: 3px;
-        align-items: center !important;
+        align-items: center;
+
     }
 
    .hero-optimize span,.hero-flex span{
@@ -245,14 +246,14 @@
 
     .hero-paragraph p{
         font-size: 15px;
-        width: 100px;
+        width:280px;
         line-height: 25px;
-        width: 250px;
         text-align: center
     }
 
     .flex-hero{
-      padding-left: ;
+      justify-content: center;
+      padding: 0px 45px;
     }
 
     .flex-hero button{

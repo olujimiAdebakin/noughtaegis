@@ -165,22 +165,30 @@ const Navbar = () => {
             <div className="dropdown-content-1">
               <div>
                 <ul>
-                  <Link to="/education" className={isActive("/education") ? "active" : ""}>
+                  <Link
+                    to="/education"
+                    className={isActive("/education") ? "active" : ""}
+                  >
                     Education
                   </Link>
-                  <Link to="/telecommunications"
+                  <Link
+                    to="/telecommunications"
                     className={isActive("/telecommunications") ? "active" : ""}
                   >
                     Telecommunications
                   </Link>
-                  <Link to="/banking-financial-services"
+                  <Link
+                    to="/banking-financial-services"
                     className={
                       isActive("/banking-financial-services") ? "active" : ""
                     }
                   >
                     Banking & Financial-Services
                   </Link>
-                  <Link to="/government" className={isActive("/government") ? "active" : ""}>
+                  <Link
+                    to="/government"
+                    className={isActive("/government") ? "active" : ""}
+                  >
                     Government
                   </Link>
                   <Link
@@ -192,10 +200,16 @@ const Navbar = () => {
                 </ul>
               </div>
               <ul>
-                <Link to="/military" className={isActive("/military") ? "active" : ""}>
+                <Link
+                  to="/military"
+                  className={isActive("/military") ? "active" : ""}
+                >
                   Military
                 </Link>
-                <Link to="/procurement" className={isActive("/procurement") ? "active" : ""}>
+                <Link
+                  to="/procurement"
+                  className={isActive("/procurement") ? "active" : ""}
+                >
                   Procurement
                 </Link>
                 <Link
@@ -235,7 +249,6 @@ const Navbar = () => {
             <button>Contact Us</button>
           </Link>
         </div>
-
         <div className="nav-toggle" onClick={handleToggle}>
           <GiHamburgerMenu />
         </div>
