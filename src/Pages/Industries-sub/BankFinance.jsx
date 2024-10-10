@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
-import "./Education.css";
+import "./BankFinance.css";
 import Footer from "../../Components/Footer/Footer";
 import Testimonial from "../../Components/Testimonial/Testimonial";
 import Navbar from "../../Components/Navbar/Navbar";
 import Marqee from "../../Reusable/Marqee/Marqee";
 import RedChart from "../../assets/graphic-lines-red.webp";
 import BlueChart from "../../assets/graphic-lines-blue.webp";
-import procurement_cyber from "../../assets/portrait-young.avif";
+import procurement_cyber from "../../assets/finance.avif";
 const BankFinance = () => {
     
         const [showMarquee, setShowMarquee] = useState(true);
@@ -34,8 +34,8 @@ const BankFinance = () => {
     <div>
       <Navbar />
 
-      <div className="education-container" data-aos="fade-up-right">
-        <div className="healthcare-text">
+      <div className="banking-container" data-aos="fade-up-right">
+        <div className="banking-text">
           <p>EFFICIENT BANKING</p>
           <h2>
             Advanced <span className="procurement">Cybersecurity</span>{" "}
@@ -58,8 +58,8 @@ const BankFinance = () => {
         <Testimonial />
       </div>
 
-      <div className="evolving" data-aos="fade-up-right">
-        <div className="evolving-text">
+      <div className="bank-evolving" data-aos="fade-up-right">
+        <div className="bank-evolving-text">
           <h1>
             Evolving Cybersecurity Landscape in Banking and Financial Services
           </h1>
@@ -72,20 +72,20 @@ const BankFinance = () => {
             and compliance with regulations.
           </p>
         </div>
-        <div className="evolving-image">
+        <div className="bank-evolving-image">
           <img src={procurement_cyber} alt="Cybersecurity in Education" />
         </div>
       </div>
 
-      <div className="challenge-container" data-aos="fade-up-right">
+      <div className="bank-challenge-container" data-aos="fade-up-right">
         <h1>Cybersecurity Hurdles in Banking and Financial Services</h1>
         <p>
           The primary hurdles in cybersecurity management within the financial
           services sector include:
         </p>
 
-        <div className="challenge-box">
-          <div className="challenge-card">
+        <div className="bank-challenge-box">
+          <div className="bank-challenge-card">
             <h2>Data Protection</h2>
             <p>
               Ensuring the security of sensitive customer and financial
@@ -93,7 +93,7 @@ const BankFinance = () => {
               increasingly challenging in a digital banking environment.
             </p>
           </div>
-          <div className="challenge-card">
+          <div className="bank-challenge-card">
             <h2>Network Security</h2>
             <p>
               Maintaining secure networks to protect against cyber threats,
@@ -101,7 +101,7 @@ const BankFinance = () => {
               institutions.
             </p>
           </div>
-          <div className="challenge-card">
+          <div className="bank-challenge-card">
             <h2>Compliance with Regulations</h2>
             <p>
               Adhering to legal and regulatory requirements related to data
@@ -112,7 +112,7 @@ const BankFinance = () => {
         </div>
       </div>
 
-      <div className="health-role-content" data-aos="fade-up-right">
+      <div className="bank-role-content" data-aos="fade-up-right">
         <h1>
           Noughtaegis: Pioneering Next-Generation Cybersecurity Solutions for
           Banking and Financial Services
@@ -124,8 +124,8 @@ const BankFinance = () => {
           strategies:
         </p>
 
-        <div className="health-role-box">
-          <div className="health-role-card">
+        <div className="bank-role-box">
+          <div className="bank-role-card">
             <h2>Data Protection and Privacy</h2>
             <p>
               Implementing advanced encryption and access controls to safeguard
@@ -134,7 +134,7 @@ const BankFinance = () => {
             </p>
           </div>
 
-          <div className="health-role-card">
+          <div className="bank-role-card">
             <h2>Threat Detection and Response</h2>
             <p>
               Utilizing real-time monitoring and threat intelligence to detect
@@ -143,7 +143,7 @@ const BankFinance = () => {
             </p>
           </div>
 
-          <div className="health-role-card">
+          <div className="bank-role-card">
             <h2>Training and Awareness Programs</h2>
             <p>
               Providing comprehensive training for employees on cybersecurity
@@ -154,16 +154,16 @@ const BankFinance = () => {
         </div>
       </div>
 
-      <div className="trend" data-aos="fade-up-right">
+      <div className="bank-trend" data-aos="fade-up-right">
         <h1>Financial Services Trends</h1>
         <p>
           The banking and financial services sector is experiencing significant
           evolution, including:
         </p>
 
-        <div className="trend-card">
-          <div className="trend-box">
-            <div className="trend-text">
+        <div className="bank-trend-card">
+          <div className="bank-trend-box">
+            <div className="bank-trend-text">
               <h3>Digital Banking Platforms</h3>
               <p>
                 With the rise of digital banking, over 70% of financial
@@ -171,12 +171,12 @@ const BankFinance = () => {
                 service and operational efficiency.
               </p>
             </div>
-            <div className="trend-image">
+            <div className="bank-trend-image">
               <img src={RedChart} alt="Digital Learning" />
             </div>
           </div>
-          <div className="trend-box">
-            <div className="trend-text">
+          <div className="bank-trend-box">
+            <div className="bank-trend-text">
               <h3>Cybersecurity in Financial Services</h3>
               <p>
                 As cyber threats increase, nearly 60% of financial leaders are
@@ -185,7 +185,7 @@ const BankFinance = () => {
                 regulations.
               </p>
             </div>
-            <div className="trend-image">
+            <div className="bank-trend-image">
               <img src={BlueChart} alt="Cybersecurity in Education" />
             </div>
           </div>
