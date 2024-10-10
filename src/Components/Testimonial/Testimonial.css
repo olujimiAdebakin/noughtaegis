@@ -193,7 +193,7 @@ font-weight: 700;
 
 }
 
-@media (max-width:425px) {
+@media (max-width:393px) {
 
 
   .testimonial{
@@ -225,7 +225,7 @@ font-weight: 700;
    }
   .testimonial-wrapper{
   margin: 0%;
-  padding: 10px;
+  padding:10px 10px;
     width:1000px;
   }
 

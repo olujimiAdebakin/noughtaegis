@@ -379,11 +379,13 @@ font-size: 13px;
     display: none !important;
   }
 }
-@media (max-width: 425px) {
+@media (max-width:393px) {
 
   nav{
-   padding: 10px 50px;
-   justify-content: space-between;
+   /* padding: 10px 10px; */
+   gap: 70px;
+   /* justify-content: space-between; */
+  
   }
     .nav-links, .nav-end {
         display: none; 
