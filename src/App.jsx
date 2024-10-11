@@ -28,9 +28,13 @@ import Telecommunication from './Pages/Industries-sub/Telecommunication';
 import Government from './Pages/Industries-sub/Government';
 import BankFinance from './Pages/Industries-sub/BankFinance';
 import ScrollTop from './ScrollTop';
+import Preloader from './Reusable/Preloader';
 
 
 function App() {
+
+  
+      const [loading, setLoading] = useState(true);
 
   
   useEffect(() => {
@@ -42,11 +46,19 @@ function App() {
     }); 
   }, []);
 
+      useEffect(() => {
+        // Simulate loading time
+        const timer = setTimeout(() => {
+          setLoading(false);
+        }, 3000); 
+        return () => clearTimeout(timer); 
+      }, []);
+
   return (
     <>
+      {loading && <Preloader />}
       <div className="app">
-        <ScrollTop/>
-        {/* <meta name="color-scheme" content="dark" /> */}
+        <ScrollTop />
 
         <Routes>
           <Route path="/" element={<Home />} />

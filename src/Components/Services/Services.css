@@ -234,8 +234,8 @@ transition: border-bottom 0.3s ease;
    }
 
 .services-ul li{
-    width: 60%;
-    white-space: nowrap;
+    width: 100%;
+    /* white-space: nowrap; */
     font-size: 13px;
    }
 
@@ -307,6 +307,7 @@ transition: border-bottom 0.3s ease;
 
   .services-ul li{
     font-size: 10px;
+   
    }
 
    .service-left,.service-right{
@@ -345,12 +346,4 @@ transition: border-bottom 0.3s ease;
     font-size: 18px;
   }
 
-   .services-ul{
-    width: 100%;
-   }
-
-  .services-ul li{
-    width:100%;
-    white-space: wrap;
-  }
 }
