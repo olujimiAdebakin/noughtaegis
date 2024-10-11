@@ -379,13 +379,14 @@ font-size: 13px;
     display: none !important;
   }
 }
-@media (max-width:400px) {
+@media (max-width:420px) {
 
   nav{
-  display: flex;
-  gap:270px;
+  position:relative;
   width: 100%;
-  padding:20px 50px;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
 
   }
 
