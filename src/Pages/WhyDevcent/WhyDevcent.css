@@ -236,8 +236,7 @@
 }
 }
 
-/* Media query for devices with width 500px and below */
-@media (max-width: 500px) {
+@media (max-width: 420px) {
     .why-devcent-hero {
         margin-top: 80px;
         align-items: start;
@@ -280,6 +279,15 @@
     .purpose-left p {
         font-size: 11px;
         line-height: 25px;
+        text-align: center;
+    }
+
+    .career-purpose-right{
+        align-items: center;
+    }
+
+    .career-purpose-right p{
+        text-align: center;
     }
 
     .purpose-right p {
@@ -289,8 +297,35 @@
 
     
 .career-purpose img{
-    width: 300px;
+    width: 100%;
     height: auto;
 }
 
+}
+
+@media (max-width:360px) {
+    .why-devcent-hero-text p{
+        width: 300px;
+    }
+
+    .why-devcent-hero{
+        margin-top: 0;
+        padding: 20px 30px;
+    }
+
+    .purpose-left p{
+        text-align: start;
+        
+    }
+
+     .career-purpose-right{
+        padding: 10px 0px;
+        align-items: center;
+        width: 100%;
+     }
+
+
+    .career-purpose-right p{
+        width: 300px;
+    }
 }

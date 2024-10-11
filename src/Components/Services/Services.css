@@ -248,7 +248,7 @@ transition: border-bottom 0.3s ease;
    }
 }
 
-@media (max-width:400px){
+@media (max-width:420px){
   
    .services{
     display: block;
@@ -338,4 +338,19 @@ transition: border-bottom 0.3s ease;
     margin-top: 40px;
     padding: 8px;
    }
+}
+
+@media (max-width:360px) {
+  .services-below-header h2{
+    font-size: 18px;
+  }
+
+   .services-ul{
+    width: 100%;
+   }
+
+  .services-ul li{
+    width:100%;
+    white-space: wrap;
+  }
 }

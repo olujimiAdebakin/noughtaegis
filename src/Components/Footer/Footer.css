@@ -108,8 +108,8 @@ footer{
 
 .footer-bottom p, h4{
     color: #fff;
-    font-size: 13px;
-    font-weight:400;
+    font-size: 12px;
+    font-weight:500;
 }
 
 .footer-privacy{
@@ -196,7 +196,7 @@ footer{
 }
 }
 
-@media  (max-width: 500px) {
+@media  (max-width: 420px) {
     footer{
         margin-top: 20px;
         height: 100%;

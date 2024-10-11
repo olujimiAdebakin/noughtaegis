@@ -193,7 +193,7 @@ font-weight: 700;
 
 }
 
-@media (max-width:400px) {
+@media (max-width:420px) {
 
 
   .testimonial{
@@ -204,6 +204,7 @@ font-weight: 700;
     padding: 0px 15px;
     flex-direction: column;
     align-items: start;
+    overflow: hidden;
 
   }
 
@@ -226,7 +227,7 @@ font-weight: 700;
   .testimonial-wrapper{
   margin: 0%;
   padding:10px;
-    width:1150px;
+    width:1200px;
   }
 
   .header-left{
@@ -244,6 +245,20 @@ font-weight: 700;
 .swiper-button-next{
   font-size: 20px !important;
 }
+
+}
+
+@media (max-width:360px) {
+    .testimonial-wrapper{
+  margin: 0%;
+  padding:10px;
+    width:1030px;
+  }
+
+    .header-left{
+    padding-left:100px;
+    /* padding-right:9px; */
+  }
 
 }
 

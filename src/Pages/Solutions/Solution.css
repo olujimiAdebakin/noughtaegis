@@ -276,7 +276,10 @@ font-size: 14px;
         align-items: start;
         /* margin-left: 20px; */
         padding: 25px;
-        margin-top: 60px;
+        /* margin-top: 60px; */
+        /* position: absolute; */
+        top: 0;
+        bottom: 0;
     }
 
    
@@ -331,7 +334,7 @@ font-size: 14px;
   flex-direction: column;
   align-items: start;
   margin-top: 80px;
-  padding: 30px 25px;
+  padding: 30px 15px;
 }
 
 .industries-roles h2{
@@ -341,7 +344,7 @@ font-size: 14px;
 }
 
 .industries-roles-flex{
-  gap: 10px;
+  gap: 20px;
 }
 
 .partner-flex{
@@ -354,17 +357,20 @@ font-size: 14px;
 
 }
 
-@media (max-width: 500px) {
-      .hero{
-        align-items: start;
-        margin-left: 20px;
-        margin-top: 100px;
+@media (max-width:420px) {
+      .solution-hero{
+        /* align-items: start; */
+        padding: 10px 35px;
+        margin-top: 0;
+        
+       
     }
 
 
 
     .solution-hero-design{
         gap: 4px;
+        align-items: center;
     }
 
    .solution-hero-optimize span,.solution-hero-flex span{
@@ -394,6 +400,7 @@ font-size: 14px;
         font-size: 15px;
         width: 350px;
         line-height: 25px;
+        text-align: center;
     }
 
     .solution-flex-hero button{
@@ -408,13 +415,28 @@ font-size: 14px;
    font-size: 10px;
   
 }
+.industries-roles{
+  align-items: center;
+}
 
+.industries-roles h2{
+  padding: 0;
+}
+
+.industries-left h3, .industries-right h3{
+  font-size: 12px;
+}
+
+.industries-roles-flex{
+  gap: 20px;
+  align-items: center;
+}
 .partner-flex img{
   width: 300px;
 }
 
 .partner-flex{
-  align-items: start;
+  align-items: center;
   padding: auto 25px;
 }
 
@@ -427,4 +449,7 @@ font-size: 14px;
 }
 }
 
+@media (max-width:420px) {
+  
+}
 

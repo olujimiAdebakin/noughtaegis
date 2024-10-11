@@ -353,7 +353,7 @@ font-size: 13px;
     }
     .nav-links.active{
         z-index: 40;
-        margin-top: 100px;
+        margin-top: 140px;
     }
 
     .nav-links.active a, .nav-end.active a {
@@ -384,9 +384,9 @@ font-size: 13px;
   nav{
   position:relative;
   width: 100%;
-  left: 0;
-  right: 0;
   justify-content: space-between;
+  padding: 10px 30px;
+  
 
   }
 
@@ -431,7 +431,14 @@ font-size: 13px;
     .nav-end.active a, .nav-links.active a:hover {
         color: #fd3842;
     }
+
+ 
 }
 
+@media (max-width:360px) {
+  nav{
+    padding: 10px 40px;
+  }
+}
 
 

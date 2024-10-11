@@ -317,10 +317,11 @@ font-size: 2rem;
 }
 
 /* Media Query for screen width 500px and below */
-@media (max-width: 500px) {
+@media (max-width:420px) {
   .career-hero {
     padding: 12px 40px;
     height:470px;
+    margin-top: 0;
   }
   
   .career-hero h2{
@@ -331,7 +332,7 @@ font-size: 2rem;
 
   .career-hero p {
     font-size: 13px;
-    width:330px;
+    width:350px;
   }
 
     .why-join-header{
@@ -361,7 +362,7 @@ font-size: 2rem;
   }
   
   .our-values-card {
-    width: 300px;
+    width: 370px;
     height: 400px;
   }
 
@@ -398,10 +399,19 @@ text-align: center;
     padding-bottom: 10px;
     gap: 30px;
   }
+
+  .why-devcent img{
+    width: 100%;
+  }
   
   .why-devcent h2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
+
+   .why-devcent-right{
+    width: 100%;
+    align-items: center;
+   }
 
   .our-values-content{
     flex-direction: column;
@@ -414,3 +424,40 @@ text-align: center;
   }
 }
 
+@media (max-width:360px) {
+
+  .career-hero h2{
+    font-size: 20px;
+    width: 300px;
+  }
+   .career-hero p {
+    font-size: 13px;
+    width:300px;
+  }
+
+  .why-join-header p{
+    width: 300px;
+  }
+
+  .who-we-aree-header h2{
+    font-size: 15px;
+  }
+
+  .our-values-header h2{
+    font-size: 15px;
+  }
+
+  .our-values-card{
+    width: 320px;
+  }
+
+  .why-devcent{
+    align-items: center;
+    width: 100%;
+  }
+
+  .why-devcent-right p{
+    width: 300px;
+    text-align: center;
+  }
+}

@@ -98,23 +98,29 @@
 }
 
 
-@media (max-width:500px){
+@media (max-width:420px){
     .serve{
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 20px;
         padding: 20px 25px;
-        overflow: visible;
+        overflow: hidden;
         height: fit-content;
     }
 
     .serve-left-link{
         gap: 13px;
+        margin-top: 2rem;
     }
+     .serve-left h3{
+        white-space: nowrap;
+        font-size: 25px;
+     }
 
     .serve-left-link a{
-        width: 170px;
+        width: 140px;
+        font-size: 13px;
     }
 
     .serve-left button{
@@ -123,6 +129,6 @@
     }
 
     .serve-right img{
-        width: 330px;
+        width:100%;
     }
 }
