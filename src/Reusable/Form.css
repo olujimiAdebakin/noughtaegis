@@ -1,0 +1,188 @@
+.contacts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.contacts-left{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.get-in-touch{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contacts-desc{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contacts-desc h2{
+    color: #fd3842;
+    font-size: 30px;
+}
+
+.contacts-desc p{
+    color: #000000;
+    font-size: 15px;
+    font-weight: 600;
+    width: 300px;
+}
+
+.contacts-email{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contacts-email p{
+    color: #000000;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.contacts-text p{
+    color: #000000;
+    font-size: 15px;
+    font-weight: 600;
+    width: 340px;
+}
+
+
+.contacts-right{
+    background-color: #001a38;
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    border-radius: 12px;
+}
+.contacts-input{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 30px;
+    column-gap: 40px;
+}
+
+.contacts-input input{
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.contacts-select div{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contacts-select label{
+    color:#fff;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.contacts-select select{
+    background: inherit;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: #001a38;
+    color: grey;
+    padding: 12px;
+}
+
+.contacts-checkbox h3{
+    color: #fff;
+    font-size: 15px;
+}
+
+.contacts-checkbox{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.contacts-checkbox-down{
+display: flex;
+flex-direction: column;
+gap: 13px;
+}
+
+.contacts-checkbox-flex{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contacts-checkbox-flex h3{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.contacts-checkbox-flex input{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    background-color: #fff;
+}
+
+.contacts-checkbox-flex input:checked{
+    background-color:inherit;
+}
+
+.contacts-textarea{
+    width: 100%;
+}
+
+.contacts-textarea h2{
+    color: #fff;
+    font-size: 15px;
+}
+
+.text-area{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.text-area label{
+color: #fff;
+font-size: 13px;
+}
+
+.text-area textarea{
+    width:500px;
+    background: inherit;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+    resize: none;
+    color: #fff;
+}
+
+.contacts-submit{
+    display: flex;
+    justify-content:center;
+}
+
+.contacts-submit button{
+    background-color: #fd3842;
+    color: #fff;
+    width:100%;
+    height: 34px;
+    border-radius: 13px;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+}

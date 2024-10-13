@@ -219,7 +219,7 @@ font-weight: 700;
    }
 
    .testimonial-card p{
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     width:270px;
     line-height: 23px;
@@ -227,7 +227,7 @@ font-weight: 700;
   .testimonial-wrapper{
   margin: 0%;
   padding:10px;
-    width:1200px;
+    width:1180px;
   }
 
   .header-left{
@@ -252,7 +252,7 @@ font-weight: 700;
     .testimonial-wrapper{
   margin: 0%;
   padding:10px;
-    width:1030px;
+    width:1000px;
   }
 
     .header-left{

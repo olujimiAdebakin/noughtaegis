@@ -1,23 +1,24 @@
-/* Preloader.css */
+
 .preloader {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #00274f; 
+    background-color:#00274f;
+    z-index: 9999;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .loader {
-    border: 8px solid #fd3842; /* Light gray */
-    border-top: 8px solid #fff; /* Blue */
+    border: 8px solid #fd3842; 
+    border-top: 8px solid #fff; 
     border-radius: 50%;
     width: 60px;
     height: 60px;
-    animation: spin 1s linear infinite;
+    animation: spin 3s linear infinite;
 }
 
 @keyframes spin {

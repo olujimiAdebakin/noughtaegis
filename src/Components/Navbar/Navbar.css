@@ -130,7 +130,7 @@ font-size: 13px;
   padding: 20px 50px;
   z-index: 0;
    left: 300%;
-  transform: translateX(-52%);
+  transform: translateX(-54%);
 }
 
 .dropdown-toggle{
@@ -315,7 +315,10 @@ font-size: 13px;
 @media (max-width: 768px) {
 
      nav{
-     width: 100%;
+     /* width: 100%; */
+     position: relative;
+     justify-content: space-between;
+     padding: 20px 50px;
       
     } 
 

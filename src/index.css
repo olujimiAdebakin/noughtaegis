@@ -10,6 +10,7 @@
     text-decoration: none;
     list-style: none;
      font-family: "IBM Plex Sans", sans-serif;
+     /* overflow: hidden; */
 }
 
 html{
@@ -23,6 +24,7 @@ body{
     background:#001a38;
     user-select: none;
     overflow-x: hidden !important;
+    width: 100vw;
 }
 
 

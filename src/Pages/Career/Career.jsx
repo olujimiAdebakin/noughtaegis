@@ -17,6 +17,7 @@ import alwayslearning from "../../assets/always-learning.webp";
 import no_egos from "../../assets/no-egos.webp";
 import dig_deeper from "../../assets/dig_deeper.webp";
 import whydevcent from '../../assets/whydevcent.webp';
+import OurTeam from '../../Reusable/OurTeam';
 // import engineer from "../../assets/engineer.jpg";
 
 const Career = () => {
@@ -83,6 +84,7 @@ const Career = () => {
           </div>
         </div>
       </div>
+      <OurTeam/>
       <Certification />
       <div className="who-we-aree" data-aos="fade-up-right">
         <div className="who-we-aree-header">

@@ -154,9 +154,10 @@
 /* Media query for devices with width 768px and below */
 @media (max-width: 768px) {
     .why-devcent-hero {
-        margin-top: 100px;
-        align-items: start;
+        margin-top:0;
+        align-items: center;
         padding: 20px 25px;
+        height: 400px;
     }
 
     .why-devcent-hero-text p {
@@ -191,16 +192,17 @@
 
     .career-purpose{
     margin-top: 10px;
-    flex-direction: column;
+  
     border-bottom: 2px solid #fff;
     padding-bottom: 50px;
-    padding: 0px 25px 50px 25px;
-    align-items: start;
+    /* padding: 0px 25px 50px 25px; */
+    gap: 30px;
+    align-items: center;
     
 }
 
 .career-purpose img{
-    width: 400px;
+    width:300px;
     height: auto;
 }
 

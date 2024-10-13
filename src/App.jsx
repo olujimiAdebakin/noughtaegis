@@ -21,7 +21,6 @@ import NonProfit from './Pages/Industries-sub/NonProfit';
 import ManuFacturing from './Pages/Industries-sub/ManuFacturing';
 import LawFirm from './Pages/Industries-sub/LawFirm';
 import Military from './Pages/Industries-sub/Military';
-import Marqee from './Reusable/Marqee/Marqee';
 import Procurement from './Pages/Industries-sub/Procurement';
 import Education from './Pages/Industries-sub/Education';
 import Telecommunication from './Pages/Industries-sub/Telecommunication';
@@ -29,6 +28,7 @@ import Government from './Pages/Industries-sub/Government';
 import BankFinance from './Pages/Industries-sub/BankFinance';
 import ScrollTop from './ScrollTop';
 import Preloader from './Reusable/Preloader';
+import Profile from './Reusable/Profile';
 
 
 function App() {
@@ -47,10 +47,10 @@ function App() {
   }, []);
 
       useEffect(() => {
-        // Simulate loading time
+       
         const timer = setTimeout(() => {
           setLoading(false);
-        }, 3000); 
+        }, 5000); 
         return () => clearTimeout(timer); 
       }, []);
 
@@ -62,6 +62,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/profile/:name" element={<Profile />} />
 
           {/* PAGES */}
 
@@ -69,7 +70,6 @@ function App() {
           <Route path="/contactform" element={<ContactForm />} />
           <Route path="/whydevcent" element={<WhyDevcent />} />
           <Route path="/career" element={<Career />} />
-          <Route path="/contactform" element={<ContactForm />} />
 
           {/* services-Sub-pages */}
 

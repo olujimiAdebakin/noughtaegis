@@ -1,6 +1,10 @@
 .contact-form{
     background-color: #fff;
     margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 40px;
 }
 
 .contact-form-header{
@@ -9,6 +13,7 @@
     align-items: center;
     gap: 17px;
     padding: 50px 20px;
+   
 }
 
 .contact-form-header h2{
