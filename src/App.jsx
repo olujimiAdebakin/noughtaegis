@@ -56,7 +56,7 @@ function App() {
 
   return (
     <>
-      {loading && <Preloader />}
+      {/* {loading && <Preloader />} */}
       <div className="app">
         <ScrollTop />
 
