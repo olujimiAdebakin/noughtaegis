@@ -10,7 +10,6 @@
     text-decoration: none;
     list-style: none;
      font-family: "IBM Plex Sans", sans-serif;
-     /* overflow: hidden; */
 }
 
 html{
@@ -22,6 +21,7 @@ body{
    
     font-family: "Poppins", sans-serif;
     background:#001a38;
+    /* background-color: red; */
     user-select: none;
     overflow-x: hidden !important;
     width: 100vw;

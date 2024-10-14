@@ -1,0 +1,66 @@
+.profile-page{
+    margin-top:10px;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 700px;
+    gap: 100px;
+}
+
+.profile-content{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.profile-content h2{
+    color: #fd3842;
+    font-size: 20px;
+}
+
+.profile-content h3{
+    color: #fff;
+    font-size: 17px;
+}
+
+.profile-about{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile-about h3{
+    color: #fd3842;
+    font-size: 17px;
+}
+
+.profile-about p{
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    width: 400px;
+    line-height: 25px;
+}
+
+.profile-skill{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile-skill h3{
+    color: #fd3842;
+    font-size: 13px;
+    font-size: 18px;
+}
+
+.profile-skill span{
+    font-size: 12px;
+    color: #fff;
+}
+
+.profile-img img{
+    width: 400px;
+    height: 400px;
+}

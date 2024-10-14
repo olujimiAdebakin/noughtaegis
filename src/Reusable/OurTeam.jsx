@@ -6,33 +6,33 @@ import { Link, useNavigate } from "react-router-dom";
 
 const teamMembers = [
   {
-    name: "Adebakin Olalekan",
-    role: "Frontend Developer",
+    name: "Tosin Fakile",
+    role: "CyberSeurity Engineer",
     image: jimi,
   },
   {
-    name: "Talodabioluwa",
+    name: "Adeleke Oluwaseun",
     role: "Backend Developer",
     image: jimi,
   },
   {
-    name: "Adisa Malik",
+    name: "Talodabioluwa Paul",
     role: "UI/UX Designer",
     image: jimi,
   },
   {
-    name: "Adebakin Olalekan",
-    role: "Frontend Developer",
+    name: "Ololade Bello",
+    role: "SoftWare Developer",
     image: avatar,
   },
   {
-    name: "Talodabioluwa",
-    role: "Backend Developer",
+    name: "Ayodele Boluwatife",
+    role: "CyberSecurity Analyst",
     image: avatar,
   },
   {
     name: "Adisa Malik",
-    role: "UI/UX Designer",
+    role: "SoftWare Developer",
     image: avatar,
   },
 ];
@@ -59,51 +59,7 @@ const OurTeam = () => {
 
       <div className="our-team-flex">
         <div className="our-team-left">
-          <div className="our-team-left-content">
-            <h2>Meet Our Team</h2>
-            <p>
-              Our team is composed of skilled professionals dedicated to
-              delivering exceptional results and innovative solutions. Together,
-              we strive to exceed expectations and create lasting impact.
-            </p>
-            <p>
-              We believe in collaboration, innovation, and excellence in every
-              project. Our diverse backgrounds and expertise allow us to tackle
-              challenges with creativity and passion.
-            </p>
-            <div className="our-team-left-btn">
-              <button className="cta-button" onClick={handleContactClick}>
-                Get in Touch
-              </button>
-            </div>
-            <blockquote>
-              "Great things in business are never done by one person; they're
-              done by a team of people." - Steve Jobs
-            </blockquote>
-            <div className="social-media-links">
-              <Link
-                href="link-to-twitter"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Twitter
-              </Link>
-              <Link
-                href="link-to-linkedin"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                LinkedIn
-              </Link>
-              <Link
-                href="link-to-facebook"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Facebook
-              </Link>
-            </div>
-          </div>
+         
         </div>
         <div className="our-team-grid">
           {teamMembers.map((member, index) => (

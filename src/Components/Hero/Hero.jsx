@@ -3,11 +3,18 @@ import "./Hero.css";
 import gsap from "gsap";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Marqee from "../../Reusable/Marqee/Marqee";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const heroRef = useRef(null);
   const spotlightRefs = useRef([]);
   const textRef = useRef(null); 
+
+
+  const navigate = useNavigate();
+  const contactForm = () => {
+    navigate("/contactform");
+  }
 
   useEffect(() => {
     spotlightRefs.current.forEach((spotlight) => {
@@ -71,12 +78,11 @@ const Hero = () => {
         <p>Noughtaegis: The intersection of innovation and cybersecurity.</p>
       </div>
 
-      <div className="flex-hero">
+      <div className="flex-hero" onClick={contactForm}>
         <button>
           Get in Touch <IoIosArrowRoundForward style={{ fontSize: "23px" }} />
         </button>
       </div>
-     
     </div>
   );
 };

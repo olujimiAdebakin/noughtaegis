@@ -50,13 +50,13 @@ function App() {
        
         const timer = setTimeout(() => {
           setLoading(false);
-        }, 5000); 
+        }, 4000); 
         return () => clearTimeout(timer); 
       }, []);
 
   return (
     <>
-      {/* {loading && <Preloader />} */}
+      {loading && <Preloader />}
       <div className="app">
         <ScrollTop />
 
