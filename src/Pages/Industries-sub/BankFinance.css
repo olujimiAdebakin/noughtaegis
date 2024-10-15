@@ -1,11 +1,12 @@
 .banking-container{
     background-image: 
-    linear-gradient(transparent 70%, #001a38), 
-        linear-gradient(to top, transparent 76%, #001a38), 
-        linear-gradient(to left, transparent 40%, #001a38), 
-        linear-gradient(to right, transparent 30%, #001a38), 
-           linear-gradient(to bottom, transparent 30%, #001a38), 
-  url(../../assets/bank.avif);
+   linear-gradient(transparent 70%, #001a38), 
+    linear-gradient(to top, transparent 76%, #001a38), 
+    linear-gradient(to left, transparent 40%, #001a38), 
+    linear-gradient(to right, transparent 30%, #001a38), 
+    linear-gradient(to bottom, transparent 30%, #001a38), 
+    linear-gradient(rgba(36, 15, 15, 0.16), rgba(255, 255, 255, 0.3)), /* Light overlay */
+    url(../../assets/gettyimages-1454530407-612x612.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -52,11 +53,16 @@
 .bank-evolving-text{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 .bank-evolving-text p{
-    line-height: 25px;
+    line-height:30px;
+}
+
+.bank-evolving-text h1{
+    font-size: 30px;
+    color: #fd3842;
 }
 
 .bank-evolving-image img{
@@ -158,6 +164,10 @@
     gap: 1rem;
     border-bottom: 1px solid #fff;
     padding-bottom: 2rem;
+}
+
+.bank-trend h1{
+    color: #fd3842;
 }
 
 .bank-trend-image img{

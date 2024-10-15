@@ -11,6 +11,8 @@ import compsci from "../../assets/computsci.avif";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isMoved, setIsMoved] = useState(false);
+  const [servicesOpen, setServicesOpen] = useState(false)
+   const [industriesOpen, setIndustriesOpen] = useState(false);
   const location = useLocation(); // Get current location
 
   const handleToggle = () => {
@@ -32,7 +34,18 @@ const Navbar = () => {
     };
   }, []);
 
-  // Function to check if a link is active
+
+  const toggleServicesDropdown = () => {
+    setServicesOpen(!servicesOpen);
+    setIndustriesOpen(false); 
+  };
+
+  const toggleIndustriesDropdown = () => {
+    setIndustriesOpen(!industriesOpen);
+    setServicesOpen(false); 
+  };
+
+ 
   const isActive = (path) => location.pathname === path;
 
   return (
@@ -52,12 +65,16 @@ const Navbar = () => {
           </Link>
           <div className="dropdown">
             <Link
-              to="/solutions"
+              to=""
               className={`dropdown-toggle ${
                 isActive("/solutions") ? "active" : ""
               }`}
             >
-              Services <IoMdArrowDropdown className="nav-icon" />
+              Services{" "}
+              <IoMdArrowDropdown
+                className="nav-icon"
+                onClick={toggleServicesDropdown}
+              />
             </Link>
             <div className="dropdown-content">
               <div className="dropdown-flex">
@@ -159,7 +176,10 @@ const Navbar = () => {
           </div>
 
           <div className="industries-drop-down">
-            <Link className={isActive("/industries") ? "active" : ""}>
+            <Link
+              className={isActive("/industries") ? "active" : ""}
+              onClick={toggleIndustriesDropdown}
+            >
               Industries <IoMdArrowDropdown className="nav-icon" />
             </Link>
             <div className="dropdown-content-1">
@@ -244,7 +264,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className={`nav-end ${menuOpen ? "active" : ""}`}>
-          <a href="#">Get a Quote</a>
+          
           <Link to="/contactform">
             <button>Contact Us</button>
           </Link>

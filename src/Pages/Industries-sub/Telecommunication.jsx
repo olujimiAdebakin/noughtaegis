@@ -183,7 +183,7 @@ const Telecommunication = () => {
                 compliance with industry regulations.
               </p>
             </div>
-            <div className="telecomtrend-image">
+            <div className="telecom-trend-image">
               <img src={BlueChart} alt="Cybersecurity in Telecommunication" />
             </div>
           </div>

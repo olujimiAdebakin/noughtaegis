@@ -5,7 +5,7 @@
         linear-gradient(to left, transparent 40%, #001a38), 
         linear-gradient(to right, transparent 30%, #001a38), 
            linear-gradient(to bottom, transparent 30%, #001a38), 
-  url(../../assets/telecom.jpg);
+  url(../../assets/freepik_edit.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -51,7 +51,13 @@
 .telecom-evolving-text{
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 2rem;
+}
+
+.telecom-evolving h1{
+    font-size: 32px;
+    color: #fd3842;
+    width: 300px;
 }
 
 .telecom-evolving-text p{
@@ -157,6 +163,11 @@
     gap: 1rem;
     border-bottom: 1px solid #fff;
     padding-bottom: 2rem;
+}
+
+.telecom-trend h1{
+    color: #fd3842;
+    font-size: 32px;
 }
 
 .telecom-trend-image img{

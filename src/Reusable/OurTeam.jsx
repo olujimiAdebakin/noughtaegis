@@ -1,24 +1,26 @@
 import React from "react";
 import "./OurTeam.css";
-import avatar from "../assets/download.jpg"; 
-import jimi from "../assets/jimi.jpg"; 
-import { Link, useNavigate } from "react-router-dom";
+import tosin from "../assets/tosin.jpg"; 
+import dele from "../assets/Dele.jpg"; 
+import avatar from "../assets/Avatar.avif"
+import { useNavigate } from "react-router-dom";
+
 
 const teamMembers = [
   {
     name: "Tosin Fakile",
     role: "CyberSeurity Engineer",
-    image: jimi,
+    image: tosin,
   },
   {
     name: "Adeleke Oluwaseun",
-    role: "Backend Developer",
-    image: jimi,
+    role: "Cloud Engineer",
+    image: avatar,
   },
   {
     name: "Talodabioluwa Paul",
     role: "UI/UX Designer",
-    image: jimi,
+    image: avatar,
   },
   {
     name: "Ololade Bello",
@@ -28,10 +30,10 @@ const teamMembers = [
   {
     name: "Ayodele Boluwatife",
     role: "CyberSecurity Analyst",
-    image: avatar,
+    image: dele,
   },
   {
-    name: "Adisa Malik",
+    name: "Adebakin Olujimi",
     role: "SoftWare Developer",
     image: avatar,
   },
@@ -40,10 +42,6 @@ const teamMembers = [
 const OurTeam = () => {
   const navigate = useNavigate();
 
-  const handleContactClick = () => {
-    navigate("/contactform");
-  }
-
 
 
   const handleImageClick = (name) => {
@@ -51,16 +49,16 @@ const OurTeam = () => {
   };
 
   return (
-    <div className="our-team">
+    <section id="our-team" className="our-team">
       <div className="our-team-header">
         <h2>Meet Our Team</h2>
         <p>We are a group of dedicated professionals ready to serve you.</p>
       </div>
 
       <div className="our-team-flex">
-        <div className="our-team-left">
+        {/* <div className="our-team-left">
          
-        </div>
+        </div> */}
         <div className="our-team-grid">
           {teamMembers.map((member, index) => (
             <div className="our-team-card" key={index}>
@@ -68,10 +66,11 @@ const OurTeam = () => {
                 className="img-card-wrapper"
                 onClick={() => handleImageClick(member.name)}
               >
-                <div className="our-card-wrapper-content">
-                  <img src={member.image} alt={member.name} />
+                <div className="img-wrapper-position">
+                  <div className="our-card-wrapper-content">
+                    <img src={member.image} alt={member.name} />
+                  </div>
                 </div>
-                <div className="half-circle"></div>
               </div>
               <div className="our-team-card-text">
                 <h3>{member.name}</h3>
@@ -81,7 +80,7 @@ const OurTeam = () => {
           ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

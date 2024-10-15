@@ -161,7 +161,7 @@ font-size: 13px;
 }
 
 .text-area textarea{
-    width:500px;
+    width:470px;
     background: inherit;
     border-bottom: 1px solid #fff;
     padding-bottom: 10px;
@@ -185,4 +185,53 @@ font-size: 13px;
 .error {
     color: red;
     font-size: 12px;
+}
+
+@media (max-width:768px) {
+    .contacts{
+    flex-direction: column;
+}
+
+.contacts-right{
+    width: 700px;
+}
+
+.text-area text{
+    width: 600px;
+}
+
+.contacts-desc p{
+    width: 570px;
+    font-size: 14px;
+}
+
+}
+
+@media (max-width:420px) {
+    .contacts-desc{
+        align-items: center;
+        padding: 0;
+    }
+
+    .contacts-desc p{
+        font-size: 13px;
+        width: 300px;
+        text-align: center;
+    }
+
+    .contacts-email{
+        text-align: center;
+    }
+
+    .contacts-text{
+    text-align: center;
+    }
+
+    .contacts-right{
+        width:100%;
+    }
+
+ .text-area text{
+    width: 600px;
+}
 }

@@ -244,7 +244,6 @@ font-size: 2rem;
   
   .career-hero h2, .career-hero p {
     width: 100%;
-    
     text-align: center;
   }
 .career-hero h2{
@@ -294,8 +293,8 @@ font-size: 2rem;
   }
   
   .why-devcent {
-    flex-direction: column;
-    align-items: start;
+    /* flex-direction: column; */
+    align-items:center;
     padding: 50px 50px;
     gap: 40px;
     margin-bottom: 30px;
@@ -397,6 +396,7 @@ text-align: center;
 
   .why-devcent {
     padding-bottom: 10px;
+    flex-direction: column;
     gap: 30px;
   }
 
