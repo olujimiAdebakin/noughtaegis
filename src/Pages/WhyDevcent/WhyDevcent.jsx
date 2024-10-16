@@ -5,7 +5,9 @@ import Footer from '../../Components/Footer/Footer';
 import Certification from "../../Components/Certification/Certification";
 import ProudMember from '../../Reusable/ProudMember';
 import CoreValues from '../../Reusable/CoreValues';
-import whydevcent from '../../assets/whydevcent.webp'
+import whydevcent from '../../assets/whydevcent.webp';
+import OurTeam from "../../Reusable/OurTeam";
+
 const WhyDevcent = () => {
   return (
     <>
@@ -72,6 +74,7 @@ const WhyDevcent = () => {
       </div>
       <ProudMember />
       <CoreValues />
+      <OurTeam/>
       <div className="career-purpose" data-aos="fade-up-right">
         <img src={whydevcent} alt="" />
         <div className="career-purpose-right">

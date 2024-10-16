@@ -58,7 +58,7 @@ const Testimonial = () => {
       <div className="testimonial-wrapper">
         <Swiper
           modules={[Navigation]}
-          spaceBetween={20}
+          spaceBetween={10}
           slidesPerView={3} 
           onAutoplay={true}
           

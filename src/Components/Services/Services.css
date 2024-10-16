@@ -1,25 +1,26 @@
 .services {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 24px;
   margin-top: 30px;
+  
 }
 
 .services-header{
   display: flex;
-  justify-content: center;
-  width: 33%;
+  padding-right: 850px;
+  
 }
 
 .services-header h2{
   color: white;
   font-size: 35px;
- text-align: start;
+
 }
 
 .services-container {
   display: flex;
-
   justify-content: center;
   gap: 100px;
    flex-wrap: wrap; 

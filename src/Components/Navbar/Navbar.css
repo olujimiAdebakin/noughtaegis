@@ -122,15 +122,15 @@ font-size: 13px;
 .dropdown-content {
   display: none;
   position: absolute;
-   top: calc(100% + 6px);
+   top: calc(100% + 4px);
   left:0;
   right: 0;
   width: 100vw; 
   background-color: #00274f;
-  padding: 20px 50px;
-  z-index: 0;
+  padding: 10px 50px;
+  z-index: 1000;
    left: 300%;
-  transform: translateX(-54%);
+  transform: translateX(-57%);
 }
 
 .dropdown-toggle{
@@ -264,7 +264,7 @@ font-size: 13px;
   background-color: #00274f;
   padding: 15px 50px;
   z-index: 0;
-  transform: translateX(-39%);
+  transform: translateX(-45%);
   transition: all 500ms ease-in-out;
   
 }
