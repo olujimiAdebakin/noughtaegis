@@ -1,10 +1,11 @@
 .procurement-container{
     background-image: 
-    linear-gradient(transparent 70%, #001a38), 
-        linear-gradient(to top, transparent 76%, #001a38), 
-        linear-gradient(to left, transparent 40%, #001a38), 
+    linear-gradient(transparent 40%, #001a38), 
+        linear-gradient(to top, transparent 36%, #001a38), 
+        linear-gradient(to left, transparent 30%, #001a38), 
         linear-gradient(to right, transparent 30%, #001a38), 
-  url(../../assets/young-attractive.avif);
+         linear-gradient(to bottom, transparent 20%, #001a38), 
+  url(../../assets/business-man-working-late-office.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -54,7 +55,7 @@
 }
 
 .evolving-text p{
-    line-height: 25px;
+    line-height:25px;
 }
 
 .evolving-image img{

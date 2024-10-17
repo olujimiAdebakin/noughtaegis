@@ -35,7 +35,7 @@ const Procurement = () => {
     <div>
       <Navbar />
 
-      <div className="healthcare-container" data-aos="fade-up-right">
+      <div className="procurement-container" data-aos="fade-up-right">
         <div className="healthcare-text">
           <p>EFFICIENT PROCUREMENT</p>
           <h2>

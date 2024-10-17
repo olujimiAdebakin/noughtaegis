@@ -117,20 +117,21 @@ font-size: 13px;
 
 .dropdown {
   position: relative;
+  z-index: 3;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-   top: calc(100% + 4px);
+   top: 100%;
   left:0;
   right: 0;
   width: 100vw; 
   background-color: #00274f;
-  padding: 10px 50px;
+  padding: 15px 50px;
   z-index: 1000;
    left: 300%;
-  transform: translateX(-57%);
+  transform: translateX(-55%);
 }
 
 .dropdown-toggle{
@@ -190,6 +191,7 @@ font-size: 13px;
 
 .dropdown-promotions {
   display: flex;
+  justify-content: center;
   align-items: start;
   gap: 90px;
 }
@@ -252,18 +254,18 @@ font-size: 13px;
 
 .dropdown-content-1{
   display: flex;
+  justify-content: center;
   gap: 100px;
-  /* padding: 20px 100px; */
-  align-items:end;
+  align-items:center;
   display: none;
   position: absolute;
-    top: 120%; 
+    top: 190%; 
   left:0px;
   right:0%;
   width: 100vw; 
   background-color: #00274f;
-  padding: 15px 50px;
-  z-index: 0;
+  padding: 15px 300px;
+  z-index: 999;
   transform: translateX(-45%);
   transition: all 500ms ease-in-out;
   

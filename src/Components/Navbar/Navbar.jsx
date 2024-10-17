@@ -182,77 +182,102 @@ const Navbar = () => {
             >
               Industries <IoMdArrowDropdown className="nav-icon" />
             </Link>
+
             <div className="dropdown-content-1">
               <div>
                 <ul>
-                  <Link
-                    to="/education"
-                    className={isActive("/education") ? "active" : ""}
-                  >
-                    Education
-                  </Link>
-                  <Link
-                    to="/telecommunications"
-                    className={isActive("/telecommunications") ? "active" : ""}
-                  >
-                    Telecommunications
-                  </Link>
-                  <Link
-                    to="/banking-financial-services"
-                    className={
-                      isActive("/banking-financial-services") ? "active" : ""
-                    }
-                  >
-                    Banking & Financial-Services
-                  </Link>
-                  <Link
-                    to="/government"
-                    className={isActive("/government") ? "active" : ""}
-                  >
-                    Government
-                  </Link>
-                  <Link
-                    to="/law-firm"
-                    className={isActive("/law-firm") ? "active" : ""}
-                  >
-                    Law-Firms
-                  </Link>
+                  <li>
+                    <Link
+                      to="/education"
+                      className={isActive("/education") ? "active" : ""}
+                    >
+                      Education
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/telecommunications"
+                      className={
+                        isActive("/telecommunications") ? "active" : ""
+                      }
+                    >
+                      Telecommunications
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/banking-financial-services"
+                      className={
+                        isActive("/banking-financial-services") ? "active" : ""
+                      }
+                    >
+                      Banking & Financial Services
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/government"
+                      className={isActive("/government") ? "active" : ""}
+                    >
+                      Government
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      to="/law-firm"
+                      className={isActive("/law-firm") ? "active" : ""}
+                    >
+                      Law Firms
+                    </Link>
+                  </li>
                 </ul>
               </div>
+
               <ul>
-                <Link
-                  to="/military"
-                  className={isActive("/military") ? "active" : ""}
-                >
-                  Military
-                </Link>
-                <Link
-                  to="/procurement"
-                  className={isActive("/procurement") ? "active" : ""}
-                >
-                  Procurement
-                </Link>
-                <Link
-                  to="/healthcare"
-                  className={isActive("/healthcare") ? "active" : ""}
-                >
-                  HealthCare
-                </Link>
-                <Link
-                  to="/non-profit"
-                  className={isActive("/non-profit") ? "active" : ""}
-                >
-                  Non-Profit
-                </Link>
-                <Link
-                  to="/manufacturing"
-                  className={isActive("/manufacturing") ? "active" : ""}
-                >
-                  Manufacturing
-                </Link>
+                <li>
+                  <Link
+                    to="/military"
+                    className={isActive("/military") ? "active" : ""}
+                  >
+                    Military
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/procurement"
+                    className={isActive("/procurement") ? "active" : ""}
+                  >
+                    Procurement
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/healthcare"
+                    className={isActive("/healthcare") ? "active" : ""}
+                  >
+                    Healthcare
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/non-profit"
+                    className={isActive("/non-profit") ? "active" : ""}
+                  >
+                    Non-Profit
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/manufacturing"
+                    className={isActive("/manufacturing") ? "active" : ""}
+                  >
+                    Manufacturing
+                  </Link>
+                </li>
               </ul>
             </div>
           </div>
+
           <Link
             to="/whydevcent"
             className={isActive("/whydevcent") ? "active" : ""}
@@ -264,7 +289,6 @@ const Navbar = () => {
           </Link>
         </div>
         <div className={`nav-end ${menuOpen ? "active" : ""}`}>
-          
           <Link to="/contactform">
             <button>Contact Us</button>
           </Link>

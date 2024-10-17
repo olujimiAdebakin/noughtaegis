@@ -84,7 +84,6 @@ const Career = () => {
           </div>
         </div>
       </div>
-      <OurTeam/>
       <Certification />
       <div className="who-we-aree" data-aos="fade-up-right">
         <div className="who-we-aree-header">

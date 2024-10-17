@@ -46,7 +46,8 @@
 
 .telecom-evolving{
     display: flex;
-    align-items: start;
+    justify-content: center;
+    align-items:start;
     gap: 2rem;
     color: white;
     padding: 30px 150px;
@@ -59,13 +60,14 @@
 }
 
 .telecom-evolving h1{
-    font-size: 32px;
+    font-size: 30px;
     color: #fd3842;
-    width: 300px;
+    width:430px;
 }
 
 .telecom-evolving-text p{
-    line-height: 25px;
+    line-height:30px;
+    width: 370px;
 }
 
 .telecom-evolving-image img{

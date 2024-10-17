@@ -6,9 +6,9 @@
         linear-gradient(to top, transparent 56%, #001a38), 
         linear-gradient(to left, transparent 40%, #001a38), 
         linear-gradient(to right, transparent 40%, #001a38),  
-  url(../../assets/nonprofit.jpg);
+  url(../../assets/nonprofit.png);
   background-repeat: no-repeat;
-  background-blend-mode:multiply;
+  /* background-blend-mode:multiply; */
     background-position: center;
     background-size: cover;
       height: 470px;
@@ -27,6 +27,7 @@
     font-size: 40px;
     width: 700px;
     text-align: center;
+    color:  #fd3842;
 }
 
 .nonprofit-text p{

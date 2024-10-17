@@ -2,6 +2,7 @@ import React from "react";
 import "./OurTeam.css";
 import tosin from "../assets/tosin.jpg"; 
 import dele from "../assets/Dele.jpg"; 
+import leonard from "../assets/leonard.jpg"
 import avatar from "../assets/Avatar.avif"
 import { useNavigate } from "react-router-dom";
 
@@ -17,20 +18,16 @@ const teamMembers = [
     role: "Cloud Engineer",
     image: avatar,
   },
-  {
-    name: "Talodabioluwa Paul",
-    role: "UI/UX Designer",
-    image: avatar,
-  },
-  {
-    name: "Ololade Bello",
-    role: "SoftWare Developer",
-    image: avatar,
-  },
+
   {
     name: "Ayodele Boluwatife",
     role: "CyberSecurity Analyst",
     image: dele,
+  },
+  {
+    name: "Leonard Ojornubi Ikediuba",
+    role: "CyberSecurity Analyst",
+    image: leonard,
   },
   {
     name: "Adebakin Olujimi",
