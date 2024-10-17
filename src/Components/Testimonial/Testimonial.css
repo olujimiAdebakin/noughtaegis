@@ -80,8 +80,9 @@ font-weight: 700;
 
 .testimonial-card p{
     color: white;
-    font-size: 15px;
-    width:300px;
+    font-size: 13px;
+    font-weight: 400;
+    width:250px;
     line-height: 25px;
 }
 
@@ -242,6 +243,11 @@ font-weight: 700;
   font-size: 20px !important;
 }
 
+.swiper-button-prev,
+.swiper-button-next{
+  display: none;
+}
+
 }
 
 @media (max-width:360px) {
@@ -255,6 +261,11 @@ font-weight: 700;
     padding-left:100px;
     /* padding-right:9px; */
   }
+
+  .swiper-button-prev,
+.swiper-button-next{
+  display: none;
+}
 
 }
 

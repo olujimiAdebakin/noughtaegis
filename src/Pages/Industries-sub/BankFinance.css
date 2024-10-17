@@ -1,12 +1,14 @@
 .banking-container{
     background-image: 
-   linear-gradient(transparent 70%, #001a38), 
-    linear-gradient(to top, transparent 76%, #001a38), 
-    linear-gradient(to left, transparent 40%, #001a38), 
-    linear-gradient(to right, transparent 30%, #001a38), 
-    linear-gradient(to bottom, transparent 30%, #001a38), 
-    linear-gradient(rgba(36, 15, 15, 0.16), rgba(255, 255, 255, 0.3)), /* Light overlay */
-    url(../../assets/gettyimages-1454530407-612x612.jpg);
+   linear-gradient(transparent 40%, #001a38), 
+    linear-gradient(to top, transparent 60%, #001a38), 
+    linear-gradient(to left, transparent 20%, #001a38), 
+    linear-gradient(to right, transparent 20%, #001a38), 
+    linear-gradient(to bottom, transparent 40%, #001a38), 
+    /* linear-gradient(rgba(36, 15, 15, 0.16),), Light overlay */
+    url(../../assets/black-man-using-computer_23-2149370614.jpg);
+    background-blend-mode:;
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;

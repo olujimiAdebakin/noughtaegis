@@ -378,6 +378,10 @@ font-size: 13px;
        
     }
 
+    .dropdown-promotions{
+      display: none;
+    }
+
    .dropdown-content,
   .dropdown-content-1 {
     display: none !important;
@@ -414,13 +418,18 @@ font-size: 13px;
     }
 
     .dropdown:hover .dropdown-content {
-  display: none; 
+  /* display: none;  */
 }
+
+   .dropdown-content,
+  .dropdown-content-1 {
+    flex-direction: column!important;
+  }
 
 
     .nav-links.active, .nav-end.active {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         position: absolute;
         top: 50px;
         left: 0;

@@ -2,12 +2,13 @@
     color: white;
     margin-top: 60px;
  background-image: 
-    linear-gradient(transparent 80%, #001a38), 
+    linear-gradient(transparent 40%, #001a38), 
         linear-gradient(to top, transparent 56%, #001a38), 
         linear-gradient(to left, transparent 40%, #001a38), 
         linear-gradient(to right, transparent 40%, #001a38),  
   url(../../assets/nonprofit.jpg);
   background-repeat: no-repeat;
+  background-blend-mode:multiply;
     background-position: center;
     background-size: cover;
       height: 470px;
