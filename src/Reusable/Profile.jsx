@@ -44,14 +44,14 @@ const Profile = () => {
    "Ayodele Boluwatife": {
      img: dele,
      role: "CyberSecurity Analyst",
-     bio: "Ayodele Boluwatife is a dedicated CyberSecurity Analyst with expertise in vulnerability assessments, threat detection, and incident management. Ayodele takes a proactive approach to identifying security gaps and ensuring data protection for organizations. His experience includes monitoring network traffic, analyzing security breaches, and implementing strategies to safeguard systems from potential cyberattacks.",
+     bio: "Ayodele Boluwatife is a dedicated Cybersecurity Analyst with expertise in vulnerability assessments, threat detection, and incident management. Ayodele takes a proactive approach to identifying security gaps and ensuring data protection for organizations. His experience includes monitoring network traffic,  incident response, threat hunting, risk assessment, analyzing security breaches, and implementing strategies to safeguard systems.",
      skill: [
        { name: "Network Security", level: 100 },
        { name: "Risk Management", level: 100 },
        { name: "Penetration Testing", level: 97 },
        { name: "Incident Response", level: 94 },
-       { name: "Vulnerability Assessment", level: 95 },
-       { name: "Compliance Auditing", level: 93 },
+       { name: "Threat analysis and management", level: 95 },
+       { name: "systems and network protection", level: 93 },
      ],
    },
 

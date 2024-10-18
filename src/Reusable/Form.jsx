@@ -3,77 +3,103 @@ import emailjs from "emailjs-com"; // Import EmailJS
 import "./Form.css";
 
 const Form = () => {
-  const [formData, setFormData] = useState({
-    companyName: "",
-    firstName: "",
-    lastName: "",
-    email: "",
-    phoneNumber: "",
-    numberOfEmployees: "",
-    howDidYouHear: "",
-    services: [],
-    message: "",
-  });
+   const [formData, setFormData] = useState({
+     companyName: "",
+     firstName: "",
+     lastName: "",
+     email: "",
+     phoneNumber: "",
+     numberOfEmployees: "",
+     howDidYouHear: "",
+     services: [],
+     message: "",
+   });
 
-  const [errors, setErrors] = useState({});
+   const [errors, setErrors] = useState({});
+   const [loading, setLoading] = useState(false); 
+   const [success, setSuccess] = useState(""); 
+   const [errorMessage, setErrorMessage] = useState(""); 
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
+     const handleChange = (e) => {
+     const { name, value } = e.target;
+     setFormData({ ...formData, [name]: value });
+   };
 
-  const handleCheckboxChange = (e) => {
-    const { value } = e.target;
-    setFormData((prevData) => {
-      const services = prevData.services.includes(value)
-        ? prevData.services.filter((service) => service !== value)
-        : [...prevData.services, value];
-      return { ...prevData, services };
-    });
-  };
+   const handleCheckboxChange = (e) => {
+     const { value } = e.target;
+     setFormData((prevData) => {
+       const services = prevData.services.includes(value)
+         ? prevData.services.filter((service) => service !== value)
+         : [...prevData.services, value];
+       return { ...prevData, services };
+     });
+   };
 
-  const validate = () => {
-    const newErrors = {};
-    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+   const validate = () => {
+     const newErrors = {};
+     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    if (!formData.companyName)
-      newErrors.companyName = "Company Name is required";
-    if (!formData.firstName) newErrors.firstName = "First Name is required";
-    if (!formData.lastName) newErrors.lastName = "Last Name is required";
-    if (!formData.email) {
-      newErrors.email = "Email is required";
-    } else if (!emailPattern.test(formData.email)) {
-      newErrors.email = "Email is not valid";
-    }
-    if (!formData.phoneNumber)
-      newErrors.phoneNumber = "Phone Number is required";
-    if (!formData.numberOfEmployees)
-      newErrors.numberOfEmployees = "Number Of Employees is required";
-    if (!formData.howDidYouHear)
-      newErrors.howDidYouHear = "Please select how you heard about us";
-    if (!formData.message) newErrors.message = "Message is required";
+     if (!formData.companyName)
+       newErrors.companyName = "Company Name is required";
+     if (!formData.firstName) newErrors.firstName = "First Name is required";
+     if (!formData.lastName) newErrors.lastName = "Last Name is required";
+     if (!formData.email) {
+       newErrors.email = "Email is required";
+     } else if (!emailPattern.test(formData.email)) {
+       newErrors.email = "Email is not valid";
+     }
+     if (!formData.phoneNumber)
+       newErrors.phoneNumber = "Phone Number is required";
+     if (!formData.numberOfEmployees)
+       newErrors.numberOfEmployees = "Number Of Employees is required";
+     if (!formData.howDidYouHear)
+       newErrors.howDidYouHear = "Please select how you heard about us";
+     if (!formData.message) newErrors.message = "Message is required";
 
-    setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
-  };
+     setErrors(newErrors);
+     return Object.keys(newErrors).length === 0;
+   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
+      const handleSubmit = (e) => {
+     e.preventDefault();
+     setErrorMessage(""); 
+     setSuccess(""); 
 
-    if (validate()) {
-      emailjs
-        .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", formData, "YOUR_USER_ID")
-        .then(
-          (response) => {
-            console.log("SUCCESS!", response.status, response.text);
-           
-          },
-          (err) => {
-            console.error("FAILED...", err);
-          }
-        );
-    }
-  };
+     if (validate()) {
+       setLoading(true); 
+       emailjs
+         .send(
+           process.env.REACT_APP_EMAILJS_SERVICE_ID,
+           process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+           formData,
+           process.env.REACT_APP_EMAILJS_USER_ID
+         )
+         .then(
+           (response) => {
+             console.log("SUCCESS!", response.status, response.text);
+             setSuccess("Your message has been successfully sent!"); 
+             setLoading(false); 
+             setFormData({
+               companyName: "",
+               firstName: "",
+               lastName: "",
+               email: "",
+               phoneNumber: "",
+               numberOfEmployees: "",
+               howDidYouHear: "",
+               services: [],
+               message: "",
+             }); 
+           },
+           (err) => {
+             console.error("FAILED...", err);
+             setErrorMessage("Something went wrong. Please try again later."); 
+             setLoading(false); 
+           }
+         );
+     }
+   };
 
   return (
     <div className="contacts">
@@ -107,6 +133,7 @@ const Form = () => {
               name="companyName"
               placeholder="Company Name"
               onChange={handleChange}
+              value={formData.companyName}
             />
             {errors.companyName && (
               <span className="error">{errors.companyName}</span>
@@ -117,6 +144,7 @@ const Form = () => {
               name="firstName"
               placeholder="First Name"
               onChange={handleChange}
+              value={formData.firstName}
             />
             {errors.firstName && (
               <span className="error">{errors.firstName}</span>
@@ -127,6 +155,7 @@ const Form = () => {
               name="email"
               placeholder="Business Email"
               onChange={handleChange}
+              value={formData.email}
             />
             {errors.email && <span className="error">{errors.email}</span>}
 
@@ -135,6 +164,7 @@ const Form = () => {
               name="numberOfEmployees"
               placeholder="Number Of Employees"
               onChange={handleChange}
+              value={formData.numberOfEmployees}
             />
             {errors.numberOfEmployees && (
               <span className="error">{errors.numberOfEmployees}</span>
@@ -145,6 +175,7 @@ const Form = () => {
               name="lastName"
               placeholder="Last Name"
               onChange={handleChange}
+              value={formData.lastName}
             />
             {errors.lastName && (
               <span className="error">{errors.lastName}</span>
@@ -155,6 +186,7 @@ const Form = () => {
               name="phoneNumber"
               placeholder="Phone Number"
               onChange={handleChange}
+              value={formData.phoneNumber}
             />
             {errors.phoneNumber && (
               <span className="error">{errors.phoneNumber}</span>
@@ -239,6 +271,7 @@ const Form = () => {
                 name="message"
                 maxLength={100}
                 onChange={handleChange}
+                value={formData.message}
               ></textarea>
               {errors.message && (
                 <span className="error">{errors.message}</span>
@@ -246,7 +279,16 @@ const Form = () => {
             </div>
           </div>
           <div className="contacts-submit">
-            <button type="submit">Submit</button>
+            {loading ? (
+              <div className="loader">Sending...</div>
+            ) : success ? (
+              <div className="success-message">{success}</div>
+            ) : errorMessage ? (
+              <div className="error-message">{errorMessage}</div>
+            ) : null}
+            <button type="submit" disabled={loading}>
+              {loading ? "Submitting..." : "Submit"}
+            </button>
           </div>
         </form>
       </div>

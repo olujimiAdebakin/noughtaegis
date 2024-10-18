@@ -254,14 +254,14 @@ font-size: 13px;
 .dropdown-content-1{
   display: none;
   position:absolute;
-    top: 100%; 
+    top: 130%; 
   width: 100vw; 
   background-color: #00274f;
   padding: 20px 10px;
   margin: 0;
   /* z-index: 999; */
-  /* transform: translateX(-45%); */
-  /* transition: all 500ms ease-in-out; */
+  transform: translateX(-45%);
+  transition: all 300ms ease-in-out;
   
 }
 
@@ -309,7 +309,7 @@ font-size: 13px;
 .industries-drop-down:hover .dropdown-content-1{
   display:flex;
   justify-content: start;
-  /* padding-left: 340px; */
+  padding-left: 340px;
 }
 
 
