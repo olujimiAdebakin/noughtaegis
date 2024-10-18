@@ -1,10 +1,12 @@
 .contact-form{
     background-color: #fff;
-    margin-top: 60px;
+    margin-top: 80px;
     display: flex;
     flex-direction: column;
     gap: 50px;
     padding-bottom: 40px;
+    padding: 40px 10px;
+    /* height: 800px; */
 }
 
 .contact-form-header{
@@ -53,6 +55,10 @@
 
 
 @media (max-width:420px) {
+
+    .contact-form{
+        padding: 10px 0;
+    }
     .contact-form-header{
         gap: 10px;
     }

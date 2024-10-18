@@ -12,7 +12,7 @@ const ContactForm = () => {
       <Navbar />
 
       <div className="contact-form">
-        <div className="contact-form-header">
+        {/* <div className="contact-form-header">
           <h2>
             Nouthaegis empowers you to stay ahead of cyber threats, enhancing
             your security posture through expert testing, consulting, and
@@ -23,7 +23,7 @@ const ContactForm = () => {
             industry standards. We probe, question, and collaborate to uncover
             hidden vulnerabilities
           </p>
-        </div>
+        </div> */}
         <Form/>
       </div>
 

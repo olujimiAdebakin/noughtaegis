@@ -78,6 +78,18 @@
     font-weight: 500;
 }
 
+.digit-flex{
+    display: flex;
+    gap: 14px;
+    align-items: start;
+}
+
+
+.digit-flex div{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
 .contacts-select div{
     display: flex;
     flex-direction: column;
@@ -264,4 +276,11 @@ font-size: 13px;
 .text-area textarea{
     width: 100%;
 }
+
+.digit-flex{
+    flex-direction: column;
+    gap: 14px;
+    align-items: center;
+}
+
 }

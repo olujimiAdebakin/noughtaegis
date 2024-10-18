@@ -70,16 +70,16 @@ const Form = () => {
        setLoading(true); 
        emailjs
          .send(
-           process.env.REACT_APP_EMAILJS_SERVICE_ID,
-           process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+           import.meta.env.REACT_APP_EMAILJS_SERVICE_ID,
+           import.meta.env.REACT_APP_EMAILJS_TEMPLATE_ID,
            formData,
-           process.env.REACT_APP_EMAILJS_USER_ID
+           import.meta.env.REACT_APP_EMAILJS_USER_ID
          )
          .then(
            (response) => {
              console.log("SUCCESS!", response.status, response.text);
-             setSuccess("Your message has been successfully sent!"); 
-             setLoading(false); 
+             setSuccess("Your message has been successfully sent!");
+             setLoading(false);
              setFormData({
                companyName: "",
                firstName: "",
@@ -90,12 +90,12 @@ const Form = () => {
                howDidYouHear: "",
                services: [],
                message: "",
-             }); 
+             });
            },
            (err) => {
              console.error("FAILED...", err);
-             setErrorMessage("Something went wrong. Please try again later."); 
-             setLoading(false); 
+             setErrorMessage("Something went wrong. Please try again later.");
+             setLoading(false);
            }
          );
      }
@@ -115,7 +115,14 @@ const Form = () => {
         </div>
         <div className="contacts-email">
           <p>Email: hello@noughtaegis.com</p>
-          <p>Phone: +234 567 654 34</p>
+          <div className="digit-flex">
+            {" "}
+            <p>Phone: </p>
+            <div>
+              <p>+234 91 358 823 46</p>
+              <p>+234 80 395 543 11</p>
+            </div>
+          </div>
         </div>
         <div className="contacts-text">
           <p>
