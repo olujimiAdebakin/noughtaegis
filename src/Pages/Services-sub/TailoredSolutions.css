@@ -19,15 +19,20 @@ background-image: linear-gradient(transparent 40%, #001a38),
         linear-gradient(to right, transparent 40%, #001a38), url(../../assets/portrait-professional-elegant-businessman.jpg); filter: brightness(80%);
 }
 
-.tailored-solutions-hero h3{
+.tailored-solutions-hero h1{
     color: #fd3842;
     font-size: 2rem;
     text-align: center;
+    display: flex;
+    gap: 10px;
+    align-items: center;
    
 }
 
-.tailored-solutions-hero span{
-    font-size: 2rem;
+.tailored-solutions-hero h3{
+    font-size: 2.3rem;
+       color: #fd3842;
+       font-weight: bold;    
 }
 
 .tailored-solutions-hero h2{

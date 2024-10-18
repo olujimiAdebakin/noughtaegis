@@ -32,7 +32,10 @@ const ItSrategy = () => {
         <Navbar />
         <div className="it-strategy">
           <div className="it-strategy-hero">
-            <h2 className="animated-text">IT Strategy</h2>
+            <h2>
+              IT
+              <span className="shake"> Strategy</span>
+            </h2>
             <p>
               Strategic IT planning aligns technology with business goals to
               drive innovation and growth. By creating a clear IT roadmap,
@@ -41,7 +44,9 @@ const ItSrategy = () => {
               efficient processes, cost savings, and the ability to adapt to
               changing market needs while fostering long-term success.
             </p>
-            <div className="it-strategy-marquee">{showMarquee && <Marqee />}</div>
+            <div className="it-strategy-marquee">
+              {showMarquee && <Marqee />}
+            </div>
           </div>
 
           <div className="it-strategy-testimonial">

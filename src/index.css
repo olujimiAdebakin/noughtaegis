@@ -15,16 +15,14 @@
 html{
     font-size: 14px;
     scroll-behavior: smooth;
-    zoom: 0 !important;
+   
 }
 
 body{
    
     font-family: "Poppins", sans-serif;
     background:#001a38;
-    /* user-select: none; */
     overflow-x: hidden !important;
-    width: 100vw;
 }
 
 
@@ -62,6 +60,7 @@ small{
 .app{
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .swiper-button-next,

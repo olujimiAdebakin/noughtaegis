@@ -25,15 +25,15 @@ const TailoredSolutions = () => {
     //   });
     // }, []);
 
-    useEffect(() => {
-      gsap.to(textRef.current, {
-        scale: 1.2,
-        duration: 2,
-        yoyo: true,
-        repeat: -1,
-        ease: "power1.inOut",
-      });
-    }, []);
+    // useEffect(() => {
+    //   gsap.to(textRef.current, {
+    //     scale: 1.2,
+    //     duration: 2,
+    //     yoyo: true,
+    //     repeat: -1,
+    //     ease: "power1.inOut",
+    //   });
+    // }, []);
 
   //   const addSpotlight = (el) => {
   //     if (el && !spotlightRefs.current.includes(el)) {
@@ -74,9 +74,9 @@ const TailoredSolutions = () => {
       >
         {/* <div className="spotlight" ref={addSpotlight}></div>
         <div className="spotlight" ref={addSpotlight}></div> */}
-        <h3 ref={textRef}>
-          <span>Tailored </span> Cyber IT Consultancy
-        </h3>
+        <h1>
+          <h3 className='shake'>Tailored </h3> Cyber IT Consultancy
+        </h1>
         <h2>
           Empowering Professional Services with Superior IT and Cybersecurity
           Consulting

@@ -39,7 +39,8 @@ const CyberServices = () => {
 
       <div className="cyber-hero" data-aos="fade-up-right">
         <h2>
-          <span className="animated-text">Secure</span> Protect. Innovate.
+          Secure.
+          <span className="shake">Protect.</span> Innovate.
         </h2>
         <p>
           Secure. Protect. Innovate. These three words embody our unwavering

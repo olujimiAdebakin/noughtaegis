@@ -29,6 +29,9 @@
 .cyber-hero h2{
     color: #fff;
     font-size: 40px;
+    display: flex;
+    gap: 12px;
+    align-items:center;
 }
 
 .cyber-hero p{

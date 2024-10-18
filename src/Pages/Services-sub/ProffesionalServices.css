@@ -22,8 +22,14 @@
     font-size: 40px;
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 10px;
     font-weight: 700;
+}
+
+.professional-services-hero h3{
+    color: #fd3842;
+    font-size: 40px;
+    font-weight:bold;
 }
 
 .professional-services-hero h4{
@@ -62,7 +68,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 100px;
     padding: 30px 70px;
 }
 
@@ -80,10 +86,11 @@
 
 .professional-services-header p{
     color: #fff;
-    font-size: 12px;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: 600;
     width: 500px;
     text-align: center;
+    line-height: 25px;
 }
 
 .professional-services-grid-item{
@@ -102,7 +109,7 @@
 .professional-services-grid-item p{
     color: #fff;
     font-size: 13px;
-    font-weight: 400;
+    font-weight: 600;
     width: 300px;
     text-align: center;
 }

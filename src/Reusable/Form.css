@@ -232,6 +232,9 @@ font-size: 13px;
     }
 
  .text-area text{
-    width: 600px;
+    width: 100%;
+}
+.text-area textarea{
+    width: 100%;
 }
 }

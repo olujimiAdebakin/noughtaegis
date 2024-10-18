@@ -1,10 +1,8 @@
 import React from "react";
 import "./ContactForm.css";
-import Form from "../../Reusable/Form"
-
-
-import Navbar from "../../Components/Navbar/Navbar";
-import Footer from "../../Components/Footer/Footer";
+import Navbar from "../Components/Navbar/Navbar";
+import Footer from "../Components/Footer/Footer";
+import Form from "../Reusable/Form";
 
 const ContactForm = () => {
   return (
@@ -24,7 +22,7 @@ const ContactForm = () => {
             hidden vulnerabilities
           </p>
         </div>
-        <Form/>
+        <Form />
       </div>
 
       <Footer />

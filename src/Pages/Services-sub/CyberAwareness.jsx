@@ -70,7 +70,9 @@ const generateVisibleColor = () => {
 
       <div className="cyber-awareness">
         <section className="cyber-awareness-hero">
-          <h2 className="animated-text">Stay Secure, Stay Informed</h2>
+          <h2>
+            Stay <span className="shake"> Secure</span>, Stay Informed
+          </h2>
           <p>Your guide to becoming more secure in the digital world.</p>
           <button className="cta-button" onClick={handleStartTraining}>
             Start Training

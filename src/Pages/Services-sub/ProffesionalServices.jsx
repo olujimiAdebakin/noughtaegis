@@ -49,7 +49,9 @@ const ProffesionalServices = () => {
 
       <div className="professional-services">
         <div className="professional-services-hero">
-          <h2 ref={textRef}>Unlock Expert IT Solutions</h2>
+          <h2>
+            Unlock Expert IT <h3 className='shake'> Solutions</h3>
+          </h2>
           <p>
             Empowering your business with cutting-edge technology, tailored to
             drive growth and efficiency.

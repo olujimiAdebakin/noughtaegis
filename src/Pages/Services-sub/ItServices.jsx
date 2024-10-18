@@ -34,7 +34,9 @@ const ItServices = () => {
       <Navbar />
 
       <div className="it-service-hero">
-        <h2 className="animated-text">Managed IT Services for SMBs</h2>
+        <h2>
+          <span className="shake">Managed</span> IT Services for SMBs
+        </h2>
         <p>
           Empowering small and medium-sized businesses with tailored Managed IT
           solutions, backed by cutting-edge cybersecurity expertise. We

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import './Career.css'
-import Navbar from '../../Components/Navbar/Navbar'
-import Footer from '../../Components/Footer/Footer';
-import Marqee from "../../Reusable/Marqee/Marqee";
-import Certification from '../../Components/Certification/Certification';
+
+
+
+
 
 import case1 from "../../assets/case-study01.webp"
 import case2 from "../../assets/case-study02.webp";
@@ -17,7 +17,11 @@ import alwayslearning from "../../assets/always-learning.webp";
 import no_egos from "../../assets/no-egos.webp";
 import dig_deeper from "../../assets/dig_deeper.webp";
 import whydevcent from '../../assets/whydevcent.webp';
-import OurTeam from '../../Reusable/OurTeam';
+import Navbar from '../../Components/Navbar/Navbar';
+import Footer from '../../Components/Footer/Footer';
+import Marqee from '../../Reusable/Marqee/Marqee';
+import Certification from '../../Components/Certification/Certification';
+
 // import engineer from "../../assets/engineer.jpg";
 
 const Career = () => {
@@ -61,7 +65,7 @@ const Career = () => {
               learn, and succeed. Explore our open positions below and apply
               today
             </p>
-            {showMarquee && <Marqee />}
+            {showMarquee && <Marqee/>}
           </div>
         </div>
         {/* <WaveAnimation /> */}
@@ -84,7 +88,7 @@ const Career = () => {
           </div>
         </div>
       </div>
-      <Certification />
+      <Certification/>
       <div className="who-we-aree" data-aos="fade-up-right">
         <div className="who-we-aree-header">
           <h2>Why You Should Join the NoughtAegis Family</h2>

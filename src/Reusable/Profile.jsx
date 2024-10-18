@@ -5,7 +5,7 @@ import Navbar from '../Components/Navbar/Navbar';
 import Footer from '../Components/Footer/Footer';
 import { GrNext, GrPrevious } from "react-icons/gr";
 import tosin from "../assets/tosin.jpg"; 
-import dele from "../assets/ayodele.jpg";
+import dele from "../assets/Dele.jpg"; 
 import leonard from "../assets/leonard.jpg"
 import avatar from "../assets/Avatar.avif" 
 import ProgressBar from './ProgressBar';
@@ -58,7 +58,7 @@ const Profile = () => {
    "Leonard Ojornubi Ikediuba": {
      img: leonard,
      role: "CyberSecurity Analyst",
-     bio: "I'm Leonard Ojornubi Ikediuba, a passionate IT professional with a proven track record in enhancing cybersecurity for startups across Africa. As the driving force behind CyberSec Haven, he leads initiatives to educate employees on safe practices, implement robust security policies, and conduct engaging awareness sessions. Leonard’s unique approach blends humor with education, making cybersecurity training both informative and enjoyable. He specializes in IT support, threat analysis, and web application security, and is a strong advocate for cybersecurity awareness. Let’s connect to explore how he can help fortify your organization's security in an enjoyable way.",
+     bio: "I'm Leonard Ojornubi Ikediuba, a passionate IT professional with a proven track record in enhancing cybersecurity for startups across Africa. As the driving force behind CyberSec Haven, he leads initiatives to educate employees on safe practices, implement robust security policies, and conduct engaging awareness sessions. Leonard’s unique approach blends humor with education, making cybersecurity training both informative and enjoyable. He specializes in IT support, threat analysis, and web application security, and is a strong advocate for cybersecurity awareness.",
      skill: [
        { name: "Network Security", level: 100 },
        { name: "Risk Management", level: 100 },
@@ -107,7 +107,7 @@ const Profile = () => {
     useEffect(() => {
       const interval = setInterval(() => {
         handleNextPage(); 
-      }, 4000); 
+      }, 15000); 
 
       return () => clearInterval(interval); 
     }, [currentIndex]);

@@ -55,9 +55,9 @@ const Navbar = () => {
           isMoved ? "navbar-scrolled" : "navbar-transparent"
         }`}
       >
-        <div className="nav-img">
+        <Link to="/" className="nav-img">
           <img src={logo} alt="Logo" />
-        </div>
+        </Link>
 
         <div className={`nav-links ${menuOpen ? "active" : ""}`}>
           <Link to="/" className={isActive("/") ? "active" : ""}>
@@ -184,97 +184,101 @@ const Navbar = () => {
             </Link>
 
             <div className="dropdown-content-1">
-              <div>
+              <div className="dropdown-content-flex">
+                <div>
+                  <ul>
+                    <li>
+                      <Link
+                        to="/education"
+                        className={isActive("/education") ? "active" : ""}
+                      >
+                        Education
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/telecommunications"
+                        className={
+                          isActive("/telecommunications") ? "active" : ""
+                        }
+                      >
+                        Telecommunications
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/banking-financial-services"
+                        className={
+                          isActive("/banking-financial-services")
+                            ? "active"
+                            : ""
+                        }
+                      >
+                        Banking & Financial Services
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/government"
+                        className={isActive("/government") ? "active" : ""}
+                      >
+                        Government
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        to="/law-firm"
+                        className={isActive("/law-firm") ? "active" : ""}
+                      >
+                        Law Firms
+                      </Link>
+                    </li>
+                  </ul>
+                </div>
+
                 <ul>
                   <li>
                     <Link
-                      to="/education"
-                      className={isActive("/education") ? "active" : ""}
+                      to="/military"
+                      className={isActive("/military") ? "active" : ""}
                     >
-                      Education
+                      Military
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to="/telecommunications"
-                      className={
-                        isActive("/telecommunications") ? "active" : ""
-                      }
+                      to="/procurement"
+                      className={isActive("/procurement") ? "active" : ""}
                     >
-                      Telecommunications
+                      Procurement
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to="/banking-financial-services"
-                      className={
-                        isActive("/banking-financial-services") ? "active" : ""
-                      }
+                      to="/healthcare"
+                      className={isActive("/healthcare") ? "active" : ""}
                     >
-                      Banking & Financial Services
+                      Healthcare
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to="/government"
-                      className={isActive("/government") ? "active" : ""}
+                      to="/non-profit"
+                      className={isActive("/non-profit") ? "active" : ""}
                     >
-                      Government
+                      Non-Profit
                     </Link>
                   </li>
                   <li>
                     <Link
-                      to="/law-firm"
-                      className={isActive("/law-firm") ? "active" : ""}
+                      to="/manufacturing"
+                      className={isActive("/manufacturing") ? "active" : ""}
                     >
-                      Law Firms
+                      Manufacturing
                     </Link>
                   </li>
                 </ul>
               </div>
-
-              <ul>
-                <li>
-                  <Link
-                    to="/military"
-                    className={isActive("/military") ? "active" : ""}
-                  >
-                    Military
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/procurement"
-                    className={isActive("/procurement") ? "active" : ""}
-                  >
-                    Procurement
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/healthcare"
-                    className={isActive("/healthcare") ? "active" : ""}
-                  >
-                    Healthcare
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/non-profit"
-                    className={isActive("/non-profit") ? "active" : ""}
-                  >
-                    Non-Profit
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="/manufacturing"
-                    className={isActive("/manufacturing") ? "active" : ""}
-                  >
-                    Manufacturing
-                  </Link>
-                </li>
-              </ul>
             </div>
           </div>
 

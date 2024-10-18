@@ -28,10 +28,18 @@
      text-shadow: rgba(0, 0,0, 0.5);
 }
 
+
+.it-service-hero span{
+    color:#fd3842;
+    font-size: 30px;
+     text-shadow: rgba(0, 0,0, 0.5);
+}
+
+
 .it-service-hero p{
     color: #fff;
     font-size: 13px;
-    font-weight: 500;
+    font-weight: 600;
     width: 600px;
     text-align: center;
     line-height: 24px;
