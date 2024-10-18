@@ -78,14 +78,14 @@ footer{
    align-items: start;
 }
 
-.futer li{
+.futer a{
     color: white;
     font-size: 13px;
     position: relative;
     padding-left: 20px;
 }
 
-.futer li::before {
+.futer a::before {
   content: "";
   position: absolute;
   top: 50%;

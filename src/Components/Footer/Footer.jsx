@@ -52,26 +52,28 @@ const Footer = () => {
           <div className="footer-links">
             <h2>SERVICES</h2>
             <ul className="futer">
-              <li>Managed IT Services</li>
-              <li>Cybersecurity Services</li>
-              <li>IT Strategy</li>
-              <li>IT Consulting</li>
-              <li>Network Management</li>
-              <li>Cloud Services</li>
-              <li>Help Desk Support</li>
+              <Link to="/It-services">Managed IT Services</Link>
+              <Link to="/Cyber-services">Cybersecurity Services</Link>
+              <Link to="/it-strategy">IT Strategy</Link>
+              <Link to="/tailored-solutions">Tailored Consulting</Link>
+              <Link to="/Cyber-awareness">Cyber Awareness</Link>
+              <Link to="/proffesional-services">Professional Service</Link>
             </ul>
           </div>
 
           <div className="footer-links">
             <h2>INDUSTRIES</h2>
             <ul className="futer">
-              <li>Financial Institutions</li>
-              <li>Health Institutions</li>
-              <li>Technology & Startup</li>
-              <li>Law Firms</li>
-              <li>Private Equity</li>
-              <li>Manufacturing</li>
-              <li>Entertainment</li>
+              <Link to="/banking-financial-services">
+                Banking & Financial Services
+              </Link>
+              <Link to="/healthcare">HealthCare</Link>
+              <Link to="/manufacturing">Manufacturing</Link>
+
+              <Link to="/law-firm">Law Firms</Link>
+              <Link to="/telecommunications">Telecommunication</Link>
+              <Link to="/non-profit">Non-profit</Link>
+              <Link to="/government">Government</Link>
             </ul>
           </div>
         </div>

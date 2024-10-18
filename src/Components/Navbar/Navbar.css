@@ -350,6 +350,7 @@ font-size: 13px;
         z-index: 10;
          background-color: #00274f;
           flex-direction: column;
+          overflow: hidden;
     }
 
     .nav-end{
@@ -359,7 +360,7 @@ font-size: 13px;
     }
     .nav-links.active{
         z-index: 40;
-        margin-top: 110px;
+        margin-top:70px;
     }
 
     .nav-links.active a, .nav-end.active a {
@@ -426,10 +427,12 @@ font-size: 13px;
    .dropdown-content,
   .dropdown-content-1 {
     flex-direction: column!important;
+    /* height: 100vh; */
   }
 
 
-    .nav-links.active, .nav-end.active {
+    .nav-links.active
+  {
         display: flex;
         flex-direction: column;
         position: absolute;
@@ -437,9 +440,16 @@ font-size: 13px;
         left: 0;
         width: 100%;
         background-color: #00274f;
-        padding:25px;
-        z-index: 10;
+        padding:75px;
+        overflow: hidden;
+        /* z-index: 40; */
+        height: 100vh;
     }
+
+        .nav-end.active{
+          height: 100vh;
+
+        }
 
     .nav-links.active a, .nav-end.active a {
         font-size: 13px;
