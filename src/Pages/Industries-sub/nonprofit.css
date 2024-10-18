@@ -57,6 +57,9 @@
     width: 700px;
 }
 
+.current-text h1{
+    color: #fd3842;
+}
 .current-text p{
      line-height: 25px;
      font-weight: 600;
@@ -77,6 +80,7 @@
 
 .current-container h1{
     font-size: 33px;
+    color: #fd3842;
 }
 
 
@@ -101,6 +105,7 @@
 .current-card h2{
     font-size: 24px;
     font-weight: 700;
+    
 }
 
 .current-card p{
@@ -111,6 +116,7 @@
 
 .current-role-content h1{
     font-size: 33px;
+    color: #fd3842;
 }
 
 .current-role-content p{

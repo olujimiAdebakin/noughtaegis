@@ -90,7 +90,7 @@ const Profile = () => {
   const currentIndex = profileNames.indexOf(name); 
       
   const handleGoToOurTeam = () => {
-    navigate("/career#our-team");
+    navigate("/whydevcent#our-team");
   }
 
   const handlePrevPage = () => {

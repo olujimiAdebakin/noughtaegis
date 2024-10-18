@@ -284,6 +284,11 @@
         text-align: center;
     }
 
+    .career-purpose{
+        flex-direction: column;
+        align-self:center;
+    }
+
     .career-purpose-right{
         align-items: center;
     }
@@ -329,5 +334,9 @@
 
     .career-purpose-right p{
         width: 300px;
+    }
+
+    .career-purpose{
+        flex-direction: column;
     }
 }
