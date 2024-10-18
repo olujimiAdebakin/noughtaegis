@@ -6,35 +6,37 @@ import cyber_awareness from "../../assets/ai-image.jpg"
 import Footer from "../../Components/Footer/Footer"
 import paragraphs from '../../../assets'
 import Quiz from "../../Reusable/Quiz";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import Testimonial from "../../Components/Testimonial/Testimonial"
 
 const CyberAwareness = () => {
 
-  //  const paragraphs = [
-  //   "Don't fall victim to cybercrime. Our training program equips you with the knowledge and tools to navigate the internet safely and securely.",
-  //   "Stay safe online! Our training program teaches you how to safeguard sensitive information, recognize cyber threats, and maintain your privacy.",
-  //   "In today's digital age, cybersecurity awareness is crucial. Protect yourself from hackers, data breaches, and malicious attacks with our comprehensive training program.",
-  //   "Safeguard your digital life. Discover how to protect your sensitive information and stay ahead of cyber threats with our expert training.",
-  //   "Cybersecurity is a shared responsibility. Take control of your digital presence with our easy-to-understand lessons on safe browsing and data protection.",
-  //   "Understand the risks of weak passwords and how attackers can exploit them. Our training teaches you to create strong passwords that keep you safe.",
-  //   "Prevent identity theft by learning how to secure your personal information. Our program offers actionable tips to protect your privacy.",
-  //   "The internet is full of threats, but you can navigate it safely with our security training. Learn to recognize phishing emails and avoid online scams.",
-  //   "Stay ahead of cybercriminals by keeping your software updated. Our training covers the importance of patching and using secure applications.",
-  //   "Data breaches are on the rise. Learn how to detect unusual activity and protect your accounts from unauthorized access with two-factor authentication.",
-  //   "The weakest link in cybersecurity is often human error. Learn how to spot social engineering attacks and protect your company from internal threats.",
-  //   "Is your Wi-Fi secure? Discover the importance of encrypting your network and avoiding public Wi-Fi risks with our comprehensive security modules.",
-  //   "Online threats evolve constantly, but so can you. Stay up-to-date with the latest cybersecurity practices and trends through our expert training.",
-  //   "Protect your digital footprint by understanding privacy settings and how to limit the data you share online. Safeguard your personal and professional life.",
-  //   "Avoid financial loss by learning how to secure online transactions. Our training teaches you to recognize secure websites and avoid e-commerce fraud.",
-  //   "Learn the importance of regularly backing up your data. Our training explains how to securely store and recover your information in case of attacks.",
-  //   "Understand ransomware and how to avoid becoming a victim. Our program covers prevention strategies and what to do if your system is compromised.",
-  //   "Secure your mobile devices just like your computer. Learn about mobile app security, safe downloading practices, and protecting your data on the go.",
-  //   "Work from home safely with our cybersecurity tips. Protect your remote setup from intruders and maintain confidentiality while working online.",
-  //   "Become your own first line of defense by mastering basic cybersecurity skills. Empower yourself to avoid the most common cyber threats with confidence.",
-  // ];
+      const [showMarquee, setShowMarquee] = useState(true);
+      const [lastScrollY, setLastScrollY] = useState(0);
 
+      const handleScroll = () => {
+        const currentScrollY = window.scrollY;
+        if (currentScrollY > lastScrollY) {
+          // Scrolling down
+          setShowMarquee(false);
+        } else {
+          // Scrolling up
+          setShowMarquee(true);
+        }
+        setLastScrollY(currentScrollY);
+      };
+
+      useEffect(() => {
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+          window.removeEventListener("scroll", handleScroll);
+        };
+      }, [lastScrollY]);
+
+ 
   const [currentParagraph, setCurrentParagraph] = useState(0);
   const [color, setColor] = useState("#fff");
+  const navigate = useNavigate();
 
 
 const generateVisibleColor = () => {
@@ -46,12 +48,15 @@ const generateVisibleColor = () => {
   return color;
 };
 
+  const handleStartTraining = () => {
+    navigate("/contactform");
+  }
 
   useEffect(() => {
     
     const interval = setInterval(() => {
       setCurrentParagraph((prev) => (prev + 1) % paragraphs.paragraphs.length);
-      setColor(generateRandomColor());
+      setColor(generateVisibleColor);
     }, 7000);
 
    
@@ -67,9 +72,15 @@ const generateVisibleColor = () => {
         <section className="cyber-awareness-hero">
           <h2 className="animated-text">Stay Secure, Stay Informed</h2>
           <p>Your guide to becoming more secure in the digital world.</p>
-          <button className="cta-button">Start Training</button>
-          <Marqee />
+          <button className="cta-button" onClick={handleStartTraining}>
+            Start Training
+          </button>
+          {showMarquee && <Marqee />}
         </section>
+
+        {/* <div className="it-strategy-testimonial">
+          <Testimonial />
+        </div> */}
 
         <section className="cyber-awareness-flex">
           <div className="introduction">
@@ -93,7 +104,7 @@ const generateVisibleColor = () => {
                 module equips you with the knowledge to recognize suspicious
                 activity and avoid being a victim of phishing scams.
               </p>
-              <button>Start Module</button>
+              <button onClick={handleStartTraining}>Get Started</button>
             </div>
             <div className="module-card">
               <h3>Safe Browsing</h3>
@@ -104,7 +115,7 @@ const generateVisibleColor = () => {
                 Learn how to make informed decisions that minimize your exposure
                 to threats.
               </p>
-              <button>Start Module</button>
+              <button onClick={handleStartTraining}>Get Started</button>
             </div>
             <div className="module-card">
               <h3>Password Management</h3>
@@ -115,7 +126,7 @@ const generateVisibleColor = () => {
                 multi-factor authentication and periodic updates, to enhance
                 security.
               </p>
-              <button>Start Module</button>
+              <button onClick={handleStartTraining}>Get Started</button>
             </div>
             <div className="module-card">
               <h3>Social Engineering</h3>
@@ -125,7 +136,7 @@ const generateVisibleColor = () => {
                 as pretexting, baiting, and impersonation, providing you with
                 tools to spot these tactics and prevent exploitation.
               </p>
-              <button>Start Module</button>
+              <button onClick={handleStartTraining}>Get Started</button>
             </div>
             <div className="module-card">
               <h3>Data Protection</h3>
@@ -135,7 +146,7 @@ const generateVisibleColor = () => {
                 secure data storage practices to ensure your information remains
                 confidential and protected from unauthorized access.
               </p>
-              <button>Start Module</button>
+              <button onClick={handleStartTraining}>Get Started</button>
             </div>
             <div className="module-card">
               <h3>Mobile Security</h3>
@@ -145,7 +156,7 @@ const generateVisibleColor = () => {
                 permissions, mobile encryption, and the dangers of public Wi-Fi
                 to keep your mobile data safe from potential threats.
               </p>
-              <button>Start Module</button>
+              <button onClick={handleStartTraining}>Get Started</button>
             </div>
             <div className="module-card">
               <h3>Email Security</h3>
@@ -155,7 +166,7 @@ const generateVisibleColor = () => {
                 malicious attachments, and use encryption tools to protect
                 sensitive information sent via email.
               </p>
-              <button>Start Module</button>
+              <button onClick={handleStartTraining}>Get Started</button>
             </div>
             <div className="module-card">
               <h3>Network Security</h3>
@@ -165,7 +176,7 @@ const generateVisibleColor = () => {
                 access points to help you understand how to protect your network
                 from intrusion, malware, and other vulnerabilities.
               </p>
-              <button>Start Module</button>
+              <button onClick={handleStartTraining}>Get Started</button>
             </div>
             <div className="module-card">
               <h3>Incident Response</h3>
@@ -177,14 +188,14 @@ const generateVisibleColor = () => {
                 containment strategies, and recovery actions to ensure swift and
                 effective responses to cyber threats.
               </p>
-              <button>Start Module</button>
+              <button onClick={handleStartTraining}>Get Started</button>
             </div>
           </div>
         </section>
 
-        {/* <div className="quiz-section">
-        <Quiz/>
-        </div> */}
+        <div className="quiz-section">
+          <Quiz />
+        </div>
 
         {/* FAQ Section */}
         {/* <section className="faqq">
@@ -209,7 +220,7 @@ const generateVisibleColor = () => {
           <h2>Need Help?</h2>
           <p>
             If you have any questions or need more personalized training, feel
-            free to <Link href="/contact">contact us</Link>.
+            free to <h3 onClick={handleStartTraining}>contact us</h3>
           </p>
         </section>
       </div>

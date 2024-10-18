@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './CyberServices.css'
 import Navbar from '../../Components/Navbar/Navbar'
 import Marqee from '../../Reusable/Marqee/Marqee';
@@ -6,10 +6,33 @@ import cyber_right from '../../assets/cyber-service.jpg'
 import Certification from '../../Components/Certification/Certification';
 import Benefit from '../../Reusable/Benefit';
 import CyberTestimonials from '../../Reusable/CyberTestimonials';
+import Testimonial from "../../Components/Testimonial/Testimonial"
 import Footer from '../../Components/Footer/Footer';
 import Accordion from '../../Reusable/Accordion';
 
 const CyberServices = () => {
+
+          const [showMarquee, setShowMarquee] = useState(true);
+          const [lastScrollY, setLastScrollY] = useState(0);
+
+          const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+            if (currentScrollY > lastScrollY) {
+              // Scrolling down
+              setShowMarquee(false);
+            } else {
+              // Scrolling up
+              setShowMarquee(true);
+            }
+            setLastScrollY(currentScrollY);
+          };
+
+          useEffect(() => {
+            window.addEventListener("scroll", handleScroll);
+            return () => {
+              window.removeEventListener("scroll", handleScroll);
+            };
+          }, [lastScrollY]);
   return (
     <>
       <Navbar />
@@ -33,8 +56,12 @@ const CyberServices = () => {
           <li>24/7 SOC incident Response</li>
           <li>Security Assesment</li>
         </ul>
-        <Marqee />
+        {showMarquee && <Marqee />}
       </div>
+
+      {/* <div className="it-strategy-testimonial">
+        <Testimonial />
+      </div> */}
 
       <div className="cyber-services" data-aos="fade-up-right">
         <div className="cyber-services-header">

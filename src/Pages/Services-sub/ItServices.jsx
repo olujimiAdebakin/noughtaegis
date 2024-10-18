@@ -1,29 +1,52 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './ItServices.css'
 import Navbar from '../../Components/Navbar/Navbar'
 import Testimonial from '../../Components/Testimonial/Testimonial'
+import Marqee from "../../Reusable/Marqee/Marqee";
 
 import Footer from '../../Components/Footer/Footer'
 
 const ItServices = () => {
+
+          const [showMarquee, setShowMarquee] = useState(true);
+          const [lastScrollY, setLastScrollY] = useState(0);
+
+          const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+            if (currentScrollY > lastScrollY) {
+              // Scrolling down
+              setShowMarquee(false);
+            } else {
+              // Scrolling up
+              setShowMarquee(true);
+            }
+            setLastScrollY(currentScrollY);
+          };
+
+          useEffect(() => {
+            window.addEventListener("scroll", handleScroll);
+            return () => {
+              window.removeEventListener("scroll", handleScroll);
+            };
+          }, [lastScrollY]);
   return (
     <>
       <Navbar />
 
       <div className="it-service-hero">
-        <h2>Managed IT Services for SMBs</h2>
+        <h2 className="animated-text">Managed IT Services for SMBs</h2>
         <p>
           Empowering small and medium-sized businesses with tailored Managed IT
           solutions, backed by cutting-edge cybersecurity expertise. We
           safeguard your operations, so you can focus on growth, knowing your
           systems and data are in expert hands.
         </p>
+        {showMarquee && <Marqee />}
       </div>
 
       <div className="it-service-testimonial">
         <Testimonial />
       </div>
-
 
       <div className="it-service-empower">
         <div className="it-service-empower-header">
@@ -94,7 +117,7 @@ const ItServices = () => {
         </div>
       </div>
       <div className="it-service-footer">
-        <Footer/>
+        <Footer />
       </div>
     </>
   );

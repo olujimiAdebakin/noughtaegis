@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import "./TailoredSolutions.css"
 import Navbar from '../../Components/Navbar/Navbar'
 import Marqee from '../../Reusable/Marqee/Marqee';
@@ -40,6 +40,28 @@ const TailoredSolutions = () => {
   //       spotlightRefs.current.push(el);
   //     }
   // };
+
+          const [showMarquee, setShowMarquee] = useState(true);
+          const [lastScrollY, setLastScrollY] = useState(0);
+
+          const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+            if (currentScrollY > lastScrollY) {
+              // Scrolling down
+              setShowMarquee(false);
+            } else {
+              // Scrolling up
+              setShowMarquee(true);
+            }
+            setLastScrollY(currentScrollY);
+          };
+
+          useEffect(() => {
+            window.addEventListener("scroll", handleScroll);
+            return () => {
+              window.removeEventListener("scroll", handleScroll);
+            };
+          }, [lastScrollY]);
   
   return (
     <>
@@ -48,7 +70,7 @@ const TailoredSolutions = () => {
       <div
         className="tailored-solutions-hero"
         data-aos="fade-up-right"
-       data-aos-duration="1000"
+        data-aos-duration="1000"
       >
         {/* <div className="spotlight" ref={addSpotlight}></div>
         <div className="spotlight" ref={addSpotlight}></div> */}
@@ -69,11 +91,11 @@ const TailoredSolutions = () => {
           management and cybersecurity consultancy tailored specifically to meet
           the needs of professional services firms.
         </p>
-        <Marqee />
+        {showMarquee && <Marqee />}
       </div>
 
       <div className="tailored-solutions-testimonials">
-        <Testimonial/>
+        <Testimonial />
       </div>
 
       <div className="tailored-solutions-content" data-aos="fade-up-right">
@@ -148,7 +170,7 @@ const TailoredSolutions = () => {
           </div>
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 }

@@ -6,7 +6,12 @@
     align-items: center;
     gap:25px;
     margin-top: 60px;
-    background-image: url(../../assets/digital-padlock-depicted-blue-circuit-background-symbolizes-cybersecurity-measures_548264-12959.jpg);
+    background-image: linear-gradient(transparent 40%, #001a38), 
+        linear-gradient(to top, transparent 56%, #001a38), 
+        linear-gradient(to left, transparent 40%, #001a38), 
+        linear-gradient(to right, transparent 40%, #001a38),
+           linear-gradient(to bottom, transparent 30%, #001a38),
+     url(../../assets/digital-padlock-depicted-blue-circuit-background-symbolizes-cybersecurity-measures_548264-12959.jpg);
     height: 470px;
     width: 100%;
     /* background-position: center; */
@@ -135,7 +140,7 @@
 }
 
 .cyber-text h2{
-    color: #fff;
+    color: #fd3842;
     font-size: 17px;
 }
 

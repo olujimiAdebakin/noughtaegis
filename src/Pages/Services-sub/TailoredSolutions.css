@@ -6,13 +6,17 @@ gap:25px;
 margin-top:4.2rem;
 padding: 100px;
 height: 470px;
-/* background-size: cover; */
+background-size: cover;
+background-position: center;
 position: relative;
 opacity: 10%;
 width: 100vw;
 opacity: 3;
 opacity: 1;
-background-image: url(../../assets/digital-technology-technical-support-customer-service-concept_555983-3818.jpg); filter: brightness(80%);
+background-image: linear-gradient(transparent 40%, #001a38), 
+        linear-gradient(to top, transparent 56%, #001a38), 
+        linear-gradient(to left, transparent 30%, #001a38), 
+        linear-gradient(to right, transparent 40%, #001a38), url(../../assets/portrait-professional-elegant-businessman.jpg); filter: brightness(80%);
 }
 
 .tailored-solutions-hero h3{

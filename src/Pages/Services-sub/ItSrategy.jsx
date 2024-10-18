@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './ItStrategy.css'
 import Navbar from '../../Components/Navbar/Navbar';
 import Testimonial from '../../Components/Testimonial/Testimonial';
@@ -6,12 +6,33 @@ import Footer from '../../Components/Footer/Footer';
 import Marqee from '../../Reusable/Marqee/Marqee';
 
 const ItSrategy = () => {
+          const [showMarquee, setShowMarquee] = useState(true);
+          const [lastScrollY, setLastScrollY] = useState(0);
+
+          const handleScroll = () => {
+            const currentScrollY = window.scrollY;
+            if (currentScrollY > lastScrollY) {
+              // Scrolling down
+              setShowMarquee(false);
+            } else {
+              // Scrolling up
+              setShowMarquee(true);
+            }
+            setLastScrollY(currentScrollY);
+          };
+
+          useEffect(() => {
+            window.addEventListener("scroll", handleScroll);
+            return () => {
+              window.removeEventListener("scroll", handleScroll);
+            };
+          }, [lastScrollY]);
     return (
       <>
         <Navbar />
         <div className="it-strategy">
           <div className="it-strategy-hero">
-            <h2>IT Strategy</h2>
+            <h2 className="animated-text">IT Strategy</h2>
             <p>
               Strategic IT planning aligns technology with business goals to
               drive innovation and growth. By creating a clear IT roadmap,
@@ -20,9 +41,7 @@ const ItSrategy = () => {
               efficient processes, cost savings, and the ability to adapt to
               changing market needs while fostering long-term success.
             </p>
-            <div className="it-strategy-marquee">
-              <Marqee />
-            </div>
+            <div className="it-strategy-marquee">{showMarquee && <Marqee />}</div>
           </div>
 
           <div className="it-strategy-testimonial">

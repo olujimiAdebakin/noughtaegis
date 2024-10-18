@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import './ProffesionalServices.css'
 import Navbar from '../../Components/Navbar/Navbar'
 import Testimonial from '../../Components/Testimonial/Testimonial';
@@ -7,6 +7,9 @@ import gsap from 'gsap';
 import Marqee from '../../Reusable/Marqee/Marqee';
 
 const ProffesionalServices = () => {
+
+
+  
   const textRef = useRef(null);
   
      useEffect(() => {
@@ -18,20 +21,40 @@ const ProffesionalServices = () => {
          ease: "power1.inOut",
        });
      }, []);
+  
+           const [showMarquee, setShowMarquee] = useState(true);
+           const [lastScrollY, setLastScrollY] = useState(0);
+
+           const handleScroll = () => {
+             const currentScrollY = window.scrollY;
+             if (currentScrollY > lastScrollY) {
+               // Scrolling down
+               setShowMarquee(false);
+             } else {
+               // Scrolling up
+               setShowMarquee(true);
+             }
+             setLastScrollY(currentScrollY);
+           };
+
+           useEffect(() => {
+             window.addEventListener("scroll", handleScroll);
+             return () => {
+               window.removeEventListener("scroll", handleScroll);
+             };
+           }, [lastScrollY]);
   return (
     <>
       <Navbar />
 
       <div className="professional-services">
         <div className="professional-services-hero">
-          <h2>
-            Unlock <h4 ref={textRef}>Expert IT </h4> Solutions
-          </h2>
+          <h2 ref={textRef}>Unlock Expert IT Solutions</h2>
           <p>
             Empowering your business with cutting-edge technology, tailored to
             drive growth and efficiency.
           </p>
-          <Marqee/>
+          {showMarquee && <Marqee />}
         </div>
         <div className="proffessional-services-testimonial">
           <Testimonial />
