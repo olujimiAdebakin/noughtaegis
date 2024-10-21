@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import emailjs from "emailjs-com"; // Import EmailJS
+import emailjs from "@emailjs/browser"; 
 import "./Form.css";
 
 const Form = () => {
@@ -64,16 +64,19 @@ const Form = () => {
       const handleSubmit = (e) => {
      e.preventDefault();
      setErrorMessage(""); 
-     setSuccess(""); 
+        setSuccess(""); 
+        
+        emailjs.init("3SpS5HnrOiQL8GOl0");
 
      if (validate()) {
        setLoading(true); 
        emailjs
          .send(
-           import.meta.env.REACT_APP_EMAILJS_SERVICE_ID,
-           import.meta.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+           
+           import.meta.env.VITE_EMAILJS_SERVICE_ID,
+           import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
            formData,
-           import.meta.env.REACT_APP_EMAILJS_USER_ID
+           import.meta.env.VITE_EMAILJS_USER_ID
          )
          .then(
            (response) => {
@@ -97,7 +100,11 @@ const Form = () => {
              setErrorMessage("Something went wrong. Please try again later.");
              setLoading(false);
            }
-         );
+       );
+       console.log('SERVICE_ID:', import.meta.env.VITE_EMAILJS_SERVICE_ID);
+console.log('TEMPLATE_ID:', import.meta.env.VITE_EMAILJS_TEMPLATE_ID);
+console.log('USER_ID:', import.meta.env.VITE_EMAILJS_USER_ID);
+
      }
    };
 
@@ -203,8 +210,8 @@ const Form = () => {
             <div>
               <label>How did you hear about us</label>
               <select name="howDidYouHear" onChange={handleChange}>
-                <option value="" disabled>
-                  Select an option
+                <option value="" disabled selected>
+                  Select your option
                 </option>
                 <option value="Communities">Communities</option>
                 <option value="Clutch">Clutch</option>
@@ -279,6 +286,7 @@ const Form = () => {
                 maxLength={100}
                 onChange={handleChange}
                 value={formData.message}
+                placeholder="Enter Your Message"
               ></textarea>
               {errors.message && (
                 <span className="error">{errors.message}</span>

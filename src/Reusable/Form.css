@@ -153,6 +153,7 @@ gap: 13px;
 
 .contacts-textarea{
     width: 100%;
+   
 }
 
 .contacts-textarea h2{
@@ -165,6 +166,7 @@ gap: 13px;
     flex-direction: column;
     gap: 10px;
     width: 100%;
+     margin-top: 10px;
 }
 
 .text-area label{
@@ -184,6 +186,9 @@ font-size: 13px;
 .contacts-submit{
     display: flex;
     justify-content:center;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
 }
 
 .contacts-submit button{
@@ -208,8 +213,9 @@ font-size: 13px;
 
 
 .success-message {
-  color: green;
+  color:white;
   margin-top: 10px;
+  font-weight: bold;
 }
 
 

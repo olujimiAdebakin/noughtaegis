@@ -441,7 +441,7 @@ font-size: 13px;
         width: 100%;
         background-color: #00274f;
         padding:75px;
-        overflow: hidden;
+        /* overflow: hidden; */
         /* z-index: 40; */
         height: 100vh;
     }
