@@ -19,6 +19,10 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  // const handleMenu = () => {
+  //   navigate("/career")
+  // }
+
   const handleScroll = () => {
     if (window.scrollY > 30) {
       setIsMoved(true);

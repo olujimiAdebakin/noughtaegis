@@ -3,6 +3,7 @@ import "./OurTeam.css";
 import tosin from "../assets/tosin.jpg"; 
 import dele from "../assets/Dele.jpg"; 
 import leonard from "../assets/leonard.jpg"
+import samuel from "../assets/sandra.jpg";
 import avatar from "../assets/Avatar.avif"
 import { useNavigate } from "react-router-dom";
 
@@ -33,6 +34,11 @@ const teamMembers = [
     name: "Adebakin Olujimi",
     role: "SoftWare Developer",
     image: avatar,
+  },
+  {
+    name: "Omodara, Samuel Abiola",
+    role: "Data Analyst",
+    image: samuel,
   },
 ];
 

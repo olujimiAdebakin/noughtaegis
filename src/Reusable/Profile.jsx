@@ -7,6 +7,7 @@ import { GrNext, GrPrevious } from "react-icons/gr";
 import tosin from "../assets/tosin.jpg"; 
 import dele from "../assets/Dele.jpg"; 
 import leonard from "../assets/leonard.jpg"
+import samuel from "../assets/sandra.jpg"
 import avatar from "../assets/Avatar.avif" 
 import ProgressBar from './ProgressBar';
 import { FaArrowDown } from "react-icons/fa6";
@@ -80,6 +81,20 @@ const Profile = () => {
        { name: "Typescript", level: 70 },
        { name: "TailwindCss", level: 60 },
        { name: "HTML/CSS", level: 100 },
+     ],
+   },
+
+      "Omodara, Samuel Abiola": {
+     img: samuel,
+     role: "Data Analyst",
+     bio: "OMODARA, Samuel Abiola is a proficient Data Analyst with vast experience in transforming raw data into actionable insights that drive decision-making and business growth. With a passion for data-driven problem-solving, Samuel excels in collecting, cleaning, and interpreting large datasets to provide meaningful business recommendations. Abiola is comfortable with the use of Technology and tools such as Microsoft Excel, SQL, Python, Tableau, Power BI with large datasets and utilizing advanced statistical techniques.",
+     skill: [
+       { name: "Data Cleaning and Transformation", level: 80 },
+       { name: "Problem Solving", level: 70 },
+       { name: "Business Intelligence", level: 85 },
+       { name: "Statistical Analysis", level: 70 },
+       { name: "Reporting and Visualization", level: 60 },
+       { name: "Database Management", level: 100 },
      ],
    },
  };
