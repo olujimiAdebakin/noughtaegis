@@ -287,7 +287,7 @@ const Navbar = () => {
           </div>
 
           <Link
-            to="/whydevcent"
+            to="/whynoughtaegis"
             className={isActive("/whydevcent") ? "active" : ""}
           >
             Who We Are <IoMdArrowDropdown className="nav-icon" />

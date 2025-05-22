@@ -42,7 +42,7 @@ function App() {
       duration: 1200, 
       offset: 200, 
       easing: "ease-in-out", 
-      once: true,
+      once:true,
     }); 
   }, []);
 
@@ -66,9 +66,9 @@ function App() {
 
           {/* PAGES */}
 
-          <Route path="/solutions" element={<Solution />} />
+          <Route path="/solutions" element={<Solution/>} />
           <Route path="/contactform" element={<ContactForm />} />
-          <Route path="/whydevcent" element={<WhyDevcent />} />
+          <Route path="/whynoughtaegis" element={<WhyDevcent />} />
           <Route path="/career" element={<Career />} />
 
           {/* services-Sub-pages */}

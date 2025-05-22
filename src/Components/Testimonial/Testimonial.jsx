@@ -9,33 +9,33 @@ import "swiper/css/navigation";
 const testimonials = [
   {
     text: "This service has exceeded my expectations in every way. The team's expertise, professionalism, and attention to detail have been truly impressive. Highly recommend!",
-    name: "John Doe",
-    position: "CEO, Company A",
+    name: "Tezza Business Solutions",
+    position: "CEO",
   },
   {
     text: "From initial consultation to project completion, the experience was seamless. Their dedication to delivering top-notch results is genuinely admirable. Wonderful experience!",
-    name: "Jane Smith",
-    position: "Manager, Company B",
+    name: "Spin Designs",
+    position: "CEO",
   },
   {
     text: "I'm thrilled with the outcomes! The team's innovative approach and technical expertise have significantly improved our processes. Couldn't be happier with the results.",
-    name: "Alice Johnson",
-    position: "Developer, Company C",
+    name: "Cybersechaven",
+    position: "CEO",
   },
   {
     text: "The level of professionalism and attentiveness was outstanding. Their flexibility and willingness to adapt to our needs made the collaboration effortless. Will definitely use again!",
-    name: "Bob Brown",
-    position: "Designer, Company D",
+    name: "Ruozo",
+    position: "CEO",
   },
   {
     text: "The value for money is exceptional, and the support team’s responsiveness is unparalleled. Their expertise has significantly enhanced our business operations. Great investment!",
-    name: "Charlie Green",
-    position: "Product Owner, Company E",
+    name: "SunFi",
+    position: "CEO",
   },
   {
     text: "Every aspect of the service, from initial consultation to delivery, was executed flawlessly. Their passion for excellence shines through in every detail. Exceeded expectations!",
-    name: "Diana White",
-    position: "Entrepreneur, Company F",
+    name: "Ogun State Government",
+    position: "MR, Governor",
   },
 ];
 

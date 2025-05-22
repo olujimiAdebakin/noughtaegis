@@ -27,23 +27,27 @@ const WhyDevcent = () => {
           </p>
         </div>
       </div>
-
-      <div className="who-we-are" data-aos="fade-up-right">
-        <h2>Who We Are</h2>
-        <p>
-          NoughtAegis is a passionate team of highly trained, proactive ethical
-          hackers. We protect and secure organizations from costly cybersecurity
-          breaches by collaborating with them to enhance and strengthen their
-          security posture.
-        </p>
-        <p>
-          We provide expert-level penetration testing services that are both
-          comprehensive and tailored to your unique needs. Our mission is to
-          cultivate a secure digital environment where everyone has the right to
-          privacy and cybersecurity. By identifying vulnerabilities and
-          strengthening defenses, we empower you to thrive in a digital
-          landscape that prioritizes safety and trust for all.
-        </p>
+      <div className="who-we-are-flex">
+        <div className="who-we-are" data-aos="fade-up-right">
+          <h2>Who We Are</h2>
+          <p>
+            NoughtAegis is a passionate team of highly trained, proactive
+            ethical hackers. We protect and secure organizations from costly
+            cybersecurity breaches by collaborating with them to enhance and
+            strengthen their security posture.
+          </p>
+          <p>
+            We provide expert-level penetration testing services that are both
+            comprehensive and tailored to your unique needs. Our mission is to
+            cultivate a secure digital environment where everyone has the right
+            to privacy and cybersecurity. By identifying vulnerabilities and
+            strengthening defenses, we empower you to thrive in a digital
+            landscape that prioritizes safety and trust for all.
+          </p>
+        </div>
+        <div>
+          
+        </div>
       </div>
       <Certification />
       <div className="our-purpose" data-aos="fade-up-right">
@@ -74,7 +78,7 @@ const WhyDevcent = () => {
       </div>
       <ProudMember />
       <CoreValues />
-      <OurTeam/>
+      <OurTeam />
       <div className="career-purpose" data-aos="fade-up-right">
         <img src={whydevcent} alt="" />
         <div className="career-purpose-right">

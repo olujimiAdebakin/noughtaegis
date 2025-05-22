@@ -166,6 +166,8 @@
     flex-direction: column;
     gap: 50px;
     margin-top: 50px;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 20px;
 }
 
 .cyber-spectrum-header{

@@ -13,13 +13,14 @@ const Serve = () => {
             <Link to="/education">Education</Link>
             <Link to="telecommunications">Telecommunications</Link>
             <Link to="/banking-financial-services">Banking & Finance</Link>
-         
+
             <Link to="/healthcare">HealthCare</Link>
-            <Link to="/law-firms">Law-Firms</Link>
+            <Link to="/law-firm">Law-Firms</Link>
             <Link to="/non-profit">Non-Profit</Link>
             <Link to="/manufacturing">Manufacturing</Link>
             <Link to="/military">Military</Link>
             <Link to="/government">Government</Link>
+            <Link to="/procurement">Procurement</Link>
           </div>
           <button>See All Industries</button>
         </div>

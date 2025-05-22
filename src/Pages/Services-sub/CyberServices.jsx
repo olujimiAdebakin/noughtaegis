@@ -131,9 +131,9 @@ const CyberServices = () => {
         <Benefit />
       </div>
 
-      <div className="cyber-testimonial" data-aos="fade-up-right">
+      {/* <div className="cyber-testimonial" data-aos="fade-up-right">
         <CyberTestimonials />
-      </div>
+      </div> */}
 
       <div className="cyber-spectrum" data-aos="fade-up-right">
         <div className="cyber-spectrum-header">
@@ -191,9 +191,9 @@ const CyberServices = () => {
           </div>
         </div>
       </div>
-      <div className="cyber-accordion">
+      {/* <div className="cyber-accordion">
         <Accordion />
-      </div>
+      </div> */}
       <div className="cyber-footer">
         <Footer />
       </div>
